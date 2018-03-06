@@ -6329,7 +6329,7 @@
         - CC1=CCC2CC1C2(C)C
   - !!omap
     - id: MNXM4482_c
-    - name: "\u0152\u2264-aminopropionitrile"
+    - name: beta-aminopropionitrile
     - compartment: i
     - charge: 1
     - formula: C3H7N2
@@ -6777,7 +6777,7 @@
         - '[NH3+][C@H]1[C@H](O)[C@@H](COP([O-])([O-])=O)O[C@]1(O)CO'
   - !!omap
     - id: MNXM5534_c
-    - name: "4,4-dimethyl-5\u0152\xB1-cholesta-8-en-3-\u0152\u2264-ol"
+    - name: 4,4-dimethyl-5alpha-cholesta-8-en-3-beta-ol
     - compartment: i
     - charge: 0
     - formula: C29H50O
@@ -7020,7 +7020,7 @@
         - UPC03428
   - !!omap
     - id: MNXM5993_c
-    - name: "(2R,3S)-\u0152\u2264-methylmalyl-CoA"
+    - name: (2R,3S)-beta-methylmalyl-CoA
     - compartment: i
     - charge: -5
     - formula: C26H37N7O20P3S
@@ -8227,8 +8227,7 @@
         - UPC05125
   - !!omap
     - id: MNXM90927_c
-    - name: "4\u0152\xB1-methyl-5\u0152\xB1-ergosta-8,14,24(28)-trien-3\u0152\u2264\
-        -ol"
+    - name: 4alpha-methyl-5alpha-ergosta-8,14,24(28)-trien-3beta-ol
     - compartment: i
     - charge: 0
     - formula: C29H46O
@@ -28421,7 +28420,7 @@
         - ''
   - !!omap
     - id: MNXM4482_out
-    - name: "\u0152\u2264-aminopropionitrile (out)"
+    - name: beta-aminopropionitrile (out)
     - metabolites: !!omap
       - MNXM4482_c: -1.0
     - lower_bound: 0.0
@@ -28687,7 +28686,7 @@
         - ''
   - !!omap
     - id: MNXM5534_out
-    - name: "4,4-dimethyl-5\u0152\xB1-cholesta-8-en-3-\u0152\u2264-ol (out)"
+    - name: 4,4-dimethyl-5alpha-cholesta-8-en-3-beta-ol (out)
     - metabolites: !!omap
       - MNXM5534_c: -1.0
     - lower_bound: 0.0
@@ -28844,7 +28843,7 @@
         - ''
   - !!omap
     - id: MNXM5993_out
-    - name: "(2R,3S)-\u0152\u2264-methylmalyl-CoA (out)"
+    - name: (2R,3S)-beta-methylmalyl-CoA (out)
     - metabolites: !!omap
       - MNXM5993_c: -1.0
     - lower_bound: 0.0
@@ -29556,8 +29555,7 @@
         - ''
   - !!omap
     - id: MNXM90927_out
-    - name: "4\u0152\xB1-methyl-5\u0152\xB1-ergosta-8,14,24(28)-trien-3\u0152\u2264\
-        -ol (out)"
+    - name: 4alpha-methyl-5alpha-ergosta-8,14,24(28)-trien-3beta-ol (out)
     - metabolites: !!omap
       - MNXM90927_c: -1.0
     - lower_bound: 0.0
@@ -31446,7 +31444,7 @@
         - rxn05332
   - !!omap
     - id: MNXR14704_c
-    - name: "1 glyoxylate + 1 propionyl-CoA(4-) = 1 (2R,3S)-\u0152\u2264-methylmalyl-CoA"
+    - name: 1 glyoxylate + 1 propionyl-CoA(4-) = 1 (2R,3S)-beta-methylmalyl-CoA
     - metabolites: !!omap
       - MNXM5993_c: 1.0
       - glx_c: -1.0
@@ -33342,8 +33340,7 @@
         - rxn03007
   - !!omap
     - id: MNXR17346_c
-    - name: "1 H(+) + 1 NADPH + 1 14-demethyllanosterol = 1 NADP(+) + 1 4,4-dimethyl-5\u0152\
-        \xB1-cholesta-8-en-3-\u0152\u2264-ol"
+    - name: 1 H(+) + 1 NADPH + 1 14-demethyllanosterol = 1 NADP(+) + 1 4,4-dimethyl-5alpha-cholesta-8-en-3-beta-ol
     - metabolites: !!omap
       - 44mzym_c: -1.0
       - MNXM5534_c: 1.0
@@ -38680,8 +38677,8 @@
         - 18633, 18634, 18635, 18636, 24654
   - !!omap
     - id: MNXR33163_c
-    - name: "4 H2O + 1 formate + 3 NADP(+) + 1 4\u0152\xB1-methyl-5\u0152\xB1-ergosta-8,14,24(28)-trien-3\u0152\
-        \u2264-ol = 2 H(+) + 1 obtusifoliol + 3 dioxygen + 3 NADPH"
+    - name: 4 H2O + 1 formate + 3 NADP(+) + 1 4alpha-methyl-5alpha-ergosta-8,14,24(28)-trien-3beta-ol
+        = 2 H(+) + 1 obtusifoliol + 3 dioxygen + 3 NADPH
     - metabolites: !!omap
       - MNXM2144_c: 1.0
       - MNXM90927_c: -1.0
@@ -51638,8 +51635,8 @@
         - rxn06520, rxn10534, rxn12662
   - !!omap
     - id: MNXR59575_c
-    - name: "1 H2O + 1 gamma-glutamyl-beta-aminopropiononitrile = 1 \u0152\u2264-aminopropionitrile\
-        \ + 1 L-glutamate"
+    - name: 1 H2O + 1 gamma-glutamyl-beta-aminopropiononitrile = 1 beta-aminopropionitrile
+        + 1 L-glutamate
     - metabolites: !!omap
       - MNXM4482_c: 1.0
       - MNXM8633_c: -1.0
