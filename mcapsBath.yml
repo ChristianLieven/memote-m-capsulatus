@@ -118,33 +118,6 @@
       - seed.compound: cpd00203
       - upa: UPA:UPC00236
   - !!omap
-    - id: 15HPET_c
-    - name: 15(S)-HPETE(1-)
-    - compartment: c
-    - charge: -1
-    - formula: C20H31O4
-    - annotation: !!omap
-      - bigg.metabolite: 15HPET
-      - biocyc: META:5Z8Z11Z13E-15S-15-HYDROPEROXYICOS
-      - chebi:
-        - CHEBI:15628
-        - CHEBI:758
-        - CHEBI:18595
-        - CHEBI:18594
-        - CHEBI:19152
-        - CHEBI:10920
-        - CHEBI:36041
-        - CHEBI:57446
-      - hmdb:
-        - HMDB04244
-        - HMDB06501
-      - inchi: InChI=1S/C20H32O4/c1-2-3-13-16-19(24-23)17-14-11-9-7-5-4-6-8-10-12-15-18-20(21)22/h4-5,8-11,14,17,19,23H,2-3,6-7,12-13,15-16,18H2,1H3,(H,21,22)/p-1/b5-4-,10-8-,11-9-,17-14+/t19-/m0/s1
-      - kegg.compound: C05966
-      - lipidmaps: LIPIDMAPS:LMFA03060014
-      - metanetx.chemical: MNXM2314
-      - reactome: REACTOME:2142718
-      - seed.compound: cpd03555
-  - !!omap
     - id: 15dap_c
     - name: cadaverine
     - compartment: c
@@ -2268,37 +2241,6 @@
       - seed.compound: cpd02679
       - upa: UPA:UPC04377
   - !!omap
-    - id: 5HPET_c
-    - name: 5(S)-HPTE
-    - compartment: c
-    - charge: -1
-    - formula: C20H31O4
-    - annotation: !!omap
-      - bigg.metabolite: 5HPET
-      - biocyc: META:6E8Z11Z14Z-5S-5-HYDROPEROXYCOSA-6
-      - biopath:
-        - BIOPATH:(S)-5-Hydroperoxy-6
-        - BIOPATH:8
-        - BIOPATH:11
-        - BIOPATH:14-eicosatetranoic_acid
-      - chebi:
-        - CHEBI:15632
-        - CHEBI:10924
-        - CHEBI:18601
-        - CHEBI:20573
-        - CHEBI:2061
-        - CHEBI:60942
-        - CHEBI:57450
-      - hmdb:
-        - HMDB01193
-        - HMDB11135
-      - inchi: InChI=1S/C20H32O4/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-16-19(24-23)17-15-18-20(21)22/h6-7,9-10,12-14,16,19,23H,2-5,8,11,15,17-18H2,1H3,(H,21,22)/p-1/b7-6-,10-9-,13-12-,16-14+/t19-/m1/s1
-      - kegg.compound: C05356
-      - lipidmaps: LIPIDMAPS:LMFA03060012
-      - metanetx.chemical: MNXM808
-      - reactome: REACTOME:266010
-      - seed.compound: cpd03176
-  - !!omap
     - id: 5a2opntn_c
     - name: 5-amino-2-oxopentanoic acid zwitterion
     - compartment: c
@@ -2915,60 +2857,6 @@
         - ' cpd12512'
       - upa: UPA:UPC00229
   - !!omap
-    - id: C04051_c
-    - name: 5-amino-4-imidazolecarboxyamide
-    - compartment: c
-    - charge: 0
-    - formula: C4H6N4O
-    - annotation: !!omap
-      - bigg.metabolite: C04051
-      - biocyc: META:CPD-3762
-      - chebi:
-        - CHEBI:2030
-        - CHEBI:20544
-      - hmdb: HMDB03192
-      - inchi: InChI=1S/C4H6N4O/c5-3-2(4(6)9)7-1-8-3/h1H,5H2,(H2,6,9)(H,7,8)
-      - kegg.compound: C04051
-      - metanetx.chemical: MNXM4388
-      - seed.compound:
-        - cpd02506
-        - ' cpd16736'
-  - !!omap
-    - id: Glc_aD_c
-    - name: alpha-D-glucose
-    - compartment: c
-    - charge: 0
-    - formula: C6H12O6
-    - annotation: !!omap
-      - biocyc:
-        - META:1-4-alpha-D-Glucan
-        - META:ALPHA-GLUCOSE
-      - chebi:
-        - CHEBI:15444
-        - CHEBI:18503
-        - CHEBI:138
-        - CHEBI:10809
-        - CHEBI:17925
-        - CHEBI:40557
-        - CHEBI:42802
-        - CHEBI:10242
-        - CHEBI:22386
-        - CHEBI:12318
-      - hmdb: HMDB03345
-      - inchi: InChI=1S/C6H12O6/c7-1-2-3(8)4(9)5(10)6(11)12-2/h2-11H,1H2/t2-,3-,4+,5-,6+/m1/s1
-      - kegg.compound:
-        - C00267
-        - D02325
-      - metanetx.chemical: MNXM99
-      - reactome:
-        - REACTOME:70115
-        - REACTOME:70113
-        - REACTOME:113780
-        - REACTOME:964746
-        - REACTOME:1605745
-        - REACTOME:868632
-        - REACTOME:868686
-  - !!omap
     - id: Largn_c
     - name: L-arogenate(1-)
     - compartment: c
@@ -3037,26 +2925,6 @@
         - D03636
       - metanetx.chemical: MNXM927
       - seed.compound: cpd00381
-  - !!omap
-    - id: Ncbmpts_c
-    - name: N-carbamoylputrescinium(1+)
-    - compartment: c
-    - charge: 1
-    - formula: C5H14N3O
-    - annotation: !!omap
-      - biocyc: META:CPD-597
-      - chebi:
-        - CHEBI:17902
-        - CHEBI:21691
-        - CHEBI:12594
-        - CHEBI:12497
-        - CHEBI:7258
-        - CHEBI:58318
-      - inchi: InChI=1S/C5H13N3O/c6-3-1-2-4-8-5(7)9/h1-4,6H2,(H3,7,8,9)/p+1
-      - kegg.compound: C00436
-      - metanetx.chemical: MNXM1243
-      - seed.compound: cpd00341
-      - upa: UPA:UPC00436
   - !!omap
     - id: S_gtrdhdlp_c
     - name: '[Dihydrolipoyllysine-residue succinyltransferase] S-glutaryldihydrolipoyllysine'
@@ -8282,6 +8150,7 @@
     - id: eca4colipa_e
     - name: (enterobacterial common antigen)x4 core oligosaccharide lipid A
     - compartment: e
+    - charge: 0
     - formula: C272H447N14O160P4
     - annotation: !!omap
       - original bigg ids: ORIGINAL BIGG IDS:eca4colipa_e
@@ -8289,6 +8158,7 @@
     - id: eca4colipa_p
     - name: (enterobacterial common antigen)x4 core oligosaccharide lipid A
     - compartment: p
+    - charge: 0
     - formula: C272H447N14O160P4
     - annotation: !!omap
       - original bigg ids: ORIGINAL BIGG IDS:eca4colipa_p
@@ -8328,6 +8198,7 @@
     - id: enlipa_e
     - name: Phosphoethanolamine KDO(2)-lipid (A)
     - compartment: e
+    - charge: 0
     - formula: C112H202N3O42P3
     - annotation: !!omap
       - original bigg ids: ORIGINAL BIGG IDS:enlipa_e
@@ -8335,6 +8206,7 @@
     - id: enlipa_p
     - name: Phosphoethanolamine KDO(2)-lipid (A)
     - compartment: p
+    - charge: 0
     - formula: C112H202N3O42P3
     - annotation: !!omap
       - original bigg ids: ORIGINAL BIGG IDS:enlipa_p
@@ -8815,23 +8687,6 @@
       - seed.compound: cpd02678
       - upa: UPA:UPC04376
   - !!omap
-    - id: ficytC_c
-    - name: ferricytochrome c
-    - compartment: c
-    - charge: 0
-    - formula: C42H44FeN8O8S2R4
-    - annotation: !!omap
-      - biocyc: META:Cytochromes-C-Oxidized
-      - chebi:
-        - CHEBI:15991
-        - CHEBI:14240
-        - CHEBI:5026
-        - CHEBI:14245
-      - inchi: ''
-      - kegg.compound: C00125
-      - metanetx.chemical: MNXM114072
-      - upa: UPA:UPC00125
-  - !!omap
     - id: ficytcc553_p
     - name: ferricytochrome c
     - compartment: p
@@ -8956,23 +8811,6 @@
       - metanetx.chemical: MNXM208
       - seed.compound: cpd01270
       - upa: UPA:UPC01847
-  - !!omap
-    - id: focytC_c
-    - name: ferrocytochrome c
-    - compartment: c
-    - charge: 0
-    - formula: C42H44FeN8O8S2R4
-    - annotation: !!omap
-      - chebi:
-        - CHEBI:16928
-        - CHEBI:14253
-        - CHEBI:14256
-        - CHEBI:5038
-        - CHEBI:8789
-      - inchi: ''
-      - kegg.compound: C00126
-      - metanetx.chemical: MNXM537
-      - upa: UPA:UPC00126
   - !!omap
     - id: focytcc553_p
     - name: ferrocytochrome c
@@ -9891,6 +9729,41 @@
       - metanetx.chemical: MNXM41
       - seed.compound: cpd00027
       - upa: UPA:UPC00031
+  - !!omap
+    - id: glc__aD_c
+    - name: alpha-D-glucose
+    - compartment: c
+    - charge: 0
+    - formula: C6H12O6
+    - annotation: !!omap
+      - biocyc:
+        - META:1-4-alpha-D-Glucan
+        - META:ALPHA-GLUCOSE
+      - chebi:
+        - CHEBI:15444
+        - CHEBI:18503
+        - CHEBI:138
+        - CHEBI:10809
+        - CHEBI:17925
+        - CHEBI:40557
+        - CHEBI:42802
+        - CHEBI:10242
+        - CHEBI:22386
+        - CHEBI:12318
+      - hmdb: HMDB03345
+      - inchi: InChI=1S/C6H12O6/c7-1-2-3(8)4(9)5(10)6(11)12-2/h2-11H,1H2/t2-,3-,4+,5-,6+/m1/s1
+      - kegg.compound:
+        - C00267
+        - D02325
+      - metanetx.chemical: MNXM99
+      - reactome:
+        - REACTOME:70115
+        - REACTOME:70113
+        - REACTOME:113780
+        - REACTOME:964746
+        - REACTOME:1605745
+        - REACTOME:868632
+        - REACTOME:868686
   - !!omap
     - id: glc_bD_c
     - name: beta-D-glucose
@@ -12741,60 +12614,6 @@
       - seed.compound: cpd00107
       - upa: UPA:UPC00123
   - !!omap
-    - id: leuktrC4_c
-    - name: leukotriene C4
-    - compartment: c
-    - charge: -2
-    - formula: C30H45N3O9S
-    - annotation: !!omap
-      - bigg.metabolite: leuktrC4
-      - biocyc: META:LEUKOTRIENE-C4
-      - biopath: BIOPATH:Leukotriene_C4
-      - chebi:
-        - CHEBI:16978
-        - CHEBI:25025
-        - CHEBI:14504
-        - CHEBI:6422
-        - CHEBI:57973
-      - hmdb:
-        - HMDB01198
-        - HMDB06015
-        - HMDB05095
-      - inchi: InChI=1S/C30H47N3O9S/c1-2-3-4-5-6-7-8-9-10-11-12-13-16-25(24(34)15-14-17-27(36)37)43-21-23(29(40)32-20-28(38)39)33-26(35)19-18-22(31)30(41)42/h6-7,9-13,16,22-25,34H,2-5,8,14-15,17-21,31H2,1H3,(H,32,40)(H,33,35)(H,36,37)(H,38,39)(H,41,42)/p-2/b7-6-,10-9-,12-11+,16-13+/t22-,23-,24-,25+/m0/s1
-      - kegg.compound: C02166
-      - lipidmaps:
-        - LIPIDMAPS:LMFA03020003
-        - LIPIDMAPS:LMFA03020020
-      - metanetx.chemical: MNXM589
-      - reactome:
-        - REACTOME:266066
-        - REACTOME:266013
-      - seed.compound: cpd01465
-  - !!omap
-    - id: leuktrD4_c
-    - name: leukotriene D4
-    - compartment: c
-    - charge: -1
-    - formula: C25H39N2O6S
-    - annotation: !!omap
-      - bigg.metabolite: leuktrD4
-      - biocyc: META:CPD66-21
-      - biopath: BIOPATH:Leukotriene_D4
-      - chebi:
-        - CHEBI:28666
-        - CHEBI:25026
-        - CHEBI:6423
-        - CHEBI:63166
-      - hmdb:
-        - HMDB03080
-        - HMDB05074
-      - inchi: InChI=1S/C25H40N2O6S/c1-2-3-4-5-6-7-8-9-10-11-12-13-16-22(21(28)15-14-17-23(29)30)34-19-20(26)25(33)27-18-24(31)32/h6-7,9-13,16,20-22,28H,2-5,8,14-15,17-19,26H2,1H3,(H,27,33)(H,29,30)(H,31,32)/p-1/b7-6-,10-9-,12-11+,16-13+/t20-,21-,22+/m0/s1
-      - kegg.compound: C05951
-      - lipidmaps: LIPIDMAPS:LMFA03020006
-      - metanetx.chemical: MNXM885
-      - reactome: REACTOME:266074
-      - seed.compound: cpd03540
-  - !!omap
     - id: leutrna_c
     - name: Leu-tRNA(Leu)
     - compartment: c
@@ -12849,6 +12668,7 @@
     - id: lipa_cold_e
     - name: Cold adapted KDO(2)-lipid (A)
     - compartment: e
+    - charge: 0
     - formula: C114H202N2O39P2
     - annotation: !!omap
       - original bigg ids: ORIGINAL BIGG IDS:lipa_cold_e
@@ -12856,6 +12676,7 @@
     - id: lipa_cold_p
     - name: Cold adapted KDO(2)-lipid (A)
     - compartment: p
+    - charge: 0
     - formula: C114H202N2O39P2
     - annotation: !!omap
       - original bigg ids: ORIGINAL BIGG IDS:lipa_cold_p
@@ -14647,6 +14468,7 @@
     - id: no3_e
     - name: no3_e
     - compartment: e
+    - charge: -1
     - formula: NO3
     - annotation: !!omap
       - SBO: SBO:0000247
@@ -14788,6 +14610,7 @@
     - id: o16a4colipa_e
     - name: (O16 antigen)x4 core oligosaccharide lipid A
     - compartment: e
+    - charge: 0
     - formula: C312H523N6O200P4
     - annotation: !!omap
       - original bigg ids: ORIGINAL BIGG IDS:o16a4colipa_e
@@ -14795,6 +14618,7 @@
     - id: o16a4colipa_p
     - name: (O16 antigen)x4 core oligosaccharide lipid A
     - compartment: p
+    - charge: 0
     - formula: C312H523N6O200P4
     - annotation: !!omap
       - original bigg ids: ORIGINAL BIGG IDS:o16a4colipa_p
@@ -17276,7 +17100,7 @@
       - seed.compound: cpd00020
       - upa: UPA:UPC00022
   - !!omap
-    - id: q8_im
+    - id: q8_c
     - name: Ubiquinone-8
     - compartment: im
     - charge: 0
@@ -17291,7 +17115,7 @@
       - metanetx.chemical: MNXM232
       - seed.compound: cpd15560
   - !!omap
-    - id: q8h2_im
+    - id: q8h2_c
     - name: Ubiquinol-8
     - compartment: im
     - charge: 0
@@ -22788,29 +22612,6 @@
         - UPA:UCR00190
         - UPA:UER00646
   - !!omap
-    - id: ADPT2
-    - name: ADPT2
-    - metabolites: !!omap
-      - C04051_c: -1.0
-      - aicar_c: 1.0
-      - ppi_c: 1.0
-      - prpp_c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 0.0
-    - gene_reaction_rule: MCA0816
-    - annotation: !!omap
-      - bigg.reaction: ADPT2
-      - kegg.reaction: R04378
-      - metanetx.reaction: MNXR54985
-      - rhea:
-        - '31135'
-        - '31136'
-        - '31137'
-        - '31138'
-      - seed:
-        - rxn03039
-        - rxn12778
-  - !!omap
     - id: ADSK
     - name: Adenylyl-sulfate kinase
     - metabolites: !!omap
@@ -25288,7 +25089,7 @@
       - pro__L_c: -0.248
       - ptdca_c: -0.00023422
       - pyr_c: -0.015
-      - q8h2_im: -0.00022
+      - q8h2_c: -0.00022
       - ribflv_c: -0.00019396
       - ru5p_D_c: -0.001
       - ser__L_c: -0.246
@@ -25335,7 +25136,7 @@
       - pi_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: ''
+    - gene_reaction_rule: MCA2983
     - annotation: !!omap
       - SBO: SBO:0000375
       - bigg.reaction: BPNT
@@ -26416,8 +26217,8 @@
       - focytcc553_p: 2.0
       - h_c: -2.0
       - h_p: 4.0
-      - q8_im: 1.0
-      - q8h2_im: -1.0
+      - q8_c: 1.0
+      - q8h2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1960_c and MCA1961_c and MCA1962 and MCA2405
@@ -27787,7 +27588,7 @@
       - ahcys_c: 1.0
       - amet_c: -1.0
       - h_c: 1.0
-      - q8h2_im: 1.0
+      - q8h2_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1164 or MCA1272
@@ -27839,6 +27640,14 @@
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
+    - id: DM_acald_c
+    - name: Demand needed to allow acetaldehyde to leave system
+    - metabolites: !!omap
+      - acald_c: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
     - id: DM_doxopa_c
     - name: 'Demand '
     - metabolites: !!omap
@@ -27847,10 +27656,26 @@
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
+    - id: DM_gmp_c
+    - name: Demand needed to allow gmp to leave system
+    - metabolites: !!omap
+      - gmp_c: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
     - id: DM_h2o2_c
     - name: hydrogen peroxide exchange
     - metabolites: !!omap
       - h2o2_c: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
+    - id: DM_pppi_c
+    - name: Demand needed to allow pppi to leave system
+    - metabolites: !!omap
+      - pppi_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
@@ -29259,7 +29084,7 @@
       - ttdcea_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: ''
+    - gene_reaction_rule: MCA1401 or MCA1006 or MCA1569
     - annotation: !!omap
       - SBO: SBO:0000375
       - bigg.reaction: FACOAE141
@@ -29358,7 +29183,7 @@
       - ttdca_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: ''
+    - gene_reaction_rule: MCA1006 or MCA1569
     - annotation: !!omap
       - SBO: SBO:0000375
       - bigg.reaction: FACOAL140
@@ -29402,7 +29227,7 @@
       - stcoa_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: ''
+    - gene_reaction_rule: MCA1006 or MCA1569
     - annotation: !!omap
       - SBO: SBO:0000375
       - bigg.reaction: FACOAL180
@@ -29435,8 +29260,8 @@
       - for_c: 1.0
       - h2o_c: -1.0
       - h_c: 1.0
-      - q8_im: -1.0
-      - q8h2_im: 1.0
+      - q8_c: -1.0
+      - q8h2_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2155
@@ -31020,10 +30845,10 @@
     - id: GLUKA
     - name: Glucokinase/hexokinase (glc-A)
     - metabolites: !!omap
-      - Glc_aD_c: -1.0
       - adp_c: 1.0
       - atp_c: -1.0
       - g6p_A_c: 1.0
+      - glc__aD_c: -1.0
       - h_c: 1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
@@ -35432,8 +35257,8 @@
       - h_p: 3.0
       - nad_c: 1.0
       - nadh_c: -1.0
-      - q8_im: -1.0
-      - q8h2_im: 1.0
+      - q8_c: -1.0
+      - q8h2_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1347 and MCA1348 and MCA1349 and MCA1350 and MCA1351
@@ -35450,8 +35275,8 @@
       - h_c: -1.0
       - nad_c: 1.0
       - nadh_c: -1.0
-      - q8_im: -1.0
-      - q8h2_im: 1.0
+      - q8_c: -1.0
+      - q8h2_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1918
@@ -35468,8 +35293,8 @@
       - na1_p: 2.0
       - nad_c: 1.0
       - nadh_c: -1.0
-      - q8_im: -1.0
-      - q8h2_im: 1.0
+      - q8_c: -1.0
+      - q8h2_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2389 and MCA2388 and MCA2387 and MCA2386 and MCA2385
@@ -36340,8 +36165,8 @@
       - h2o_c: 1.0
       - no2_c: 1.0
       - no3_c: -1.0
-      - q8_im: 1.0
-      - q8h2_im: -1.0
+      - q8_c: 1.0
+      - q8h2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0590
@@ -36358,14 +36183,10 @@
     - id: NO3t2pp
     - name: Nitrate transport in via proton symport (periplasm)
     - metabolites: !!omap
-      - adp_c: 1.0
-      - atp_c: -1.0
-      - h2o_c: -1.0
       - h_c: 1.0
       - h_p: -1.0
       - no3_c: 1.0
       - no3_p: -1.0
-      - pi_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0589 or MCA0594
@@ -37732,11 +37553,12 @@
     - name: particulate ammonia monooxygenase
     - metabolites: !!omap
       - h2o_p: 1.0
+      - h_p: 1.0
       - ham_p: 1.0
       - nh4_p: -1.0
       - o2_p: -1.0
-      - q8_im: 1.0
-      - q8h2_im: -1.0
+      - q8_c: 1.0
+      - q8h2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ( ( MCA1796 and MCA1797 and MCA1798 ) or ( MCA2853 and MCA2854
@@ -38076,7 +37898,7 @@
       - s7p_c: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: ''
+    - gene_reaction_rule: MCA1251
     - annotation: !!omap
       - biocyc: META:RXN0-6541
       - brenda: 2.7.1.11
@@ -38910,6 +38732,7 @@
       - ficytcc555_p: 2.0
       - focytcc555_p: -2.0
       - h2o_p: 1.0
+      - h_p: -2.0
       - meoh_p: 1.0
       - o2_p: -1.0
     - lower_bound: 0.0
@@ -38926,8 +38749,8 @@
       - h2o_p: 1.0
       - meoh_p: 1.0
       - o2_p: -1.0
-      - q8_im: 1.0
-      - q8h2_im: -1.0
+      - q8_c: 1.0
+      - q8h2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ( ( MCA1796 and MCA1797 and MCA1798 ) or ( MCA2853 and MCA2854
@@ -40743,8 +40566,8 @@
     - id: SAGH
     - name: Sucrose alpha-glucohydrolase
     - metabolites: !!omap
-      - Glc_aD_c: 1.0
       - fru_c: 1.0
+      - glc__aD_c: 1.0
       - h2o_c: -1.0
       - sucr_c: -1.0
     - lower_bound: 0.0
@@ -42199,7 +42022,7 @@
       - xu5p_D_c: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: ''
+    - gene_reaction_rule: MCA3040 or MCA3046
     - annotation: !!omap
       - SBO: SBO:0000375
       - bigg.reaction: TKT1
@@ -45900,10 +45723,10 @@
   - !!omap
     - id: MCA3101
     - name: MCA3101
-- id: BMID000000141026
+- id: iCL730
 - compartments: !!omap
   - c: cytosol
   - e: extracellular
-  - im: inner membrane
+  - im: ''
   - p: periplasm
 - version: '1'
