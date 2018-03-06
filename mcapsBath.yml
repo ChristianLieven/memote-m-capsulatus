@@ -3585,6 +3585,60 @@
       - seed.compound: cpd00128
       - upa: UPA:UPC00147
   - !!omap
+    - id: ade_e
+    - name: adenine
+    - compartment: e
+    - charge: 0
+    - formula: C5H5N5
+    - annotation: !!omap
+      - bigg.metabolite: ade
+      - biocyc:
+        - META:ADENINE
+        - META:ADENINE-RING
+      - biopath: BIOPATH:Adenine
+      - chebi:
+        - CHEBI:16708
+        - CHEBI:13733
+        - CHEBI:22236
+        - CHEBI:2470
+        - CHEBI:40579
+      - hmdb: HMDB00034
+      - inchi: InChI=1S/C5H5N5/c6-4-3-5(9-1-7-3)10-2-8-4/h1-2H,(H3,6,7,8,9,10)
+      - kegg.compound:
+        - C00147
+        - D00034
+      - metanetx.chemical: MNXM168
+      - reactome: REACTOME:83951
+      - seed.compound: cpd00128
+      - upa: UPA:UPC00147
+  - !!omap
+    - id: ade_p
+    - name: adenine
+    - compartment: p
+    - charge: 0
+    - formula: C5H5N5
+    - annotation: !!omap
+      - bigg.metabolite: ade
+      - biocyc:
+        - META:ADENINE
+        - META:ADENINE-RING
+      - biopath: BIOPATH:Adenine
+      - chebi:
+        - CHEBI:16708
+        - CHEBI:13733
+        - CHEBI:22236
+        - CHEBI:2470
+        - CHEBI:40579
+      - hmdb: HMDB00034
+      - inchi: InChI=1S/C5H5N5/c6-4-3-5(9-1-7-3)10-2-8-4/h1-2H,(H3,6,7,8,9,10)
+      - kegg.compound:
+        - C00147
+        - D00034
+      - metanetx.chemical: MNXM168
+      - reactome: REACTOME:83951
+      - seed.compound: cpd00128
+      - upa: UPA:UPC00147
+  - !!omap
     - id: adn_c
     - name: adenosine
     - compartment: c
@@ -4713,6 +4767,48 @@
         - REACTOME:379728
       - seed.compound: cpd12313
   - !!omap
+    - id: aso3_c
+    - name: Arsenite
+    - compartment: c
+    - charge: 0
+    - formula: AsO3
+    - annotation: !!omap
+      - bigg.metabolite: aso3_c
+      - biocyc:
+        - META:CPD0-2040
+        - META:CPD-763
+      - kegg.compound: C06697
+      - metanetx.chemical: MNXM658
+      - seed.compound: cpd04098
+  - !!omap
+    - id: aso3_e
+    - name: Arsenite
+    - compartment: e
+    - charge: 0
+    - formula: AsO3
+    - annotation: !!omap
+      - bigg.metabolite: aso3_c
+      - biocyc:
+        - META:CPD0-2040
+        - META:CPD-763
+      - kegg.compound: C06697
+      - metanetx.chemical: MNXM658
+      - seed.compound: cpd04098
+  - !!omap
+    - id: aso3_p
+    - name: Arsenite
+    - compartment: p
+    - charge: 0
+    - formula: AsO3
+    - annotation: !!omap
+      - bigg.metabolite: aso3_c
+      - biocyc:
+        - META:CPD0-2040
+        - META:CPD-763
+      - kegg.compound: C06697
+      - metanetx.chemical: MNXM658
+      - seed.compound: cpd04098
+  - !!omap
     - id: asp_D_c
     - name: D-aspartate(1-)
     - compartment: c
@@ -4738,6 +4834,74 @@
     - id: asp__L_c
     - name: L-aspartate(1-)
     - compartment: c
+    - charge: -1
+    - formula: C4H6NO4
+    - annotation: !!omap
+      - bigg.metabolite: asp-L
+      - biocyc: META:L-ASPARTATE
+      - biopath: BIOPATH:L-Aspartate
+      - chebi:
+        - CHEBI:17053
+        - CHEBI:40913
+        - CHEBI:21247
+        - CHEBI:6193
+        - CHEBI:40942
+        - CHEBI:40853
+        - CHEBI:29958
+        - CHEBI:29991
+        - CHEBI:21244
+        - CHEBI:13085
+        - CHEBI:29993
+      - hmdb: HMDB00191
+      - inchi: InChI=1S/C4H7NO4/c5-2(4(8)9)1-3(6)7/h2H,1,5H2,(H,6,7)(H,8,9)/p-1/t2-/m0/s1
+      - kegg.compound:
+        - C00049
+        - D00013
+        - D07524
+      - metanetx.chemical: MNXM42
+      - reactome:
+        - REACTOME:29448
+        - REACTOME:113553
+      - seed.compound: cpd00041
+      - upa: UPA:UPC00049
+  - !!omap
+    - id: asp__L_e
+    - name: L-aspartate(1-)
+    - compartment: e
+    - charge: -1
+    - formula: C4H6NO4
+    - annotation: !!omap
+      - bigg.metabolite: asp-L
+      - biocyc: META:L-ASPARTATE
+      - biopath: BIOPATH:L-Aspartate
+      - chebi:
+        - CHEBI:17053
+        - CHEBI:40913
+        - CHEBI:21247
+        - CHEBI:6193
+        - CHEBI:40942
+        - CHEBI:40853
+        - CHEBI:29958
+        - CHEBI:29991
+        - CHEBI:21244
+        - CHEBI:13085
+        - CHEBI:29993
+      - hmdb: HMDB00191
+      - inchi: InChI=1S/C4H7NO4/c5-2(4(8)9)1-3(6)7/h2H,1,5H2,(H,6,7)(H,8,9)/p-1/t2-/m0/s1
+      - kegg.compound:
+        - C00049
+        - D00013
+        - D07524
+      - metanetx.chemical: MNXM42
+      - reactome:
+        - REACTOME:29448
+        - REACTOME:113553
+      - seed.compound: cpd00041
+      - upa: UPA:UPC00049
+  - !!omap
+    - id: asp__L_p
+    - name: L-aspartate(1-)
+    - compartment: p
     - charge: -1
     - formula: C4H6NO4
     - annotation: !!omap
@@ -5059,6 +5223,100 @@
         - ' cpd09385'
         - ' cpd09395'
   - !!omap
+    - id: ca2_e
+    - name: Ca(2+)
+    - compartment: e
+    - charge: 2
+    - formula: Ca
+    - annotation: !!omap
+      - bigg.metabolite: ca2
+      - biocyc:
+        - META:CA+2
+        - META:CPD0-1589
+      - biopath: BIOPATH:Ca2+
+      - chebi:
+        - CHEBI:29108
+        - CHEBI:3308
+        - CHEBI:22988
+        - CHEBI:48760
+        - CHEBI:31338
+        - CHEBI:31341
+        - CHEBI:3312
+        - CHEBI:35437
+      - inchi: InChI=1S/Ca/q+2
+      - kegg.compound:
+        - C00076
+        - C08130
+        - C12277
+        - D01083
+        - C13140
+        - D01679
+        - C13189
+        - D01723
+        - C18381
+        - D02256
+      - metanetx.chemical: MNXM128
+      - reactome:
+        - REACTOME:74016
+        - REACTOME:167012
+        - REACTOME:139827
+        - REACTOME:140648
+        - REACTOME:111875
+        - REACTOME:74112
+      - seed.compound:
+        - cpd00063
+        - ' cpd05098'
+        - ' cpd09053'
+        - ' cpd09385'
+        - ' cpd09395'
+  - !!omap
+    - id: ca2_p
+    - name: Ca(2+)
+    - compartment: p
+    - charge: 2
+    - formula: Ca
+    - annotation: !!omap
+      - bigg.metabolite: ca2
+      - biocyc:
+        - META:CA+2
+        - META:CPD0-1589
+      - biopath: BIOPATH:Ca2+
+      - chebi:
+        - CHEBI:29108
+        - CHEBI:3308
+        - CHEBI:22988
+        - CHEBI:48760
+        - CHEBI:31338
+        - CHEBI:31341
+        - CHEBI:3312
+        - CHEBI:35437
+      - inchi: InChI=1S/Ca/q+2
+      - kegg.compound:
+        - C00076
+        - C08130
+        - C12277
+        - D01083
+        - C13140
+        - D01679
+        - C13189
+        - D01723
+        - C18381
+        - D02256
+      - metanetx.chemical: MNXM128
+      - reactome:
+        - REACTOME:74016
+        - REACTOME:167012
+        - REACTOME:139827
+        - REACTOME:140648
+        - REACTOME:111875
+        - REACTOME:74112
+      - seed.compound:
+        - cpd00063
+        - ' cpd05098'
+        - ' cpd09053'
+        - ' cpd09385'
+        - ' cpd09395'
+  - !!omap
     - id: catechol_c
     - name: catechol
     - compartment: c
@@ -5167,6 +5425,36 @@
       - kegg.compound: C04419
       - metanetx.chemical: MNXM5655
       - seed.compound: cpd12543
+  - !!omap
+    - id: cd2_c
+    - name: Cadmium
+    - compartment: c
+    - charge: 2
+    - formula: Cd
+    - annotation: !!omap
+      - kegg.compound: C01413
+      - metanetx.chemical: MNXM4505
+      - seed.compound: cpd01012
+  - !!omap
+    - id: cd2_e
+    - name: Cadmium
+    - compartment: e
+    - charge: 2
+    - formula: Cd
+    - annotation: !!omap
+      - kegg.compound: C01413
+      - metanetx.chemical: MNXM4505
+      - seed.compound: cpd01012
+  - !!omap
+    - id: cd2_p
+    - name: Cadmium
+    - compartment: p
+    - charge: 2
+    - formula: Cd
+    - annotation: !!omap
+      - kegg.compound: C01413
+      - metanetx.chemical: MNXM4505
+      - seed.compound: cpd01012
   - !!omap
     - id: cdg_c
     - name: 7-carboxy-7-deazaguanine
@@ -5299,6 +5587,31 @@
     - id: ch4_c
     - name: methane
     - compartment: c
+    - charge: 0
+    - formula: CH4
+    - annotation: !!omap
+      - bigg.metabolite: ch4
+      - biocyc:
+        - META:CH4
+        - META:METHYL-GROUP
+      - biopath: BIOPATH:Methane
+      - chebi:
+        - CHEBI:16183
+        - CHEBI:6811
+        - CHEBI:14585
+        - CHEBI:25220
+        - CHEBI:29434
+        - CHEBI:29438
+      - hmdb: HMDB02714
+      - inchi: InChI=1S/CH4/h1H4
+      - kegg.compound: C01438
+      - metanetx.chemical: MNXM714
+      - seed.compound: cpd01024
+      - upa: UPA:UPC01438
+  - !!omap
+    - id: ch4_e
+    - name: methane
+    - compartment: e
     - charge: 0
     - formula: CH4
     - annotation: !!omap
@@ -5712,6 +6025,96 @@
         - UPA:UPC00698
         - UPA:UPC01327
   - !!omap
+    - id: cl_e
+    - name: Cl(-)
+    - compartment: e
+    - charge: -1
+    - formula: Cl
+    - annotation: !!omap
+      - bigg.metabolite: cl
+      - biocyc:
+        - META:CL-
+        - META:HCL
+      - chebi:
+        - CHEBI:17883
+        - CHEBI:13364
+        - CHEBI:24635
+        - CHEBI:5590
+        - CHEBI:17996
+        - CHEBI:48804
+        - CHEBI:13291
+        - CHEBI:3616
+        - CHEBI:13970
+        - CHEBI:3731
+        - CHEBI:53351
+        - CHEBI:53503
+        - CHEBI:53542
+        - CHEBI:67096
+      - hmdb:
+        - HMDB00492
+        - HMDB02073
+        - HMDB02306
+        - HMDB02162
+      - inchi: InChI=1S/ClH/h1H/p-1
+      - kegg.compound:
+        - C00698
+        - C01327
+        - D02057
+      - metanetx.chemical: MNXM43
+      - reactome:
+        - REACTOME:29572
+        - REACTOME:352022
+        - REACTOME:188972
+      - seed.compound: cpd00099
+      - upa:
+        - UPA:UPC00698
+        - UPA:UPC01327
+  - !!omap
+    - id: cl_p
+    - name: Cl(-)
+    - compartment: p
+    - charge: -1
+    - formula: Cl
+    - annotation: !!omap
+      - bigg.metabolite: cl
+      - biocyc:
+        - META:CL-
+        - META:HCL
+      - chebi:
+        - CHEBI:17883
+        - CHEBI:13364
+        - CHEBI:24635
+        - CHEBI:5590
+        - CHEBI:17996
+        - CHEBI:48804
+        - CHEBI:13291
+        - CHEBI:3616
+        - CHEBI:13970
+        - CHEBI:3731
+        - CHEBI:53351
+        - CHEBI:53503
+        - CHEBI:53542
+        - CHEBI:67096
+      - hmdb:
+        - HMDB00492
+        - HMDB02073
+        - HMDB02306
+        - HMDB02162
+      - inchi: InChI=1S/ClH/h1H/p-1
+      - kegg.compound:
+        - C00698
+        - C01327
+        - D02057
+      - metanetx.chemical: MNXM43
+      - reactome:
+        - REACTOME:29572
+        - REACTOME:352022
+        - REACTOME:188972
+      - seed.compound: cpd00099
+      - upa:
+        - UPA:UPC00698
+        - UPA:UPC01327
+  - !!omap
     - id: clpn_MC_c
     - name: Cardiolipin
     - compartment: c
@@ -5805,6 +6208,41 @@
       - seed.compound: cpd00011
       - upa: UPA:UPC00011
   - !!omap
+    - id: co2_e
+    - name: CO(2)
+    - compartment: e
+    - charge: 0
+    - formula: CO2
+    - annotation: !!omap
+      - bigg.metabolite: co2
+      - biocyc: META:CARBON-DIOXIDE
+      - biopath: BIOPATH:Carbon_dioxide
+      - chebi:
+        - CHEBI:16526
+        - CHEBI:48829
+        - CHEBI:3283
+        - CHEBI:13283
+        - CHEBI:13284
+        - CHEBI:13285
+        - CHEBI:13282
+        - CHEBI:23011
+      - hmdb: HMDB01967
+      - inchi: InChI=1S/CO2/c2-1-3
+      - kegg.compound:
+        - C00011
+        - D00004
+      - metanetx.chemical: MNXM13
+      - reactome:
+        - REACTOME:29376
+        - REACTOME:1237009
+        - REACTOME:389536
+        - REACTOME:113528
+        - REACTOME:159942
+        - REACTOME:159751
+        - REACTOME:189480
+      - seed.compound: cpd00011
+      - upa: UPA:UPC00011
+  - !!omap
     - id: co2dam_c
     - name: cob(II)yrinic acid a,c diamide(4-)
     - compartment: c
@@ -5827,6 +6265,29 @@
     - id: co_c
     - name: carbon monoxide(1+)
     - compartment: c
+    - charge: 0
+    - formula: CO
+    - annotation: !!omap
+      - bigg.metabolite: co
+      - chebi:
+        - CHEBI:17245
+        - CHEBI:41526
+        - CHEBI:3282
+        - CHEBI:13281
+        - CHEBI:23013
+        - CHEBI:58072
+      - inchi: InChI=1S/CHO/c1-2/h1H/q+1
+      - kegg.compound:
+        - C00237
+        - D09706
+        - D03398
+      - metanetx.chemical: MNXM299
+      - reactome: REACTOME:189385
+      - seed.compound: cpd00204
+  - !!omap
+    - id: co_e
+    - name: carbon monoxide(1+)
+    - compartment: e
     - charge: 0
     - formula: CO
     - annotation: !!omap
@@ -5883,6 +6344,46 @@
     - id: cobalt2_c
     - name: Co(2+)
     - compartment: c
+    - charge: 2
+    - formula: Co
+    - annotation: !!omap
+      - bigg.metabolite: cobalt2
+      - biocyc: META:CO+2
+      - biopath: BIOPATH:Co2+
+      - chebi:
+        - CHEBI:35696
+        - CHEBI:48828
+        - CHEBI:23337
+        - CHEBI:48827
+      - inchi: InChI=1S/Co/q+2
+      - kegg.compound: C00175
+      - metanetx.chemical: MNXM711
+      - seed.compound: cpd00149
+      - upa: UPA:UPC00175
+  - !!omap
+    - id: cobalt2_e
+    - name: Co(2+)
+    - compartment: e
+    - charge: 2
+    - formula: Co
+    - annotation: !!omap
+      - bigg.metabolite: cobalt2
+      - biocyc: META:CO+2
+      - biopath: BIOPATH:Co2+
+      - chebi:
+        - CHEBI:35696
+        - CHEBI:48828
+        - CHEBI:23337
+        - CHEBI:48827
+      - inchi: InChI=1S/Co/q+2
+      - kegg.compound: C00175
+      - metanetx.chemical: MNXM711
+      - seed.compound: cpd00149
+      - upa: UPA:UPC00175
+  - !!omap
+    - id: cobalt2_p
+    - name: Co(2+)
+    - compartment: p
     - charge: 2
     - formula: Co
     - annotation: !!omap
@@ -6235,20 +6736,56 @@
       - seed.compound: cpd00052
       - upa: UPA:UPC00063
   - !!omap
-    - id: cu_c
-    - name: Copper
+    - id: cu2_c
+    - name: Cu2+
     - compartment: c
     - charge: 2
     - formula: Cu
     - annotation: !!omap
-      - SBO: SBO:0000247
-      - bigg.metabolite: cu
-      - biocyc: META:CU+
+      - bigg.metabolite: cu2
+      - biocyc: META:CU+2
       - chebi:
-        - CHEBI:23379
-        - CHEBI:49551
-        - CHEBI:49552
-      - metanetx.chemical: MNXM3568
+        - CHEBI:20882
+        - CHEBI:23380
+        - CHEBI:29036
+        - CHEBI:49550
+      - kegg.compound: C00070
+      - metanetx.chemical: MNXM632
+      - seed.compound: cpd00058
+  - !!omap
+    - id: cu2_e
+    - name: Cu2+
+    - compartment: e
+    - charge: 2
+    - formula: Cu
+    - annotation: !!omap
+      - bigg.metabolite: cu2
+      - biocyc: META:CU+2
+      - chebi:
+        - CHEBI:20882
+        - CHEBI:23380
+        - CHEBI:29036
+        - CHEBI:49550
+      - kegg.compound: C00070
+      - metanetx.chemical: MNXM632
+      - seed.compound: cpd00058
+  - !!omap
+    - id: cu2_p
+    - name: Cu2+
+    - compartment: p
+    - charge: 2
+    - formula: Cu
+    - annotation: !!omap
+      - bigg.metabolite: cu2
+      - biocyc: META:CU+2
+      - chebi:
+        - CHEBI:20882
+        - CHEBI:23380
+        - CHEBI:29036
+        - CHEBI:49550
+      - kegg.compound: C00070
+      - metanetx.chemical: MNXM632
+      - seed.compound: cpd00058
   - !!omap
     - id: cys__L_c
     - name: L-cysteine zwitterion
@@ -8056,6 +8593,30 @@
         - REACTOME:879250
         - REACTOME:29478
   - !!omap
+    - id: fald_e
+    - name: formaldehyde
+    - compartment: e
+    - charge: 0
+    - formula: CH2O
+    - annotation: !!omap
+      - bigg.metabolite: fald
+      - biocyc: META:FORMALDEHYDE
+      - biopath: BIOPATH:Formaldehyde
+      - chebi:
+        - CHEBI:[&apos;16842&apos;
+        - CHEBI:&apos;5142&apos;
+        - CHEBI:&apos;24077&apos;
+        - CHEBI:&apos;337763&apos;
+        - CHEBI:&apos;14274&apos;]
+      - hmdb: HMDB01426
+      - inchi: InChI=1S/CH2O/c1-2/h1H2
+      - kegg.compound: C00067
+      - metanetx.chemical: MNXM56
+      - reactome:
+        - REACTOME:143501
+        - REACTOME:879250
+        - REACTOME:29478
+  - !!omap
     - id: fald_p
     - name: formaldehyde
     - compartment: p
@@ -8174,6 +8735,33 @@
         - cpd00021
         - ' cpd10515'
       - upa: UPA:UPC14818
+  - !!omap
+    - id: fe2_e
+    - name: fe2_p
+    - compartment: e
+    - charge: 2
+    - formula: Fe
+    - annotation: !!omap
+      - SBO: SBO:0000247
+      - bigg.metabolite: fe2
+      - biocyc: META:FE+2
+      - chebi:
+        - CHEBI:13319
+        - CHEBI:13321
+        - CHEBI:21129
+        - CHEBI:24876
+        - CHEBI:29033
+        - CHEBI:34754
+        - CHEBI:49599
+      - hmdb: HMDB00692
+      - kegg.compound: C14818
+      - metanetx.chemical: MNXM111
+      - reactome:
+        - '113531'
+        - '435347'
+        - '71067'
+      - seed.compound: cpd10515
+      - unipathway.compound: UPC14818
   - !!omap
     - id: fe2_p
     - name: fe2_p
@@ -8454,6 +9042,74 @@
       - seed.compound: cpd00393
       - upa: UPA:UPC00504
   - !!omap
+    - id: fol_e
+    - name: folate
+    - compartment: e
+    - charge: -2
+    - formula: C19H17N7O6
+    - annotation: !!omap
+      - bigg.metabolite: fol
+      - biocyc:
+        - META:All-Folates
+        - META:CPD-12826
+      - biopath: BIOPATH:Folate
+      - chebi:
+        - CHEBI:27470
+        - CHEBI:42610
+        - CHEBI:5140
+        - CHEBI:24075
+        - CHEBI:569217
+        - CHEBI:37445
+        - CHEBI:24074
+        - CHEBI:24076
+        - CHEBI:62501
+        - CHEBI:67011
+      - hmdb: HMDB00121
+      - inchi: InChI=1S/C19H19N7O6/c20-19-25-15-14(17(30)26-19)23-11(8-22-15)7-21-10-3-1-9(2-4-10)16(29)24-12(18(31)32)5-6-13(27)28/h1-4,8,12,21H,5-7H2,(H,24,29)(H,27,28)(H,31,32)(H3,20,22,25,26,30)/p-2/t12-/m0/s1
+      - kegg.compound:
+        - C00504
+        - D00070
+      - metanetx.chemical: MNXM617
+      - reactome:
+        - REACTOME:197965
+        - REACTOME:200716
+      - seed.compound: cpd00393
+      - upa: UPA:UPC00504
+  - !!omap
+    - id: fol_p
+    - name: folate
+    - compartment: p
+    - charge: -2
+    - formula: C19H17N7O6
+    - annotation: !!omap
+      - bigg.metabolite: fol
+      - biocyc:
+        - META:All-Folates
+        - META:CPD-12826
+      - biopath: BIOPATH:Folate
+      - chebi:
+        - CHEBI:27470
+        - CHEBI:42610
+        - CHEBI:5140
+        - CHEBI:24075
+        - CHEBI:569217
+        - CHEBI:37445
+        - CHEBI:24074
+        - CHEBI:24076
+        - CHEBI:62501
+        - CHEBI:67011
+      - hmdb: HMDB00121
+      - inchi: InChI=1S/C19H19N7O6/c20-19-25-15-14(17(30)26-19)23-11(8-22-15)7-21-10-3-1-9(2-4-10)16(29)24-12(18(31)32)5-6-13(27)28/h1-4,8,12,21H,5-7H2,(H,24,29)(H,27,28)(H,31,32)(H3,20,22,25,26,30)/p-2/t12-/m0/s1
+      - kegg.compound:
+        - C00504
+        - D00070
+      - metanetx.chemical: MNXM617
+      - reactome:
+        - REACTOME:197965
+        - REACTOME:200716
+      - seed.compound: cpd00393
+      - upa: UPA:UPC00504
+  - !!omap
     - id: for_c
     - name: formate
     - compartment: c
@@ -8625,6 +9281,78 @@
     - id: fum_c
     - name: fumarate(2-)
     - compartment: c
+    - charge: -2
+    - formula: C4H2O4
+    - annotation: !!omap
+      - bigg.metabolite: fum
+      - biocyc: META:FUM
+      - biopath: BIOPATH:Fumarate
+      - chebi:
+        - CHEBI:18012
+        - CHEBI:5190
+        - CHEBI:24124
+        - CHEBI:42743
+        - CHEBI:22958
+        - CHEBI:29806
+        - CHEBI:24122
+        - CHEBI:42511
+        - CHEBI:14284
+        - CHEBI:36180
+        - CHEBI:22957
+        - CHEBI:22956
+        - CHEBI:37154
+        - CHEBI:37155
+      - hmdb: HMDB00134
+      - inchi: InChI=1S/C4H4O4/c5-3(6)1-2-4(7)8/h1-2H,(H,5,6)(H,7,8)/p-2/b2-1+
+      - kegg.compound:
+        - C00122
+        - D02308
+      - metanetx.chemical: MNXM93
+      - reactome:
+        - REACTOME:113588
+        - REACTOME:29586
+      - seed.compound: cpd00106
+      - upa: UPA:UPC00122
+  - !!omap
+    - id: fum_e
+    - name: fumarate(2-)
+    - compartment: e
+    - charge: -2
+    - formula: C4H2O4
+    - annotation: !!omap
+      - bigg.metabolite: fum
+      - biocyc: META:FUM
+      - biopath: BIOPATH:Fumarate
+      - chebi:
+        - CHEBI:18012
+        - CHEBI:5190
+        - CHEBI:24124
+        - CHEBI:42743
+        - CHEBI:22958
+        - CHEBI:29806
+        - CHEBI:24122
+        - CHEBI:42511
+        - CHEBI:14284
+        - CHEBI:36180
+        - CHEBI:22957
+        - CHEBI:22956
+        - CHEBI:37154
+        - CHEBI:37155
+      - hmdb: HMDB00134
+      - inchi: InChI=1S/C4H4O4/c5-3(6)1-2-4(7)8/h1-2H,(H,5,6)(H,7,8)/p-2/b2-1+
+      - kegg.compound:
+        - C00122
+        - D02308
+      - metanetx.chemical: MNXM93
+      - reactome:
+        - REACTOME:113588
+        - REACTOME:29586
+      - seed.compound: cpd00106
+      - upa: UPA:UPC00122
+  - !!omap
+    - id: fum_p
+    - name: fumarate(2-)
+    - compartment: p
     - charge: -2
     - formula: C4H2O4
     - annotation: !!omap
@@ -9686,6 +10414,62 @@
       - umbbd.compound: c0066
       - unipathway.compound: UPC00116
   - !!omap
+    - id: glyc_e
+    - name: Glycerol
+    - compartment: e
+    - charge: 0
+    - formula: C3H8O3
+    - annotation: !!omap
+      - SBO: SBO:0000247
+      - bigg.metabolite: glyc
+      - biocyc:
+        - META:1-ALKYL-SN-GLYCEROL
+        - META:GLYCEROL
+      - chebi:
+        - CHEBI:131422
+        - CHEBI:14334
+        - CHEBI:17754
+        - CHEBI:24351
+        - CHEBI:42998
+        - CHEBI:5448
+      - hmdb: HMDB00131
+      - kegg.compound:
+        - C00116
+        - D00028
+      - metanetx.chemical: MNXM89612
+      - reactome: '192438'
+      - seed.compound: cpd00100
+      - umbbd.compound: c0066
+      - unipathway.compound: UPC00116
+  - !!omap
+    - id: glyc_p
+    - name: Glycerol
+    - compartment: p
+    - charge: 0
+    - formula: C3H8O3
+    - annotation: !!omap
+      - SBO: SBO:0000247
+      - bigg.metabolite: glyc
+      - biocyc:
+        - META:1-ALKYL-SN-GLYCEROL
+        - META:GLYCEROL
+      - chebi:
+        - CHEBI:131422
+        - CHEBI:14334
+        - CHEBI:17754
+        - CHEBI:24351
+        - CHEBI:42998
+        - CHEBI:5448
+      - hmdb: HMDB00131
+      - kegg.compound:
+        - C00116
+        - D00028
+      - metanetx.chemical: MNXM89612
+      - reactome: '192438'
+      - seed.compound: cpd00100
+      - umbbd.compound: c0066
+      - unipathway.compound: UPC00116
+  - !!omap
     - id: glyclt_c
     - name: glycolate
     - compartment: c
@@ -10012,6 +10796,54 @@
       - seed.compound: cpd00207
       - upa: UPA:UPC00242
   - !!omap
+    - id: gua_e
+    - name: guanine
+    - compartment: e
+    - charge: 0
+    - formula: C5H5N5O
+    - annotation: !!omap
+      - bigg.metabolite: gua
+      - biocyc: META:GUANINE
+      - biopath: BIOPATH:Guanine
+      - chebi:
+        - CHEBI:16235
+        - CHEBI:5563
+        - CHEBI:14371
+        - CHEBI:14372
+        - CHEBI:24443
+        - CHEBI:42948
+      - hmdb: HMDB00132
+      - inchi: InChI=1S/C5H5N5O/c6-5-9-3-2(4(11)10-5)7-1-8-3/h1H,(H4,6,7,8,9,10,11)
+      - kegg.compound: C00242
+      - metanetx.chemical: MNXM259
+      - reactome: REACTOME:83956
+      - seed.compound: cpd00207
+      - upa: UPA:UPC00242
+  - !!omap
+    - id: gua_p
+    - name: guanine
+    - compartment: p
+    - charge: 0
+    - formula: C5H5N5O
+    - annotation: !!omap
+      - bigg.metabolite: gua
+      - biocyc: META:GUANINE
+      - biopath: BIOPATH:Guanine
+      - chebi:
+        - CHEBI:16235
+        - CHEBI:5563
+        - CHEBI:14371
+        - CHEBI:14372
+        - CHEBI:24443
+        - CHEBI:42948
+      - hmdb: HMDB00132
+      - inchi: InChI=1S/C5H5N5O/c6-5-9-3-2(4(11)10-5)7-1-8-3/h1H,(H4,6,7,8,9,10,11)
+      - kegg.compound: C00242
+      - metanetx.chemical: MNXM259
+      - reactome: REACTOME:83956
+      - seed.compound: cpd00207
+      - upa: UPA:UPC00242
+  - !!omap
     - id: h2_c
     - name: H2
     - compartment: c
@@ -10103,6 +10935,82 @@
     - id: h2o_c
     - name: H2O
     - compartment: c
+    - charge: 0
+    - formula: H2O
+    - annotation: !!omap
+      - bigg.metabolite: h2o
+      - biocyc:
+        - META:OH
+        - META:OXONIUM
+        - META:WATER
+      - biopath:
+        - BIOPATH:OH-
+        - BIOPATH:Oxygen_atom
+        - BIOPATH:Water
+      - chebi:
+        - CHEBI:15377
+        - CHEBI:44292
+        - CHEBI:5585
+        - CHEBI:13352
+        - CHEBI:44819
+        - CHEBI:44701
+        - CHEBI:42043
+        - CHEBI:42857
+        - CHEBI:27313
+        - CHEBI:43228
+        - CHEBI:10743
+        - CHEBI:16234
+        - CHEBI:13365
+        - CHEBI:13419
+        - CHEBI:44641
+        - CHEBI:5594
+        - CHEBI:29356
+        - CHEBI:29374
+        - CHEBI:29375
+        - CHEBI:29412
+        - CHEBI:33811
+        - CHEBI:33813
+        - CHEBI:35511
+        - CHEBI:36385
+        - CHEBI:41981
+        - CHEBI:41979
+        - CHEBI:29373
+        - CHEBI:53442
+      - hmdb:
+        - HMDB01039
+        - HMDB02111
+      - inchi: InChI=1S/H2O/h1H2
+      - kegg.compound:
+        - C00001
+        - D00001
+        - C01328
+        - C18712
+        - C18714
+        - D03703
+        - D06322
+      - metanetx.chemical: MNXM2
+      - reactome:
+        - REACTOME:29356
+        - REACTOME:1605715
+        - REACTOME:141343
+        - REACTOME:351603
+        - REACTOME:2022884
+        - REACTOME:113518
+        - REACTOME:189422
+        - REACTOME:947593
+        - REACTOME:109276
+        - REACTOME:113521
+        - REACTOME:113519
+      - seed.compound:
+        - cpd00001
+        - ' cpd15275'
+      - upa:
+        - UPA:UPC00001
+        - UPA:UPC01328
+  - !!omap
+    - id: h2o_e
+    - name: H2O
+    - compartment: e
     - charge: 0
     - formula: H2O
     - annotation: !!omap
@@ -10361,6 +11269,47 @@
       - seed.compound: cpd00067
       - upa: UPA:UPC00080
   - !!omap
+    - id: h_e
+    - name: H(+)
+    - compartment: e
+    - charge: 1
+    - formula: H
+    - annotation: !!omap
+      - bigg.metabolite: h
+      - biocyc: META:PROTON
+      - biopath: BIOPATH:Proton
+      - chebi:
+        - CHEBI:15378
+        - CHEBI:13357
+        - CHEBI:10744
+        - CHEBI:5584
+        - CHEBI:24636
+      - inchi: InChI=1S/p+1
+      - kegg.compound: C00080
+      - metanetx.chemical: MNXM1
+      - reactome:
+        - REACTOME:70106
+        - REACTOME:1614597
+        - REACTOME:428548
+        - REACTOME:427899
+        - REACTOME:372511
+        - REACTOME:2000349
+        - REACTOME:156540
+        - REACTOME:194688
+        - REACTOME:74722
+        - REACTOME:425999
+        - REACTOME:374900
+        - REACTOME:428040
+        - REACTOME:351626
+        - REACTOME:113529
+        - REACTOME:163953
+        - REACTOME:425969
+        - REACTOME:193465
+        - REACTOME:1470067
+        - REACTOME:425978
+      - seed.compound: cpd00067
+      - upa: UPA:UPC00080
+  - !!omap
     - id: h_p
     - name: H(+)
     - compartment: p
@@ -10405,6 +11354,32 @@
     - id: ham_c
     - name: hydroxylamine
     - compartment: c
+    - charge: 0
+    - formula: H3NO
+    - annotation: !!omap
+      - biocyc: META:HYDROXYLAMINE
+      - chebi:
+        - CHEBI:15429
+        - CHEBI:43221
+        - CHEBI:24708
+        - CHEBI:5806
+        - CHEBI:14421
+        - CHEBI:10793
+        - CHEBI:29772
+        - CHEBI:29773
+      - hmdb: HMDB03338
+      - inchi: InChI=1S/H3NO/c1-2/h2H,1H2
+      - kegg.compound:
+        - C00192
+        - C11598
+      - metanetx.chemical: MNXM433
+      - seed.compound:
+        - cpd00165
+        - ' cpd08415'
+  - !!omap
+    - id: ham_e
+    - name: hydroxylamine
+    - compartment: e
     - charge: 0
     - formula: H3NO
     - annotation: !!omap
@@ -11491,6 +12466,82 @@
         - cpd00205
         - ' cpd05147'
   - !!omap
+    - id: k_e
+    - name: K(+)
+    - compartment: e
+    - charge: 1
+    - formula: K
+    - annotation: !!omap
+      - bigg.metabolite: k
+      - biocyc:
+        - META:K+
+        - META:KCL
+      - chebi:
+        - CHEBI:29103
+        - CHEBI:8345
+        - CHEBI:49685
+        - CHEBI:26219
+        - CHEBI:32030
+        - CHEBI:32035
+        - CHEBI:32588
+        - CHEBI:66872
+        - CHEBI:8346
+      - inchi: InChI=1S/K/q+1
+      - kegg.compound:
+        - C00238
+        - D08403
+        - C08219
+        - D01016
+        - C12568
+        - D01168
+        - D02060
+        - D05577
+      - metanetx.chemical: MNXM95
+      - reactome:
+        - REACTOME:74126
+        - REACTOME:29804
+      - seed.compound:
+        - cpd00205
+        - ' cpd05147'
+  - !!omap
+    - id: k_p
+    - name: K(+)
+    - compartment: p
+    - charge: 1
+    - formula: K
+    - annotation: !!omap
+      - bigg.metabolite: k
+      - biocyc:
+        - META:K+
+        - META:KCL
+      - chebi:
+        - CHEBI:29103
+        - CHEBI:8345
+        - CHEBI:49685
+        - CHEBI:26219
+        - CHEBI:32030
+        - CHEBI:32035
+        - CHEBI:32588
+        - CHEBI:66872
+        - CHEBI:8346
+      - inchi: InChI=1S/K/q+1
+      - kegg.compound:
+        - C00238
+        - D08403
+        - C08219
+        - D01016
+        - C12568
+        - D01168
+        - D02060
+        - D05577
+      - metanetx.chemical: MNXM95
+      - reactome:
+        - REACTOME:74126
+        - REACTOME:29804
+      - seed.compound:
+        - cpd00205
+        - ' cpd05147'
+  - !!omap
     - id: kdo2lipid4L_c
     - name: KDO(2)-lipid IV(A) with laurate
     - compartment: c
@@ -12032,6 +13083,60 @@
       - seed.compound: cpd00130
       - upa: UPA:UPC00149
   - !!omap
+    - id: mal__L_e
+    - name: (S)-malate
+    - compartment: e
+    - charge: -2
+    - formula: C4H4O5
+    - annotation: !!omap
+      - bigg.metabolite: mal-L
+      - biocyc: META:MAL
+      - biopath: BIOPATH:(S)-Malate
+      - chebi:
+        - CHEBI:15589
+        - CHEBI:11066
+        - CHEBI:18784
+        - CHEBI:13140
+        - CHEBI:30797
+        - CHEBI:423
+        - CHEBI:18785
+      - hmdb: HMDB00156
+      - inchi: InChI=1S/C4H6O5/c5-2(4(8)9)1-3(6)7/h2,5H,1H2,(H,6,7)(H,8,9)/p-2/t2-/m0/s1
+      - kegg.compound: C00149
+      - metanetx.chemical: MNXM98
+      - reactome:
+        - REACTOME:113544
+        - REACTOME:198498
+      - seed.compound: cpd00130
+      - upa: UPA:UPC00149
+  - !!omap
+    - id: mal__L_p
+    - name: (S)-malate
+    - compartment: p
+    - charge: -2
+    - formula: C4H4O5
+    - annotation: !!omap
+      - bigg.metabolite: mal-L
+      - biocyc: META:MAL
+      - biopath: BIOPATH:(S)-Malate
+      - chebi:
+        - CHEBI:15589
+        - CHEBI:11066
+        - CHEBI:18784
+        - CHEBI:13140
+        - CHEBI:30797
+        - CHEBI:423
+        - CHEBI:18785
+      - hmdb: HMDB00156
+      - inchi: InChI=1S/C4H6O5/c5-2(4(8)9)1-3(6)7/h2,5H,1H2,(H,6,7)(H,8,9)/p-2/t2-/m0/s1
+      - kegg.compound: C00149
+      - metanetx.chemical: MNXM98
+      - reactome:
+        - REACTOME:113544
+        - REACTOME:198498
+      - seed.compound: cpd00130
+      - upa: UPA:UPC00149
+  - !!omap
     - id: malcoa_c
     - name: malonyl-CoA(5-)
     - compartment: c
@@ -12143,6 +13248,32 @@
     - id: meoh_c
     - name: methanol
     - compartment: c
+    - charge: 0
+    - formula: CH4O1
+    - annotation: !!omap
+      - bigg.metabolite: meoh
+      - biocyc: META:METOH
+      - biopath: BIOPATH:Methanol
+      - chebi:
+        - CHEBI:17790
+        - CHEBI:44553
+        - CHEBI:25227
+        - CHEBI:44080
+        - CHEBI:6816
+        - CHEBI:14588
+        - CHEBI:52090
+      - hmdb: HMDB01875
+      - inchi: InChI=1S/CH4O/c1-2/h2H,1H3
+      - kegg.compound:
+        - C00132
+        - D02309
+      - metanetx.chemical: MNXM157
+      - seed.compound: cpd00116
+      - upa: UPA:UPC00132
+  - !!omap
+    - id: meoh_e
+    - name: methanol
+    - compartment: e
     - charge: 0
     - formula: CH4O1
     - annotation: !!omap
@@ -12371,6 +13502,82 @@
         - cpd00254
         - ' cpd04942'
   - !!omap
+    - id: mg2_e
+    - name: Mg(2+)
+    - compartment: e
+    - charge: 2
+    - formula: Mg
+    - annotation: !!omap
+      - bigg.metabolite: mg2
+      - biocyc:
+        - META:MG+2
+        - META:MGCL2
+      - biopath: BIOPATH:Mg2+
+      - chebi:
+        - CHEBI:18420
+        - CHEBI:13379
+        - CHEBI:49736
+        - CHEBI:6635
+        - CHEBI:25112
+        - CHEBI:31794
+        - CHEBI:6636
+        - CHEBI:6637
+      - inchi: InChI=1S/Mg/q+2
+      - kegg.compound:
+        - C00305
+        - C07755
+        - C07876
+        - D00731
+        - C12567
+        - D01167
+        - D04834
+      - metanetx.chemical: MNXM653
+      - reactome:
+        - REACTOME:114632
+        - REACTOME:29926
+        - REACTOME:140344
+      - seed.compound:
+        - cpd00254
+        - ' cpd04942'
+  - !!omap
+    - id: mg2_p
+    - name: Mg(2+)
+    - compartment: p
+    - charge: 2
+    - formula: Mg
+    - annotation: !!omap
+      - bigg.metabolite: mg2
+      - biocyc:
+        - META:MG+2
+        - META:MGCL2
+      - biopath: BIOPATH:Mg2+
+      - chebi:
+        - CHEBI:18420
+        - CHEBI:13379
+        - CHEBI:49736
+        - CHEBI:6635
+        - CHEBI:25112
+        - CHEBI:31794
+        - CHEBI:6636
+        - CHEBI:6637
+      - inchi: InChI=1S/Mg/q+2
+      - kegg.compound:
+        - C00305
+        - C07755
+        - C07876
+        - D00731
+        - C12567
+        - D01167
+        - D04834
+      - metanetx.chemical: MNXM653
+      - reactome:
+        - REACTOME:114632
+        - REACTOME:29926
+        - REACTOME:140344
+      - seed.compound:
+        - cpd00254
+        - ' cpd04942'
+  - !!omap
     - id: mi1p__D_c
     - name: 1D-myo-inositol 1-phosphate(2-)
     - compartment: c
@@ -12489,6 +13696,42 @@
       - seed.compound: cpd00125
       - upa: UPA:UPC00143
   - !!omap
+    - id: mn2_c
+    - name: Manganese(2+)
+    - compartment: c
+    - charge: 0
+    - formula: Mn
+    - annotation: !!omap
+      - kegg.compound:
+        - C00034
+        - C19610
+      - metanetx.chemical: MNXM2255
+      - seed.compound: cpd00030
+  - !!omap
+    - id: mn2_e
+    - name: Manganese(2+)
+    - compartment: e
+    - charge: 0
+    - formula: Mn
+    - annotation: !!omap
+      - kegg.compound:
+        - C00034
+        - C19610
+      - metanetx.chemical: MNXM2255
+      - seed.compound: cpd00030
+  - !!omap
+    - id: mn2_p
+    - name: Manganese(2+)
+    - compartment: p
+    - charge: 0
+    - formula: Mn
+    - annotation: !!omap
+      - kegg.compound:
+        - C00034
+        - C19610
+      - metanetx.chemical: MNXM2255
+      - seed.compound: cpd00030
+  - !!omap
     - id: mser__L_c
     - name: 2-methyl-L-serine
     - compartment: c
@@ -12599,6 +13842,28 @@
       - seed.compound: cpd00659
       - upa: UPA:UPC00887
   - !!omap
+    - id: n2o_e
+    - name: dinitrogen oxide
+    - compartment: e
+    - charge: 0
+    - formula: N2O
+    - annotation: !!omap
+      - bigg.metabolite: n2o
+      - biocyc: META:NITROUS-OXIDE
+      - chebi:
+        - CHEBI:17045
+        - CHEBI:7598
+        - CHEBI:44250
+        - CHEBI:25568
+        - CHEBI:14661
+      - inchi: InChI=1S/N2O/c1-2-3
+      - kegg.compound:
+        - C00887
+        - D00102
+      - metanetx.chemical: MNXM579
+      - seed.compound: cpd00659
+      - upa: UPA:UPC00887
+  - !!omap
     - id: n2o_p
     - name: dinitrogen oxide
     - compartment: p
@@ -12665,6 +13930,36 @@
         - C14042
         - D04874
         - D05860
+      - metanetx.chemical: MNXM27
+      - reactome:
+        - REACTOME:74113
+        - REACTOME:83910
+        - REACTOME:425971
+        - REACTOME:425958
+        - REACTOME:425977
+      - seed.compound:
+        - cpd00971
+        - ' cpd05105'
+  - !!omap
+    - id: na1_e
+    - name: Na(+)
+    - compartment: e
+    - charge: 1
+    - formula: Na
+    - annotation: !!omap
+      - bigg.metabolite: na1
+      - biocyc: META:NA+
+      - chebi:
+        - CHEBI:[&apos;26710&apos;
+        - CHEBI:&apos;29101&apos;
+        - CHEBI:&apos;9175&apos;
+        - CHEBI:&apos;26717&apos;
+        - CHEBI:&apos;49766&apos;
+        - CHEBI:&apos;32145&apos;
+        - CHEBI:&apos;33167&apos;
+        - CHEBI:&apos;63004&apos;]
+      - inchi: InChI=1S/Na/q+1
+      - kegg.compound: C00923
       - metanetx.chemical: MNXM27
       - reactome:
         - REACTOME:74113
@@ -12905,8 +14200,8 @@
       - seed.compound: cpd00133
       - upa: UPA:UPC00153
   - !!omap
-    - id: nh3_c
-    - name: NH4(+)
+    - id: nh4_c
+    - name: Ammonium
     - compartment: c
     - charge: 1
     - formula: H4N
@@ -12954,7 +14249,7 @@
         - C01358
         - D04594
         - D02915
-      - metanetx.chemical: MNXM15
+      - metanetx.chemical: MNXM84
       - reactome:
         - REACTOME:389843
         - REACTOME:31633
@@ -12966,8 +14261,69 @@
       - seed.compound: cpd00013
       - upa: UPA:UPC00014
   - !!omap
-    - id: nh3_p
-    - name: NH4(+)
+    - id: nh4_e
+    - name: Ammonium
+    - compartment: e
+    - charge: 1
+    - formula: H4N
+    - annotation: !!omap
+      - bigg.metabolite: nh3
+      - biocyc:
+        - META:AMMONIA
+        - META:AMMONIUM
+        - META:NH4OH
+      - biopath:
+        - BIOPATH:Ammonia
+        - BIOPATH:Ammonium-ion
+      - chebi:
+        - CHEBI:16134
+        - CHEBI:13406
+        - CHEBI:13771
+        - CHEBI:7434
+        - CHEBI:44284
+        - CHEBI:13405
+        - CHEBI:13407
+        - CHEBI:44404
+        - CHEBI:22533
+        - CHEBI:44269
+        - CHEBI:18219
+        - CHEBI:13772
+        - CHEBI:22535
+        - CHEBI:13408
+        - CHEBI:7436
+        - CHEBI:28938
+        - CHEBI:7435
+        - CHEBI:22534
+        - CHEBI:49783
+        - CHEBI:29240
+        - CHEBI:29337
+        - CHEBI:29340
+        - CHEBI:62982
+        - CHEBI:63040
+        - CHEBI:66871
+      - hmdb: HMDB00051
+      - inchi: InChI=1S/H3N/h1H3/p+1
+      - kegg.compound:
+        - C00014
+        - D02916
+        - C01342
+        - C01358
+        - D04594
+        - D02915
+      - metanetx.chemical: MNXM84
+      - reactome:
+        - REACTOME:389843
+        - REACTOME:31633
+        - REACTOME:140912
+        - REACTOME:113561
+        - REACTOME:76230
+        - REACTOME:29382
+        - REACTOME:2022135
+      - seed.compound: cpd00013
+      - upa: UPA:UPC00014
+  - !!omap
+    - id: nh4_p
+    - name: Ammonium
     - compartment: p
     - charge: 1
     - formula: H4N
@@ -13015,7 +14371,7 @@
         - C01358
         - D04594
         - D02915
-      - metanetx.chemical: MNXM15
+      - metanetx.chemical: MNXM84
       - reactome:
         - REACTOME:389843
         - REACTOME:31633
@@ -13026,6 +14382,42 @@
         - REACTOME:2022135
       - seed.compound: cpd00013
       - upa: UPA:UPC00014
+  - !!omap
+    - id: ni2_c
+    - name: Nickel
+    - compartment: c
+    - charge: 0
+    - formula: Ni
+    - annotation: !!omap
+      - kegg.compound:
+        - C00291
+        - C19609
+      - metanetx.chemical: MNXM3673
+      - seed.compound: cpd00244
+  - !!omap
+    - id: ni2_e
+    - name: Nickel
+    - compartment: e
+    - charge: 0
+    - formula: Ni
+    - annotation: !!omap
+      - kegg.compound:
+        - C00291
+        - C19609
+      - metanetx.chemical: MNXM3673
+      - seed.compound: cpd00244
+  - !!omap
+    - id: ni2_p
+    - name: Nickel
+    - compartment: p
+    - charge: 0
+    - formula: Ni
+    - annotation: !!omap
+      - kegg.compound:
+        - C00291
+        - C19609
+      - metanetx.chemical: MNXM3673
+      - seed.compound: cpd00244
   - !!omap
     - id: nicrns_c
     - name: beta-D-ribosylnicotinate
@@ -13104,6 +14496,28 @@
     - id: no2_c
     - name: nitrite
     - compartment: c
+    - charge: -1
+    - formula: NO2
+    - annotation: !!omap
+      - bigg.metabolite: no2
+      - biocyc: META:NITRITE
+      - chebi:
+        - CHEBI:16301
+        - CHEBI:14658
+        - CHEBI:44396
+        - CHEBI:7585
+        - CHEBI:25567
+      - hmdb: HMDB02786
+      - inchi: InChI=1S/HNO2/c2-1-3/h(H,2,3)/p-1
+      - kegg.compound: C00088
+      - metanetx.chemical: MNXM107
+      - reactome: REACTOME:1222379
+      - seed.compound: cpd00075
+      - upa: UPA:UPC00088
+  - !!omap
+    - id: no2_e
+    - name: nitrite
+    - compartment: e
     - charge: -1
     - formula: NO2
     - annotation: !!omap
@@ -13263,6 +14677,33 @@
       - seed.compound: cpd00418
       - upa: UPA:UPC00533
   - !!omap
+    - id: no_e
+    - name: nitric oxide
+    - compartment: e
+    - charge: 0
+    - formula: NO
+    - annotation: !!omap
+      - bigg.metabolite: no
+      - biocyc: META:NITRIC-OXIDE
+      - biopath: BIOPATH:Nitric_oxide
+      - chebi:
+        - CHEBI:16480
+        - CHEBI:44452
+        - CHEBI:14657
+        - CHEBI:25546
+        - CHEBI:7583
+      - hmdb: HMDB03378
+      - inchi: InChI=1S/NO/c1-2
+      - kegg.compound:
+        - C00533
+        - D00074
+      - metanetx.chemical: MNXM228
+      - reactome:
+        - REACTOME:202124
+        - REACTOME:1222480
+      - seed.compound: cpd00418
+      - upa: UPA:UPC00533
+  - !!omap
     - id: no_p
     - name: nitric oxide
     - compartment: p
@@ -13315,6 +14756,46 @@
     - id: o2_c
     - name: dioxygen
     - compartment: c
+    - charge: 0
+    - formula: O2
+    - annotation: !!omap
+      - bigg.metabolite: o2
+      - biocyc: META:OXYGEN-MOLECULE
+      - biopath: BIOPATH:Oxygen
+      - chebi:
+        - CHEBI:15379
+        - CHEBI:23833
+        - CHEBI:13416
+        - CHEBI:7860
+        - CHEBI:10745
+        - CHEBI:30491
+        - CHEBI:44742
+        - CHEBI:25366
+        - CHEBI:26689
+        - CHEBI:27140
+        - CHEBI:29793
+      - hmdb: HMDB01377
+      - inchi: InChI=1S/O2/c1-2
+      - kegg.compound:
+        - C00007
+        - D00003
+      - metanetx.chemical: MNXM4
+      - reactome:
+        - REACTOME:29368
+        - REACTOME:352327
+        - REACTOME:189461
+        - REACTOME:113535
+        - REACTOME:113685
+        - REACTOME:113533
+        - REACTOME:113534
+        - REACTOME:351593
+        - REACTOME:1236709
+      - seed.compound: cpd00532
+      - upa: UPA:UPC00007
+  - !!omap
+    - id: o2_e
+    - name: dioxygen
+    - compartment: e
     - charge: 0
     - formula: O2
     - annotation: !!omap
@@ -13742,6 +15223,64 @@
       - seed.compound: cpd00247
       - upa: UPA:UPC00295
   - !!omap
+    - id: orot_e
+    - name: orotate
+    - compartment: e
+    - charge: -1
+    - formula: C5H3N2O4
+    - annotation: !!omap
+      - bigg.metabolite: orot
+      - biocyc: META:OROTATE
+      - biopath: BIOPATH:Orotate
+      - chebi:
+        - CHEBI:16742
+        - CHEBI:7787
+        - CHEBI:44781
+        - CHEBI:25720
+        - CHEBI:30839
+        - CHEBI:25719
+        - CHEBI:14698
+      - hmdb: HMDB00226
+      - inchi: InChI=1S/C5H4N2O4/c8-3-1-2(4(9)10)6-5(11)7-3/h1H,(H,9,10)(H2,6,7,8,11)/p-1
+      - kegg.compound:
+        - C00295
+        - D00055
+        - D07692
+        - D08298
+      - metanetx.chemical: MNXM235
+      - reactome: REACTOME:76632
+      - seed.compound: cpd00247
+      - upa: UPA:UPC00295
+  - !!omap
+    - id: orot_p
+    - name: orotate
+    - compartment: p
+    - charge: -1
+    - formula: C5H3N2O4
+    - annotation: !!omap
+      - bigg.metabolite: orot
+      - biocyc: META:OROTATE
+      - biopath: BIOPATH:Orotate
+      - chebi:
+        - CHEBI:16742
+        - CHEBI:7787
+        - CHEBI:44781
+        - CHEBI:25720
+        - CHEBI:30839
+        - CHEBI:25719
+        - CHEBI:14698
+      - hmdb: HMDB00226
+      - inchi: InChI=1S/C5H4N2O4/c8-3-1-2(4(9)10)6-5(11)7-3/h1H,(H,9,10)(H2,6,7,8,11)/p-1
+      - kegg.compound:
+        - C00295
+        - D00055
+        - D07692
+        - D08298
+      - metanetx.chemical: MNXM235
+      - reactome: REACTOME:76632
+      - seed.compound: cpd00247
+      - upa: UPA:UPC00295
+  - !!omap
     - id: pa_MC_c
     - name: 1,2-sn-glycerol 3-phosphate
     - compartment: c
@@ -14099,6 +15638,60 @@
       - seed.compound: cpd00028
       - upa: UPA:UPC00032
   - !!omap
+    - id: pheme_e
+    - name: heme b
+    - compartment: e
+    - charge: -2
+    - formula: C34H30FeN4O4
+    - annotation: !!omap
+      - bigg.metabolite: pheme
+      - biocyc: META:PROTOHEME
+      - chebi:
+        - CHEBI:17627
+        - CHEBI:14957
+        - CHEBI:5651
+        - CHEBI:30413
+        - CHEBI:24491
+        - CHEBI:14386
+        - CHEBI:38573
+        - CHEBI:60344
+      - inchi: InChI=1S/C34H34N4O4.Fe/c1-7-21-17(3)25-13-26-19(5)23(9-11-33(39)40)31(37-26)16-32-24(10-12-34(41)42)20(6)28(38-32)15-30-22(8-2)18(4)27(36-30)14-29(21)35-25;/h7-8,13-16H,1-2,9-12H2,3-6H3,(H4,35,36,37,38,39,40,41,42);/q;+2/p-4/b25-13-,26-13-,27-14-,28-15-,29-14-,30-15-,31-16-,32-16-;
+      - kegg.compound: C00032
+      - metanetx.chemical: MNXM249
+      - reactome:
+        - REACTOME:189444
+        - REACTOME:71185
+        - REACTOME:917877
+      - seed.compound: cpd00028
+      - upa: UPA:UPC00032
+  - !!omap
+    - id: pheme_p
+    - name: heme b
+    - compartment: p
+    - charge: -2
+    - formula: C34H30FeN4O4
+    - annotation: !!omap
+      - bigg.metabolite: pheme
+      - biocyc: META:PROTOHEME
+      - chebi:
+        - CHEBI:17627
+        - CHEBI:14957
+        - CHEBI:5651
+        - CHEBI:30413
+        - CHEBI:24491
+        - CHEBI:14386
+        - CHEBI:38573
+        - CHEBI:60344
+      - inchi: InChI=1S/C34H34N4O4.Fe/c1-7-21-17(3)25-13-26-19(5)23(9-11-33(39)40)31(37-26)16-32-24(10-12-34(41)42)20(6)28(38-32)15-30-22(8-2)18(4)27(36-30)14-29(21)35-25;/h7-8,13-16H,1-2,9-12H2,3-6H3,(H4,35,36,37,38,39,40,41,42);/q;+2/p-4/b25-13-,26-13-,27-14-,28-15-,29-14-,30-15-,31-16-,32-16-;
+      - kegg.compound: C00032
+      - metanetx.chemical: MNXM249
+      - reactome:
+        - REACTOME:189444
+        - REACTOME:71185
+        - REACTOME:917877
+      - seed.compound: cpd00028
+      - upa: UPA:UPC00032
+  - !!omap
     - id: phen_c
     - name: phenol
     - compartment: c
@@ -14301,6 +15894,128 @@
     - id: pi_c
     - name: phosphate
     - compartment: c
+    - charge: -2
+    - formula: HO4P
+    - annotation: !!omap
+      - bigg.metabolite: pi
+      - biocyc:
+        - META:CPD0-1421
+        - META:PHOSPHATE-GROUP
+        - META:Pi
+      - biopath:
+        - BIOPATH:Phosphate
+        - BIOPATH:Phosphate_(protonated)
+      - chebi:
+        - CHEBI:18367
+        - CHEBI:7793
+        - CHEBI:45024
+        - CHEBI:14791
+        - CHEBI:24838
+        - CHEBI:26020
+        - CHEBI:26078
+        - CHEBI:32596
+        - CHEBI:34683
+        - CHEBI:35433
+        - CHEBI:34855
+        - CHEBI:32597
+        - CHEBI:37583
+        - CHEBI:37585
+        - CHEBI:39745
+        - CHEBI:39739
+        - CHEBI:29137
+        - CHEBI:43474
+        - CHEBI:43470
+        - CHEBI:29139
+        - CHEBI:4496
+        - CHEBI:63036
+        - CHEBI:63051
+        - CHEBI:9679
+      - hmdb: HMDB02142
+      - inchi: InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-2
+      - kegg.compound:
+        - C00009
+        - D05467
+        - C13556
+        - C13558
+      - metanetx.chemical: MNXM9
+      - reactome:
+        - REACTOME:113548
+        - REACTOME:2255331
+        - REACTOME:113550
+        - REACTOME:29372
+        - REACTOME:113551
+        - REACTOME:947590
+        - REACTOME:109277
+      - seed.compound:
+        - cpd00009
+        - ' cpd09463'
+        - ' cpd09464'
+      - upa: UPA:UPC00009
+  - !!omap
+    - id: pi_e
+    - name: phosphate
+    - compartment: e
+    - charge: -2
+    - formula: HO4P
+    - annotation: !!omap
+      - bigg.metabolite: pi
+      - biocyc:
+        - META:CPD0-1421
+        - META:PHOSPHATE-GROUP
+        - META:Pi
+      - biopath:
+        - BIOPATH:Phosphate
+        - BIOPATH:Phosphate_(protonated)
+      - chebi:
+        - CHEBI:18367
+        - CHEBI:7793
+        - CHEBI:45024
+        - CHEBI:14791
+        - CHEBI:24838
+        - CHEBI:26020
+        - CHEBI:26078
+        - CHEBI:32596
+        - CHEBI:34683
+        - CHEBI:35433
+        - CHEBI:34855
+        - CHEBI:32597
+        - CHEBI:37583
+        - CHEBI:37585
+        - CHEBI:39745
+        - CHEBI:39739
+        - CHEBI:29137
+        - CHEBI:43474
+        - CHEBI:43470
+        - CHEBI:29139
+        - CHEBI:4496
+        - CHEBI:63036
+        - CHEBI:63051
+        - CHEBI:9679
+      - hmdb: HMDB02142
+      - inchi: InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-2
+      - kegg.compound:
+        - C00009
+        - D05467
+        - C13556
+        - C13558
+      - metanetx.chemical: MNXM9
+      - reactome:
+        - REACTOME:113548
+        - REACTOME:2255331
+        - REACTOME:113550
+        - REACTOME:29372
+        - REACTOME:113551
+        - REACTOME:947590
+        - REACTOME:109277
+      - seed.compound:
+        - cpd00009
+        - ' cpd09463'
+        - ' cpd09464'
+      - upa: UPA:UPC00009
+  - !!omap
+    - id: pi_p
+    - name: phosphate
+    - compartment: p
     - charge: -2
     - formula: HO4P
     - annotation: !!omap
@@ -15348,6 +17063,58 @@
       - seed.compound: cpd00118
       - upa: UPA:UPC00134
   - !!omap
+    - id: ptrc_e
+    - name: putrescine
+    - compartment: e
+    - charge: 2
+    - formula: C4H14N2
+    - annotation: !!omap
+      - bigg.metabolite: ptrc
+      - biocyc: META:PUTRESCINE
+      - biopath: BIOPATH:Putrescine
+      - chebi:
+        - CHEBI:17148
+        - CHEBI:45092
+        - CHEBI:26405
+        - CHEBI:14972
+        - CHEBI:8650
+        - CHEBI:326268
+      - hmdb: HMDB01414
+      - inchi: InChI=1S/C4H12N2/c5-3-1-2-4-6/h1-6H2/p+2
+      - kegg.compound: C00134
+      - metanetx.chemical: MNXM118
+      - reactome:
+        - REACTOME:29610
+        - REACTOME:141350
+      - seed.compound: cpd00118
+      - upa: UPA:UPC00134
+  - !!omap
+    - id: ptrc_p
+    - name: putrescine
+    - compartment: p
+    - charge: 2
+    - formula: C4H14N2
+    - annotation: !!omap
+      - bigg.metabolite: ptrc
+      - biocyc: META:PUTRESCINE
+      - biopath: BIOPATH:Putrescine
+      - chebi:
+        - CHEBI:17148
+        - CHEBI:45092
+        - CHEBI:26405
+        - CHEBI:14972
+        - CHEBI:8650
+        - CHEBI:326268
+      - hmdb: HMDB01414
+      - inchi: InChI=1S/C4H12N2/c5-3-1-2-4-6/h1-6H2/p+2
+      - kegg.compound: C00134
+      - metanetx.chemical: MNXM118
+      - reactome:
+        - REACTOME:29610
+        - REACTOME:141350
+      - seed.compound: cpd00118
+      - upa: UPA:UPC00134
+  - !!omap
     - id: ptth_c
     - name: pantetheine
     - compartment: c
@@ -15371,6 +17138,64 @@
     - id: pyr_c
     - name: pyruvate
     - compartment: c
+    - charge: -1
+    - formula: C3H3O3
+    - annotation: !!omap
+      - bigg.metabolite: pyr
+      - biocyc: META:PYRUVATE
+      - biopath: BIOPATH:Pyruvate
+      - chebi:
+        - CHEBI:15361
+        - CHEBI:26462
+        - CHEBI:14987
+        - CHEBI:32816
+        - CHEBI:26466
+        - CHEBI:8685
+        - CHEBI:45253
+      - hmdb: HMDB00243
+      - inchi: InChI=1S/C3H4O3/c1-2(4)3(5)6/h1H3,(H,5,6)/p-1
+      - kegg.compound: C00022
+      - lipidmaps: LIPIDMAPS:LMFA01060077
+      - metanetx.chemical: MNXM23
+      - reactome:
+        - REACTOME:29398
+        - REACTOME:389680
+        - REACTOME:113557
+      - seed.compound: cpd00020
+      - upa: UPA:UPC00022
+  - !!omap
+    - id: pyr_e
+    - name: pyruvate
+    - compartment: e
+    - charge: -1
+    - formula: C3H3O3
+    - annotation: !!omap
+      - bigg.metabolite: pyr
+      - biocyc: META:PYRUVATE
+      - biopath: BIOPATH:Pyruvate
+      - chebi:
+        - CHEBI:15361
+        - CHEBI:26462
+        - CHEBI:14987
+        - CHEBI:32816
+        - CHEBI:26466
+        - CHEBI:8685
+        - CHEBI:45253
+      - hmdb: HMDB00243
+      - inchi: InChI=1S/C3H4O3/c1-2(4)3(5)6/h1H3,(H,5,6)/p-1
+      - kegg.compound: C00022
+      - lipidmaps: LIPIDMAPS:LMFA01060077
+      - metanetx.chemical: MNXM23
+      - reactome:
+        - REACTOME:29398
+        - REACTOME:389680
+        - REACTOME:113557
+      - seed.compound: cpd00020
+      - upa: UPA:UPC00022
+  - !!omap
+    - id: pyr_p
+    - name: pyruvate
+    - compartment: p
     - charge: -1
     - formula: C3H3O3
     - annotation: !!omap
@@ -15935,6 +17760,82 @@
       - seed.compound: cpd00054
       - upa: UPA:UPC00065
   - !!omap
+    - id: ser__L_e
+    - name: L-serine
+    - compartment: e
+    - charge: 0
+    - formula: C3H7NO3
+    - annotation: !!omap
+      - bigg.metabolite: ser-L
+      - biocyc: META:SER
+      - biopath: BIOPATH:L-Serine
+      - chebi:
+        - CHEBI:17115
+        - CHEBI:6301
+        - CHEBI:21387
+        - CHEBI:45677
+        - CHEBI:45440
+        - CHEBI:45597
+        - CHEBI:13167
+        - CHEBI:45451
+        - CHEBI:45590
+        - CHEBI:29999
+        - CHEBI:32836
+        - CHEBI:32837
+        - CHEBI:33384
+      - hmdb:
+        - HMDB00187
+        - HMDB00589
+      - inchi: InChI=1S/C3H7NO3/c4-2(1-5)3(6)7/h2,5H,1,4H2,(H,6,7)/t2-/m0/s1
+      - kegg.compound:
+        - C00065
+        - D00016
+      - metanetx.chemical: MNXM53
+      - reactome:
+        - REACTOME:200736
+        - REACTOME:379732
+        - REACTOME:352002
+      - seed.compound: cpd00054
+      - upa: UPA:UPC00065
+  - !!omap
+    - id: ser__L_p
+    - name: L-serine
+    - compartment: p
+    - charge: 0
+    - formula: C3H7NO3
+    - annotation: !!omap
+      - bigg.metabolite: ser-L
+      - biocyc: META:SER
+      - biopath: BIOPATH:L-Serine
+      - chebi:
+        - CHEBI:17115
+        - CHEBI:6301
+        - CHEBI:21387
+        - CHEBI:45677
+        - CHEBI:45440
+        - CHEBI:45597
+        - CHEBI:13167
+        - CHEBI:45451
+        - CHEBI:45590
+        - CHEBI:29999
+        - CHEBI:32836
+        - CHEBI:32837
+        - CHEBI:33384
+      - hmdb:
+        - HMDB00187
+        - HMDB00589
+      - inchi: InChI=1S/C3H7NO3/c4-2(1-5)3(6)7/h2,5H,1,4H2,(H,6,7)/t2-/m0/s1
+      - kegg.compound:
+        - C00065
+        - D00016
+      - metanetx.chemical: MNXM53
+      - reactome:
+        - REACTOME:200736
+        - REACTOME:379732
+        - REACTOME:352002
+      - seed.compound: cpd00054
+      - upa: UPA:UPC00065
+  - !!omap
     - id: sertrna_c
     - name: L-seryl-tRNA(Ser)
     - compartment: c
@@ -16196,9 +18097,231 @@
         - ' cpd09400'
       - upa: UPA:UPC00059
   - !!omap
+    - id: so4_e
+    - name: sulfate
+    - compartment: e
+    - charge: -2
+    - formula: O4S
+    - annotation: !!omap
+      - bigg.metabolite: so4
+      - biocyc:
+        - META:CPD0-1696
+        - META:CPD0-2387
+        - META:CPD0-2390
+        - META:CPD0-2393
+        - META:CPD0-2420
+        - META:CUSO4
+        - META:HSO4
+        - META:NA2SO4
+        - META:NH42SO4
+        - META:SULFATE
+      - biopath:
+        - BIOPATH:Sulfate
+        - BIOPATH:Sulfate_(protonated)
+      - chebi:
+        - CHEBI:16189
+        - CHEBI:45687
+        - CHEBI:15135
+        - CHEBI:9335
+        - CHEBI:23414
+        - CHEBI:26836
+        - CHEBI:31346
+        - CHEBI:31795
+        - CHEBI:32036
+        - CHEBI:32149
+        - CHEBI:32312
+        - CHEBI:32583
+        - CHEBI:32584
+        - CHEBI:32586
+        - CHEBI:32599
+        - CHEBI:33146
+        - CHEBI:35176
+        - CHEBI:45696
+        - CHEBI:29199
+        - CHEBI:45693
+        - CHEBI:50292
+        - CHEBI:53001
+        - CHEBI:53437
+        - CHEBI:53438
+        - CHEBI:53470
+        - CHEBI:53471
+        - CHEBI:53473
+        - CHEBI:53474
+        - CHEBI:53502
+        - CHEBI:53504
+        - CHEBI:62946
+      - inchi: InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)/p-2
+      - kegg.compound:
+        - C00059
+        - D05963
+        - C13192
+        - D01726
+        - C13194
+        - D09201
+        - C13199
+        - D01732
+        - C17383
+        - C18713
+        - C20392
+        - D05878
+        - D08921
+        - D08922
+      - metanetx.chemical: MNXM58
+      - reactome:
+        - REACTOME:427648
+        - REACTOME:1606845
+        - REACTOME:174375
+        - REACTOME:1609649
+        - REACTOME:1614584
+      - seed.compound:
+        - cpd00048
+        - ' cpd09396'
+        - ' cpd09397'
+        - ' cpd09400'
+      - upa: UPA:UPC00059
+  - !!omap
+    - id: so4_p
+    - name: sulfate
+    - compartment: p
+    - charge: -2
+    - formula: O4S
+    - annotation: !!omap
+      - bigg.metabolite: so4
+      - biocyc:
+        - META:CPD0-1696
+        - META:CPD0-2387
+        - META:CPD0-2390
+        - META:CPD0-2393
+        - META:CPD0-2420
+        - META:CUSO4
+        - META:HSO4
+        - META:NA2SO4
+        - META:NH42SO4
+        - META:SULFATE
+      - biopath:
+        - BIOPATH:Sulfate
+        - BIOPATH:Sulfate_(protonated)
+      - chebi:
+        - CHEBI:16189
+        - CHEBI:45687
+        - CHEBI:15135
+        - CHEBI:9335
+        - CHEBI:23414
+        - CHEBI:26836
+        - CHEBI:31346
+        - CHEBI:31795
+        - CHEBI:32036
+        - CHEBI:32149
+        - CHEBI:32312
+        - CHEBI:32583
+        - CHEBI:32584
+        - CHEBI:32586
+        - CHEBI:32599
+        - CHEBI:33146
+        - CHEBI:35176
+        - CHEBI:45696
+        - CHEBI:29199
+        - CHEBI:45693
+        - CHEBI:50292
+        - CHEBI:53001
+        - CHEBI:53437
+        - CHEBI:53438
+        - CHEBI:53470
+        - CHEBI:53471
+        - CHEBI:53473
+        - CHEBI:53474
+        - CHEBI:53502
+        - CHEBI:53504
+        - CHEBI:62946
+      - inchi: InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)/p-2
+      - kegg.compound:
+        - C00059
+        - D05963
+        - C13192
+        - D01726
+        - C13194
+        - D09201
+        - C13199
+        - D01732
+        - C17383
+        - C18713
+        - C20392
+        - D05878
+        - D08921
+        - D08922
+      - metanetx.chemical: MNXM58
+      - reactome:
+        - REACTOME:427648
+        - REACTOME:1606845
+        - REACTOME:174375
+        - REACTOME:1609649
+        - REACTOME:1614584
+      - seed.compound:
+        - cpd00048
+        - ' cpd09396'
+        - ' cpd09397'
+        - ' cpd09400'
+      - upa: UPA:UPC00059
+  - !!omap
     - id: spmd_c
     - name: spermidine(3+)
     - compartment: c
+    - charge: 3
+    - formula: C7H22N3
+    - annotation: !!omap
+      - bigg.metabolite: spmd
+      - biocyc: META:SPERMIDINE
+      - biopath: BIOPATH:Spermidine
+      - chebi:
+        - CHEBI:16610
+        - CHEBI:9218
+        - CHEBI:15097
+        - CHEBI:26732
+        - CHEBI:15095
+        - CHEBI:26733
+        - CHEBI:45647
+        - CHEBI:57834
+      - hmdb: HMDB01257
+      - inchi: InChI=1S/C7H19N3/c8-4-1-2-6-10-7-3-5-9/h10H,1-9H2/p+3
+      - kegg.compound: C00315
+      - metanetx.chemical: MNXM124
+      - reactome:
+        - REACTOME:204635
+        - REACTOME:141324
+      - seed.compound: cpd00264
+      - upa: UPA:UPC00315
+  - !!omap
+    - id: spmd_e
+    - name: spermidine(3+)
+    - compartment: e
+    - charge: 3
+    - formula: C7H22N3
+    - annotation: !!omap
+      - bigg.metabolite: spmd
+      - biocyc: META:SPERMIDINE
+      - biopath: BIOPATH:Spermidine
+      - chebi:
+        - CHEBI:16610
+        - CHEBI:9218
+        - CHEBI:15097
+        - CHEBI:26732
+        - CHEBI:15095
+        - CHEBI:26733
+        - CHEBI:45647
+        - CHEBI:57834
+      - hmdb: HMDB01257
+      - inchi: InChI=1S/C7H19N3/c8-4-1-2-6-10-7-3-5-9/h10H,1-9H2/p+3
+      - kegg.compound: C00315
+      - metanetx.chemical: MNXM124
+      - reactome:
+        - REACTOME:204635
+        - REACTOME:141324
+      - seed.compound: cpd00264
+      - upa: UPA:UPC00315
+  - !!omap
+    - id: spmd_p
+    - name: spermidine(3+)
+    - compartment: p
     - charge: 3
     - formula: C7H22N3
     - annotation: !!omap
@@ -16302,6 +18425,76 @@
     - id: succ_c
     - name: succinate(2-)
     - compartment: c
+    - charge: -2
+    - formula: C4H4O4
+    - annotation: !!omap
+      - bigg.metabolite: succ
+      - biocyc: META:SUC
+      - biopath: BIOPATH:Succinate
+      - chebi:
+        - CHEBI:15741
+        - CHEBI:22943
+        - CHEBI:26807
+        - CHEBI:9304
+        - CHEBI:45639
+        - CHEBI:30031
+        - CHEBI:22941
+        - CHEBI:15125
+        - CHEBI:26803
+        - CHEBI:30779
+      - hmdb: HMDB00254
+      - inchi: InChI=1S/C4H6O4/c5-3(6)1-2-4(7)8/h1-2H2,(H,5,6)(H,7,8)/p-2
+      - kegg.compound: C00042
+      - lipidmaps: LIPIDMAPS:LMFA01170043
+      - metanetx.chemical: MNXM25
+      - reactome:
+        - REACTOME:113536
+        - REACTOME:433123
+        - REACTOME:29434
+        - REACTOME:159939
+        - REACTOME:389583
+        - REACTOME:1650769
+      - seed.compound: cpd00036
+      - upa: UPA:UPC00042
+  - !!omap
+    - id: succ_e
+    - name: succinate(2-)
+    - compartment: e
+    - charge: -2
+    - formula: C4H4O4
+    - annotation: !!omap
+      - bigg.metabolite: succ
+      - biocyc: META:SUC
+      - biopath: BIOPATH:Succinate
+      - chebi:
+        - CHEBI:15741
+        - CHEBI:22943
+        - CHEBI:26807
+        - CHEBI:9304
+        - CHEBI:45639
+        - CHEBI:30031
+        - CHEBI:22941
+        - CHEBI:15125
+        - CHEBI:26803
+        - CHEBI:30779
+      - hmdb: HMDB00254
+      - inchi: InChI=1S/C4H6O4/c5-3(6)1-2-4(7)8/h1-2H2,(H,5,6)(H,7,8)/p-2
+      - kegg.compound: C00042
+      - lipidmaps: LIPIDMAPS:LMFA01170043
+      - metanetx.chemical: MNXM25
+      - reactome:
+        - REACTOME:113536
+        - REACTOME:433123
+        - REACTOME:29434
+        - REACTOME:159939
+        - REACTOME:389583
+        - REACTOME:1650769
+      - seed.compound: cpd00036
+      - upa: UPA:UPC00042
+  - !!omap
+    - id: succ_p
+    - name: succinate(2-)
+    - compartment: p
     - charge: -2
     - formula: C4H4O4
     - annotation: !!omap
@@ -16747,6 +18940,74 @@
     - id: thr__L_c
     - name: L-threonine zwitterion
     - compartment: c
+    - charge: 0
+    - formula: C4H9NO3
+    - annotation: !!omap
+      - bigg.metabolite: thr-L
+      - biocyc: META:THR
+      - biopath: BIOPATH:L-Threonine
+      - chebi:
+        - CHEBI:16857
+        - CHEBI:13175
+        - CHEBI:21403
+        - CHEBI:45843
+        - CHEBI:42083
+        - CHEBI:45983
+        - CHEBI:6308
+        - CHEBI:30013
+        - CHEBI:32820
+        - CHEBI:32822
+        - CHEBI:57926
+      - hmdb: HMDB00167
+      - inchi: InChI=1S/C4H9NO3/c1-2(6)3(5)4(7)8/h2-3,6H,5H2,1H3,(H,7,8)/t2-,3+/m1/s1
+      - kegg.compound:
+        - C00188
+        - D00041
+      - metanetx.chemical: MNXM142
+      - reactome:
+        - REACTOME:352000
+        - REACTOME:379706
+        - REACTOME:351990
+      - seed.compound: cpd00161
+      - upa: UPA:UPC00188
+  - !!omap
+    - id: thr__L_e
+    - name: L-threonine zwitterion
+    - compartment: e
+    - charge: 0
+    - formula: C4H9NO3
+    - annotation: !!omap
+      - bigg.metabolite: thr-L
+      - biocyc: META:THR
+      - biopath: BIOPATH:L-Threonine
+      - chebi:
+        - CHEBI:16857
+        - CHEBI:13175
+        - CHEBI:21403
+        - CHEBI:45843
+        - CHEBI:42083
+        - CHEBI:45983
+        - CHEBI:6308
+        - CHEBI:30013
+        - CHEBI:32820
+        - CHEBI:32822
+        - CHEBI:57926
+      - hmdb: HMDB00167
+      - inchi: InChI=1S/C4H9NO3/c1-2(6)3(5)4(7)8/h2-3,6H,5H2,1H3,(H,7,8)/t2-,3+/m1/s1
+      - kegg.compound:
+        - C00188
+        - D00041
+      - metanetx.chemical: MNXM142
+      - reactome:
+        - REACTOME:352000
+        - REACTOME:379706
+        - REACTOME:351990
+      - seed.compound: cpd00161
+      - upa: UPA:UPC00188
+  - !!omap
+    - id: thr__L_p
+    - name: L-threonine zwitterion
+    - compartment: p
     - charge: 0
     - formula: C4H9NO3
     - annotation: !!omap
@@ -17467,6 +19728,62 @@
     - id: tsul_c
     - name: trioxidosulfanidosulfate(1-)
     - compartment: c
+    - charge: -2
+    - formula: O3S2
+    - annotation: !!omap
+      - bigg.metabolite: tsul
+      - biocyc: META:S2O3
+      - biopath: BIOPATH:Thiosulfate
+      - chebi:
+        - CHEBI:16094
+        - CHEBI:45922
+        - CHEBI:9569
+        - CHEBI:15242
+        - CHEBI:26977
+        - CHEBI:32150
+        - CHEBI:33539
+        - CHEBI:33542
+        - CHEBI:5587
+      - inchi: InChI=1S/H2O3S2/c1-5(2,3)4/h(H2,1,2,3,4)/p-1
+      - kegg.compound:
+        - C00320
+        - C05529
+        - D01091
+      - metanetx.chemical: MNXM323
+      - reactome: REACTOME:1614595
+      - seed.compound: cpd00268
+  - !!omap
+    - id: tsul_e
+    - name: trioxidosulfanidosulfate(1-)
+    - compartment: e
+    - charge: -2
+    - formula: O3S2
+    - annotation: !!omap
+      - bigg.metabolite: tsul
+      - biocyc: META:S2O3
+      - biopath: BIOPATH:Thiosulfate
+      - chebi:
+        - CHEBI:16094
+        - CHEBI:45922
+        - CHEBI:9569
+        - CHEBI:15242
+        - CHEBI:26977
+        - CHEBI:32150
+        - CHEBI:33539
+        - CHEBI:33542
+        - CHEBI:5587
+      - inchi: InChI=1S/H2O3S2/c1-5(2,3)4/h(H2,1,2,3,4)/p-1
+      - kegg.compound:
+        - C00320
+        - C05529
+        - D01091
+      - metanetx.chemical: MNXM323
+      - reactome: REACTOME:1614595
+      - seed.compound: cpd00268
+  - !!omap
+    - id: tsul_p
+    - name: trioxidosulfanidosulfate(1-)
+    - compartment: p
     - charge: -2
     - formula: O3S2
     - annotation: !!omap
@@ -18295,6 +20612,70 @@
       - umbbd.compound: c0165
       - unipathway.compound: UPC00086
   - !!omap
+    - id: urea_e
+    - name: urea_c
+    - compartment: e
+    - charge: 0
+    - formula: CH4N2O
+    - annotation: !!omap
+      - SBO: SBO:0000247
+      - bigg.metabolite: urea
+      - biocyc: META:UREA
+      - chebi:
+        - CHEBI:15292
+        - CHEBI:16199
+        - CHEBI:27218
+        - CHEBI:32285
+        - CHEBI:46379
+        - CHEBI:48376
+        - CHEBI:9888
+      - hmdb: HMDB00294
+      - kegg.compound:
+        - C00086
+        - D00023
+        - D01749
+        - D10496
+      - metanetx.chemical: MNXM117
+      - reactome:
+        - '29514'
+        - '374061'
+        - '432019'
+      - seed.compound: cpd00073
+      - umbbd.compound: c0165
+      - unipathway.compound: UPC00086
+  - !!omap
+    - id: urea_p
+    - name: urea_c
+    - compartment: p
+    - charge: 0
+    - formula: CH4N2O
+    - annotation: !!omap
+      - SBO: SBO:0000247
+      - bigg.metabolite: urea
+      - biocyc: META:UREA
+      - chebi:
+        - CHEBI:15292
+        - CHEBI:16199
+        - CHEBI:27218
+        - CHEBI:32285
+        - CHEBI:46379
+        - CHEBI:48376
+        - CHEBI:9888
+      - hmdb: HMDB00294
+      - kegg.compound:
+        - C00086
+        - D00023
+        - D01749
+        - D10496
+      - metanetx.chemical: MNXM117
+      - reactome:
+        - '29514'
+        - '374061'
+        - '432019'
+      - seed.compound: cpd00073
+      - umbbd.compound: c0165
+      - unipathway.compound: UPC00086
+  - !!omap
     - id: uri_c
     - name: uridine
     - compartment: c
@@ -18431,6 +20812,52 @@
       - seed.compound: cpd00309
       - upa: UPA:UPC00385
   - !!omap
+    - id: xan_e
+    - name: 9H-xanthine
+    - compartment: e
+    - charge: 0
+    - formula: C5H4N4O2
+    - annotation: !!omap
+      - bigg.metabolite: xan
+      - biocyc: META:XANTHINE
+      - biopath: BIOPATH:Xanthine
+      - chebi:
+        - CHEBI:17712
+        - CHEBI:10059
+        - CHEBI:27317
+        - CHEBI:46377
+        - CHEBI:48517
+      - hmdb: HMDB00292
+      - inchi: InChI=1S/C5H4N4O2/c10-4-2-3(7-1-6-2)8-5(11)9-4/h1H,(H3,6,7,8,9,10,11)
+      - kegg.compound: C00385
+      - metanetx.chemical: MNXM174
+      - reactome: REACTOME:30064
+      - seed.compound: cpd00309
+      - upa: UPA:UPC00385
+  - !!omap
+    - id: xan_p
+    - name: 9H-xanthine
+    - compartment: p
+    - charge: 0
+    - formula: C5H4N4O2
+    - annotation: !!omap
+      - bigg.metabolite: xan
+      - biocyc: META:XANTHINE
+      - biopath: BIOPATH:Xanthine
+      - chebi:
+        - CHEBI:17712
+        - CHEBI:10059
+        - CHEBI:27317
+        - CHEBI:46377
+        - CHEBI:48517
+      - hmdb: HMDB00292
+      - inchi: InChI=1S/C5H4N4O2/c10-4-2-3(7-1-6-2)8-5(11)9-4/h1H,(H3,6,7,8,9,10,11)
+      - kegg.compound: C00385
+      - metanetx.chemical: MNXM174
+      - reactome: REACTOME:30064
+      - seed.compound: cpd00309
+      - upa: UPA:UPC00385
+  - !!omap
     - id: xmp_c
     - name: 5'-xanthylate(2-)
     - compartment: c
@@ -18519,6 +20946,36 @@
       - reactome: REACTOME:29790
       - seed.compound: cpd00198
       - upa: UPA:UPC00231
+  - !!omap
+    - id: zn2_c
+    - name: Zinc
+    - compartment: c
+    - charge: 2
+    - formula: Zn
+    - annotation: !!omap
+      - kegg.compound: C00038
+      - metanetx.chemical: MNXM149
+      - seed.compound: cpd00034
+  - !!omap
+    - id: zn2_e
+    - name: Zinc
+    - compartment: e
+    - charge: 2
+    - formula: Zn
+    - annotation: !!omap
+      - kegg.compound: C00038
+      - metanetx.chemical: MNXM149
+      - seed.compound: cpd00034
+  - !!omap
+    - id: zn2_p
+    - name: Zinc
+    - compartment: p
+    - charge: 2
+    - formula: Zn
+    - annotation: !!omap
+      - kegg.compound: C00038
+      - metanetx.chemical: MNXM149
+      - seed.compound: cpd00034
   - !!omap
     - id: zymst_c
     - name: zymosterol
@@ -19971,6 +22428,34 @@
         - UPA:UCR05225
         - UPA:UER00234
   - !!omap
+    - id: ADEt2rpp
+    - name: Adenine transport via proton symport (reversible) (periplasm)
+    - metabolites: !!omap
+      - ade_c: 1.0
+      - ade_p: -1.0
+      - h_c: 1.0
+      - h_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1664
+    - annotation: !!omap
+      - biocyc:
+        - META:TRANS-RXN0-447
+        - META:TRANS-RXN-198
+      - metanetx.reaction: MNXR475
+  - !!omap
+    - id: ADEtex
+    - name: adenine transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - ade_e: -1.0
+      - ade_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: ADEtex
+  - !!omap
     - id: ADK1
     - name: Adenylate kinase
     - metabolites: !!omap
@@ -20912,7 +23397,7 @@
       - h_c: -1.0
       - nad_c: 1.0
       - nadh_c: -1.0
-      - nh3_c: -1.0
+      - nh4_c: -1.0
       - pyr_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -21186,7 +23671,7 @@
       - co2_c: 2.0
       - h2o_c: -1.0
       - h_c: -3.0
-      - nh3_c: 2.0
+      - nh4_c: 2.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0477 and MCA0478
@@ -21841,7 +24326,7 @@
       - asn__L_c: -1.0
       - asp__L_c: 1.0
       - h2o_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0472 or MCA0542 or MCA2127
@@ -21941,6 +24426,43 @@
       - seed:
         - rxn06619
         - rxn11595
+  - !!omap
+    - id: ASO3t8pp
+    - name: Arsenite efflux via ATP hydrolysis (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - aso3_c: -1.0
+      - aso3_p: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1346 and MCA0791
+  - !!omap
+    - id: ASO3tex
+    - name: Arsenite transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - aso3_e: -1.0
+      - aso3_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: ASO3tex
+  - !!omap
+    - id: ASO3tpp
+    - name: Arsenite transport via proton antiport (periplasm)
+    - metabolites: !!omap
+      - aso3_c: -1.0
+      - aso3_p: 1.0
+      - h_c: 1.0
+      - h_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0791
   - !!omap
     - id: ASP1DC
     - name: Aspartate 1-decarboxylase
@@ -22052,7 +24574,7 @@
       - asp__L_c: -1.0
       - h2o2_c: 1.0
       - h2o_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - o2_c: -1.0
       - oaa_c: 1.0
     - lower_bound: 0.0
@@ -22308,6 +24830,29 @@
         - '19652'
       - seed: rxn06936
   - !!omap
+    - id: ASP__Ltex
+    - name: L-aspartate(1-) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - asp__L_e: -1.0
+      - asp__L_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
+    - id: ASPt2_2pp
+    - name: Aspartate transport via proton symport (2 H) (periplasm)
+    - metabolites: !!omap
+      - asp__L_c: 1.0
+      - asp__L_p: -1.0
+      - h_c: 2.0
+      - h_p: -2.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1872
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN-122A
+      - metanetx.reaction: MNXR874
+  - !!omap
     - id: ATPM
     - name: ATP maintenance requirement
     - metabolites: !!omap
@@ -22495,9 +25040,9 @@
       - pi_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: ( MCA0006 and MCA0007 and MCA0008 and MCA0009 and MCA0010
-        and MCA0011 and MCA0012 and MCA0013 ) or ( MCA2699 and MCA2700 and MCA2701
-        and MCA2707 and MCA2708 and MCA1556 and MCA3021 )
+    - gene_reaction_rule: ( MCA0005 and MCA0006 and MCA0007 and MCA0008 and MCA0009
+        and MCA0010 and MCA0011 and MCA0012 and MCA0013 ) or ( MCA2699 and MCA2700
+        and MCA2701 and MCA2707 and MCA2708 and MCA1556 and MCA3021 )
     - annotation: !!omap
       - bigg.reaction: ATPSh
       - brenda: 3.6.3.14
@@ -22514,9 +25059,9 @@
       - pi_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: ( MCA0006 and MCA0007 and MCA0008 and MCA0009 and MCA0010
-        and MCA0011 and MCA0012 and MCA0013 ) or ( MCA2699 and MCA2700 and MCA2701
-        and MCA2707 and MCA2708 and MCA1556 and MCA3021 )
+    - gene_reaction_rule: ( MCA0005 and MCA0006 and MCA0007 and MCA0008 and MCA0009
+        and MCA0010 and MCA0011 and MCA0012 and MCA0013 ) or ( MCA2699 and MCA2700
+        and MCA2701 and MCA2707 and MCA2708 and MCA1556 and MCA3021 )
     - annotation: !!omap
       - bigg.reaction: ATPSh
       - brenda: 3.6.3.14
@@ -22630,7 +25175,7 @@
       - colipa_e: -0.002
       - cpoa2h_c: -0.00186552
       - ctp_c: -0.04425885
-      - cu_c: -0.00151072
+      - cu2_c: -0.00151072
       - cys__L_c: -0.038
       - datp_c: -0.00866366
       - dctp_c: -0.01571821
@@ -22667,12 +25212,14 @@
       - mal__L_c: -0.004
       - met__L_c: -0.13
       - mg2_c: -0.12343139
+      - mn2_c: -1.8e-05
       - na1_c: -0.03914785
       - nac_c: -0.00106469
       - nad_c: -0.002
       - nadh_c: -0.002
       - nadp_c: -0.001
       - nadph_c: -0.001
+      - ni2_c: -3.4e-05
       - ocdca_c: -8.548e-05
       - ocdcea_c: -0.00014349
       - pc_MC_c: -9.37385e-06
@@ -22701,9 +25248,11 @@
       - tyr__L_c: -0.132
       - utp_c: -0.02560771
       - val__L_c: -0.36
-    - lower_bound: 0.1
+      - zn2_c: -0.001
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - objective_coefficient: 1.0
   - !!omap
     - id: BLUB
     - name: 5,6-dimethylbenzimidazole synthase
@@ -22774,6 +25323,61 @@
       - brenda: 6.3.4.14
       - kegg.reaction: R04385
       - metanetx.reaction: MNXR48675
+  - !!omap
+    - id: CA2abcpp
+    - name: Calcium efflux via ABC system (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - ca2_c: -1.0
+      - ca2_p: 1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0095 or MCA0449 or MCA1004 or MCA1761
+    - annotation: !!omap
+      - brenda: 3.6.3.8
+      - metanetx.reaction: MNXR1035
+  - !!omap
+    - id: CA2t3pp
+    - name: Calcium (Ca+2) transport out via proton antiport (periplasm)
+    - metabolites: !!omap
+      - ca2_c: -1.0
+      - ca2_p: 1.0
+      - h_c: 1.0
+      - h_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0545 or MCA0142 or MCA1907
+    - annotation: !!omap
+      - metanetx.reaction: MNXR1036
+  - !!omap
+    - id: CA2tex
+    - name: Ca(2+) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - ca2_e: -1.0
+      - ca2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: CA2tex
+  - !!omap
+    - id: CAt6pp
+    - name: Calcium / sodium antiporter (1:1)
+    - metabolites: !!omap
+      - ca2_c: -1.0
+      - ca2_p: 1.0
+      - na1_c: 1.0
+      - na1_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0850
+    - annotation: !!omap
+      - metanetx.reaction: MNXR1050
   - !!omap
     - id: CBIAT
     - name: Cobinamide adenyltransferase
@@ -22846,6 +25450,58 @@
         - '18636'
         - '24654'
   - !!omap
+    - id: CD2t3pp
+    - name: Cadmium (Cd+2) transport out via proton antiport (periplasm)
+    - metabolites: !!omap
+      - cd2_c: -2.0
+      - cd2_p: 2.0
+      - h_c: 1.0
+      - h_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0079 or MCA1239 or MCA1298 or MCA1767 or MCA0978
+    - annotation: !!omap
+      - metanetx.reaction: MNXR68486
+  - !!omap
+    - id: CD2t4pp
+    - name: Cadmium transport out via antiport (periplasm)
+    - metabolites: !!omap
+      - cd2_c: -1.0
+      - cd2_p: 1.0
+      - h_c: 1.0
+      - h_p: -1.0
+      - k_c: 1.0
+      - k_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1900
+    - annotation: !!omap
+      - metanetx.reaction: MNXR79902
+  - !!omap
+    - id: CD2tex
+    - name: Cadmium transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - cd2_e: -1.0
+      - cd2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: CD2tex
+  - !!omap
+    - id: CD2tpp
+    - name: Cadmium (+2) transport in via permease (no H+)
+    - metabolites: !!omap
+      - cd2_c: 1.0
+      - cd2_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0974 or MCA0975 or MCA1728 or MCA2417
+    - annotation: !!omap
+      - biocyc: META:RXN0-10
+      - metanetx.reaction: MNXR68487
+  - !!omap
     - id: CDGR
     - name: 7-cyano-7-deazaguanine reductase
     - metabolites: !!omap
@@ -22907,6 +25563,15 @@
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2223
+  - !!omap
+    - id: CH4tex
+    - name: methane transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - ch4_e: -1.0
+      - ch4_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
   - !!omap
     - id: CH4trpp
     - name: Diffusion CH4 between Periplasm and Cytosol
@@ -23137,6 +25802,88 @@
     - annotation: !!omap
       - metanetx.reaction: MNXR68550
   - !!omap
+    - id: CLt3_2pp
+    - name: Chloride transport out via proton antiport (2:1) (periplasm)
+    - metabolites: !!omap
+      - cl_c: 2.0
+      - cl_p: -2.0
+      - h_c: -1.0
+      - h_p: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA2509
+    - annotation: !!omap
+      - metanetx.reaction: MNXR1217
+  - !!omap
+    - id: CLtex
+    - name: Cl(-) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - cl_e: -1.0
+      - cl_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: CLtex
+  - !!omap
+    - id: CLtpp
+    - name: Chloride transport via Bestrophin channel
+    - metabolites: !!omap
+      - cl_c: 1.0
+      - cl_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 0.0
+    - gene_reaction_rule: MCA2692 or MCA3057
+  - !!omap
+    - id: CO2t
+    - name: CO2 transporter via diffusion
+    - metabolites: !!omap
+      - co2_c: -1.0
+      - co2_e: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - metanetx.reaction: MNXR1225
+  - !!omap
+    - id: COBALT2t3pp
+    - name: Cobalt (Co+2) transport out via proton antiport (periplasm)
+    - metabolites: !!omap
+      - cobalt2_c: -2.0
+      - cobalt2_p: 2.0
+      - h_c: 1.0
+      - h_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0079 or MCA1239 or MCA1298 or MCA1767 or MCA0978 or MCA2720
+    - annotation: !!omap
+      - metanetx.reaction: MNXR82020
+  - !!omap
+    - id: COBALT2tex
+    - name: Co(2+) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - cobalt2_e: -1.0
+      - cobalt2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: COBALT2tex
+  - !!omap
+    - id: COBALT2tpp
+    - name: Cobalt transport in via permease (no H+)
+    - metabolites: !!omap
+      - cobalt2_c: 1.0
+      - cobalt2_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0974 or MCA0975 or MCA1728 or MCA2417
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN-141A
+      - metanetx.reaction: MNXR82021
+  - !!omap
     - id: CODSCL5BMT
     - name: Cobalt precorrin 5b methyltransferase
     - metabolites: !!omap
@@ -23196,6 +25943,17 @@
     - annotation: !!omap
       - SBO: SBO:0000375
       - bigg.reaction: COLIPAabctex
+  - !!omap
+    - id: COt
+    - name: CO transporter via diffusion
+    - metabolites: !!omap
+      - co_c: -1.0
+      - co_e: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - metanetx.reaction: MNXR1256
   - !!omap
     - id: CPC2MT
     - name: CPC2MT
@@ -23448,7 +26206,7 @@
       - csn_c: -1.0
       - h2o_c: -1.0
       - h_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - ura_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -23553,6 +26311,50 @@
         - rxn00412
         - rxn11276
   - !!omap
+    - id: CU2abcpp
+    - name: Copper (Cu+2) ABC transporter (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - cu2_c: -1.0
+      - cu2_p: 1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0705 or MCA2072 or MCA2264
+    - annotation: !!omap
+      - biocyc:
+        - META:3.6.3.4-RXN
+        - META:TRANS-RXN-178
+      - brenda: 3.6.3.4
+      - metanetx.reaction: MNXR19990
+  - !!omap
+    - id: CU2tex
+    - name: Cu2+ transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - cu2_e: -1.0
+      - cu2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: CU2tex
+  - !!omap
+    - id: CU2tpp
+    - name: Copper transport in via permease (no H+)
+    - metabolites: !!omap
+      - cu2_c: 1.0
+      - cu2_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0975 or MCA1728 or MCA2417
+    - annotation: !!omap
+      - biocyc: META:RXN0-14
+      - metanetx.reaction: MNXR25169
+  - !!omap
     - id: CYOR_q8ppi
     - name: Ubiquinol-cytochrome c oxidoreductase Complex III
     - metabolites: !!omap
@@ -23655,7 +26457,7 @@
       - cys__L_c: -1.0
       - h2o_c: -1.0
       - h2s_c: 1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - pyr_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -23682,7 +26484,7 @@
     - metabolites: !!omap
       - Lcystin_c: -1.0
       - h2o_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - pyr_c: 1.0
       - thcys_c: 1.0
     - lower_bound: 0.0
@@ -23813,7 +26615,7 @@
       - cyst__L_c: -1.0
       - h2o_c: -1.0
       - hcys__L_c: 1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - pyr_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -24145,7 +26947,7 @@
       - dutp_c: 1.0
       - h2o_c: -1.0
       - h_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0053
@@ -24174,7 +26976,7 @@
       - ctp_c: -1.0
       - h2o_c: -1.0
       - h_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - utp_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -24732,7 +27534,7 @@
       - 5apru_c: 1.0
       - h2o_c: -1.0
       - h_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1658
@@ -24991,6 +27793,14 @@
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
+    - id: DM_h2o2_c
+    - name: hydrogen peroxide exchange
+    - metabolites: !!omap
+      - h2o2_c: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
     - id: DM_rdmbzi_c
     - name: alpha-ribazole exchange
     - metabolites: !!omap
@@ -25005,7 +27815,7 @@
       - 5a2opntn_c: 1.0
       - h2o2_c: 1.0
       - h2o_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - o2_c: -1.0
       - orn_D_c: -1.0
     - lower_bound: 0.0
@@ -25799,150 +28609,512 @@
       - kegg.reaction: R10122
       - metanetx.reaction: MNXR21512
   - !!omap
-    - id: EX_ca2_c
+    - id: EX_ade_e
+    - name: adenine exchange
+    - metabolites: !!omap
+      - ade_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: ade
+  - !!omap
+    - id: EX_aso3_e
+    - name: Arsenite exchange
+    - metabolites: !!omap
+      - aso3_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: aso3
+  - !!omap
+    - id: EX_asp__L_e
+    - name: L-aspartate(1-) exchange
+    - metabolites: !!omap
+      - asp__L_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: asp__L
+  - !!omap
+    - id: EX_ca2_e
     - name: Ca(2+) exchange
     - metabolites: !!omap
-      - ca2_c: -1.0
+      - ca2_e: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: ca2
   - !!omap
-    - id: EX_ch4_p
+    - id: EX_cd2_e
+    - name: Cadmium exchange
+    - metabolites: !!omap
+      - cd2_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: cd2
+  - !!omap
+    - id: EX_ch4_e
     - name: methane exchange
     - metabolites: !!omap
-      - ch4_p: -1.0
+      - ch4_e: -1.0
     - lower_bound: -18.46
-    - upper_bound: -0.1
+    - upper_bound: 0.0
     - gene_reaction_rule: ''
   - !!omap
-    - id: EX_cl_c
+    - id: EX_cl_e
     - name: Cl(-) exchange
     - metabolites: !!omap
-      - cl_c: -1.0
+      - cl_e: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: cl
   - !!omap
-    - id: EX_co2_c
+    - id: EX_co2_e
     - name: CO(2) exchange
     - metabolites: !!omap
-      - co2_c: -1.0
+      - co2_e: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: co2
   - !!omap
-    - id: EX_co_c
-    - name: carbon monoxide(1+) exchange
+    - id: EX_co_e
+    - name: CO exchange
     - metabolites: !!omap
-      - co_c: -1.0
+      - co_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - metanetx.reaction: MNXR1256
+  - !!omap
+    - id: EX_cobalt2_e
+    - name: Co(2+) exchange
+    - metabolites: !!omap
+      - cobalt2_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: cobalt2
+  - !!omap
+    - id: EX_cu2_e
+    - name: Cu2+ exchange
+    - metabolites: !!omap
+      - cu2_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: cu2
+  - !!omap
+    - id: EX_fald_e
+    - name: formaldehyde exchange
+    - metabolites: !!omap
+      - fald_e: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: fald
   - !!omap
-    - id: EX_cobalt2_c
-    - name: Co2+ exchange
-    - metabolites: !!omap
-      - cobalt2_c: -1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: ''
-  - !!omap
-    - id: EX_cu_c
-    - name: Cu+ exchange
-    - metabolites: !!omap
-      - cu_c: -1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: ''
-    - objective_coefficient: 1.0
-  - !!omap
-    - id: EX_fe2_p
+    - id: EX_fe2_e
     - name: fe2_p exchange
     - metabolites: !!omap
-      - fe2_p: 1.0
-    - lower_bound: 0.0
+      - fe2_e: -1.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: fe2
   - !!omap
-    - id: EX_h2o2_c
-    - name: hydrogen peroxide exchange
+    - id: EX_fol_e
+    - name: folate exchange
     - metabolites: !!omap
-      - h2o2_c: -1.0
+      - fol_e: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
-    - id: EX_h2o_c
+    - id: EX_fum_e
+    - name: fumarate(2-) exchange
+    - metabolites: !!omap
+      - fum_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: fum
+  - !!omap
+    - id: EX_glyc_e
+    - name: Glycerol exchange
+    - metabolites: !!omap
+      - glyc_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: glyc
+  - !!omap
+    - id: EX_gua_e
+    - name: guanine exchange
+    - metabolites: !!omap
+      - gua_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: gua
+  - !!omap
+    - id: EX_h2o_e
     - name: H2O exchange
     - metabolites: !!omap
-      - h2o_c: -1.0
-    - lower_bound: 0.0
+      - h2o_e: -1.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: h2o
   - !!omap
-    - id: EX_h_c
+    - id: EX_h_e
     - name: H(+) exchange
     - metabolites: !!omap
-      - h_c: -1.0
+      - h_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: h
+  - !!omap
+    - id: EX_ham_e
+    - name: hydroxylamine exchange
+    - metabolites: !!omap
+      - ham_e: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
-    - id: EX_k_c
+    - id: EX_k_e
     - name: K(+) exchange
     - metabolites: !!omap
-      - k_c: -1.0
+      - k_e: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: k
   - !!omap
-    - id: EX_mg2_c
+    - id: EX_mal__L_e
+    - name: (S)-malate exchange
+    - metabolites: !!omap
+      - mal__L_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: mal__L
+  - !!omap
+    - id: EX_meoh_e
+    - name: methanol exchange
+    - metabolites: !!omap
+      - meoh_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: meoh
+  - !!omap
+    - id: EX_mg2_e
     - name: Mg(2+) exchange
     - metabolites: !!omap
-      - mg2_c: -1.0
+      - mg2_e: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: mg2
   - !!omap
-    - id: EX_na1_c
+    - id: EX_mn2_e
+    - name: Manganese(2+) exchange
+    - metabolites: !!omap
+      - mn2_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: mn2
+  - !!omap
+    - id: EX_n2o_e
+    - name: dinitrogen oxide exchange
+    - metabolites: !!omap
+      - n2o_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: n2o
+  - !!omap
+    - id: EX_na1_e
     - name: Na(+) exchange
     - metabolites: !!omap
-      - na1_c: -1.0
-    - lower_bound: -1.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: ''
-  - !!omap
-    - id: EX_nh3_c
-    - name: NH4(+) exchange
-    - metabolites: !!omap
-      - nh3_c: -1.0
+      - na1_e: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: na1
   - !!omap
-    - id: EX_o2_c
+    - id: EX_nh4_e
+    - name: Ammonium exchange
+    - metabolites: !!omap
+      - nh4_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: nh4
+  - !!omap
+    - id: EX_ni2_e
+    - name: Nickel exchange
+    - metabolites: !!omap
+      - ni2_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: ni2
+  - !!omap
+    - id: EX_no2_e
+    - name: nitrite exchange
+    - metabolites: !!omap
+      - no2_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: no2
+  - !!omap
+    - id: EX_no3_e
+    - name: no3_e exchange
+    - metabolites: !!omap
+      - no3_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: no3
+  - !!omap
+    - id: EX_no_e
+    - name: nitric oxide exchange
+    - metabolites: !!omap
+      - no_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: no
+  - !!omap
+    - id: EX_o2_e
     - name: dioxygen exchange
     - metabolites: !!omap
-      - o2_c: -1.0
+      - o2_e: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: o2
   - !!omap
-    - id: EX_pi_c
+    - id: EX_orot_e
+    - name: orotate exchange
+    - metabolites: !!omap
+      - orot_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: orot
+  - !!omap
+    - id: EX_pheme_e
+    - name: heme b exchange
+    - metabolites: !!omap
+      - pheme_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: pheme
+  - !!omap
+    - id: EX_pi_e
     - name: phosphate exchange
     - metabolites: !!omap
-      - pi_c: -1.0
+      - pi_e: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: pi
   - !!omap
-    - id: EX_so4_c
+    - id: EX_ptrc_e
+    - name: putrescine exchange
+    - metabolites: !!omap
+      - ptrc_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: ptrc
+  - !!omap
+    - id: EX_pyr_e
+    - name: pyruvate exchange
+    - metabolites: !!omap
+      - pyr_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: pyr
+  - !!omap
+    - id: EX_ser__L_e
+    - name: L-serine exchange
+    - metabolites: !!omap
+      - ser__L_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: ser__L
+  - !!omap
+    - id: EX_so4_e
     - name: sulfate exchange
     - metabolites: !!omap
-      - so4_c: -1.0
+      - so4_e: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: so4
+  - !!omap
+    - id: EX_spmd_e
+    - name: spermidine(3+) exchange
+    - metabolites: !!omap
+      - spmd_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: spmd
+  - !!omap
+    - id: EX_succ_e
+    - name: succinate(2-) exchange
+    - metabolites: !!omap
+      - succ_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: succ
+  - !!omap
+    - id: EX_thr__L_e
+    - name: L-threonine zwitterion exchange
+    - metabolites: !!omap
+      - thr__L_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: thr__L
+  - !!omap
+    - id: EX_tsul_e
+    - name: trioxidosulfanidosulfate(1-) exchange
+    - metabolites: !!omap
+      - tsul_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: tsul
+  - !!omap
+    - id: EX_urea_e
+    - name: urea_c exchange
+    - metabolites: !!omap
+      - urea_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: urea
+  - !!omap
+    - id: EX_xan_e
+    - name: 9H-xanthine exchange
+    - metabolites: !!omap
+      - xan_e: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: xan
+  - !!omap
+    - id: EX_zn2_e
+    - name: Zinc exchange
+    - metabolites: !!omap
+      - zn2_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000627
+      - bigg.reaction: zn2
   - !!omap
     - id: FA140ACPHi
     - name: Fatty-acyl-ACP hydrolase
@@ -26209,6 +29381,18 @@
       - brenda: 1.2.2.B1
       - metanetx.reaction: MNXR82728
   - !!omap
+    - id: FALDtex
+    - name: formaldehyde transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - fald_e: -1.0
+      - fald_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: FALDtex
+  - !!omap
     - id: FALDtpp
     - name: Diffusion Formaldehyde between Periplasm and Cytosol
     - metabolites: !!omap
@@ -26347,17 +29531,45 @@
         - '15988'
       - seed: rxn00371
   - !!omap
-    - id: FE2tpp
-    - name: FeoB-mediated ferrous Iron uptake
+    - id: FE2Gabcpp
+    - name: Iron (II) transport via ABC system (GTP) (periplasm)
     - metabolites: !!omap
       - fe2_c: 1.0
       - fe2_p: -1.0
-    - lower_bound: -1000.0
+      - gdp_c: 1.0
+      - gtp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1097
     - annotation: !!omap
+      - metanetx.reaction: MNXR82823
+  - !!omap
+    - id: FE2tex
+    - name: fe2_p transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - fe2_e: -1.0
+      - fe2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
       - SBO: SBO:0000375
-      - bigg.reaction: FE2tpp
+      - bigg.reaction: FE2tex
+  - !!omap
+    - id: FE2tpp
+    - name: Iron (+2) transport in via permease (no H+)
+    - metabolites: !!omap
+      - fe2_c: 1.0
+      - fe2_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0974 or MCA0975 or MCA1728 or MCA2417
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN-8
+      - metanetx.reaction: MNXR2212
   - !!omap
     - id: FGFTh
     - name: N2-Formyl-N1-(5-phospho-D-ribosyl)glycinamide formyltransferase, chloroplast
@@ -26540,6 +29752,28 @@
         - UPA:UCR02236
         - UPA:UER00818
   - !!omap
+    - id: FOLtex
+    - name: folate transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - fol_e: -1.0
+      - fol_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
+    - id: FOLtipp
+    - name: Folate transport in via symport (periplasm)
+    - metabolites: !!omap
+      - fol_c: 1.0
+      - fol_p: -1.0
+      - h_c: 1.0
+      - h_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1506
+    - annotation: !!omap
+      - metanetx.reaction: MNXR2270
+  - !!omap
     - id: FOMETRi
     - name: Aminomethyltransferase
     - metabolites: !!omap
@@ -26718,6 +29952,32 @@
       - upa:
         - UPA:UCR01082
         - UPA:UER01007
+  - !!omap
+    - id: FUMt2_2pp
+    - name: Fumarate transport via proton symport (2 H) (periplasm)
+    - metabolites: !!omap
+      - fum_c: 1.0
+      - fum_p: -1.0
+      - h_c: 2.0
+      - h_p: -2.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1872
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN-121B
+      - metanetx.reaction: MNXR2343
+  - !!omap
+    - id: FUMtex
+    - name: fumarate(2-) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - fum_e: -1.0
+      - fum_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: FUMtex
   - !!omap
     - id: G1PACT
     - name: Glucosamine-1-phosphate N-acetyltransferase
@@ -26987,7 +30247,7 @@
       - f6p_c: 1.0
       - gam6p_c: -1.0
       - h2o_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1627 or MCA0015
@@ -27255,7 +30515,7 @@
       - alpro_c: -1.0
       - dhlpro_c: 1.0
       - mlthf_c: 1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - thf_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 0.0
@@ -27467,7 +30727,7 @@
       - gln__L_c: 1.0
       - glu__L_c: -1.0
       - h_c: 1.0
-      - nh3_c: -1.0
+      - nh4_c: -1.0
       - pi_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 0.0
@@ -27612,7 +30872,7 @@
       - h_c: 1.0
       - nad_c: -1.0
       - nadh_c: 1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1684 or MCA1030 or MCA2039 or MCA2040 or MCA2202
@@ -27644,7 +30904,7 @@
       - h_c: 1.0
       - nadp_c: -1.0
       - nadph_c: 1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1030 or MCA1684 or MCA2039 or MCA2040 or MCA2202
@@ -27999,7 +31259,7 @@
       - mlthf_c: 1.0
       - nad_c: -1.0
       - nadh_c: 1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - thf_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -28132,6 +31392,31 @@
         - UPA:UCR00475
         - UPA:UER00912
   - !!omap
+    - id: GLYCt3
+    - name: Glycerol transport via symport
+    - metabolites: !!omap
+      - glyc_c: 1.0
+      - glyc_p: -1.0
+      - h_c: 1.0
+      - h_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0615 or MCA1162 or MCA3074
+    - annotation: !!omap
+      - metanetx.reaction: MNXR80849
+  - !!omap
+    - id: GLYCtex
+    - name: Glycerol transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - glyc_e: -1.0
+      - glyc_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: GLYCtex
+  - !!omap
     - id: GLYOX
     - name: Hydroxyacylglutathione hydrolase
     - metabolites: !!omap
@@ -28167,7 +31452,7 @@
       - gly_c: -1.0
       - h2o2_c: 1.0
       - h2o_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - o2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -28863,6 +32148,43 @@
         - UPA:UCR01229
         - UPA:UER00887
   - !!omap
+    - id: GUAt2pp
+    - name: Guanine transport in via proton symport (periplasm)
+    - metabolites: !!omap
+      - gua_c: 1.0
+      - gua_p: -1.0
+      - h_c: 1.0
+      - h_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1664
+    - annotation: !!omap
+      - metanetx.reaction: MNXR2847
+  - !!omap
+    - id: GUAtex
+    - name: guanine transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - gua_e: -1.0
+      - gua_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: GUAtex
+  - !!omap
+    - id: H2Otex
+    - name: H2O transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - h2o_e: -1.0
+      - h2o_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: H2Otex
+  - !!omap
     - id: H2Otpp
     - name: Diffusion H2O between Periplasm and Cytosol
     - metabolites: !!omap
@@ -28874,6 +32196,15 @@
     - annotation: !!omap
       - SBO: SBO:0000375
       - bigg.reaction: H2Otpp
+  - !!omap
+    - id: HAMtex
+    - name: hydroxylamine transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - ham_e: -1.0
+      - ham_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
   - !!omap
     - id: HAMtpp
     - name: Diffusion Hydroxylamine between Periplasm and Cytosol
@@ -29449,7 +32780,7 @@
     - metabolites: !!omap
       - h2o_c: -1.0
       - hmbil_c: 1.0
-      - nh3_c: 4.0
+      - nh4_c: 4.0
       - ppbng_c: -4.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -29751,6 +33082,18 @@
       - upa:
         - UPA:UCR01132
         - UPA:UER00648
+  - !!omap
+    - id: Htex
+    - name: H(+) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - h_e: -1.0
+      - h_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: Htex
   - !!omap
     - id: ICDHxm
     - name: 'Isocitrate dehydrogenase  NAD '
@@ -30495,6 +33838,67 @@
         - UPA:UCR03254
         - UPA:UER00474
   - !!omap
+    - id: Kabcpp
+    - name: Potassium ABC transporter (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - k_c: 1.0
+      - k_p: -1.0
+      - pi_c: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA2216 and MCA2215 and MCA2217
+    - annotation: !!omap
+      - biocyc:
+        - META:3.6.3.12-RXN
+        - META:TRANS-RXN-2
+      - brenda: 3.6.3.12
+      - metanetx.reaction: MNXR2979
+  - !!omap
+    - id: Kt2pp
+    - name: Potassium transport in via proton symport (periplasm)
+    - metabolites: !!omap
+      - h_c: 1.0
+      - h_p: -1.0
+      - k_c: 1.0
+      - k_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA2041 or MCA0976
+    - annotation: !!omap
+      - biocyc:
+        - META:TRANS-RXN-3
+        - META:TRANS-RXN-42
+      - metanetx.reaction: MNXR3188
+  - !!omap
+    - id: Kt3pp
+    - name: Potassium transport out via proton antiport (periplasm)
+    - metabolites: !!omap
+      - h_c: 1.0
+      - h_p: -1.0
+      - k_c: -1.0
+      - k_p: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0545 or MCA1519 or MCA1760 or MCA0928
+    - annotation: !!omap
+      - metanetx.reaction: MNXR3188
+  - !!omap
+    - id: Ktex
+    - name: K(+) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - k_e: -1.0
+      - k_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: Ktex
+  - !!omap
     - id: LA4NTpp_GAPFILLING
     - name: 4-amino-4-deoxy-L-arabinotransferase (LPS lipid A modification, periplasmic
         face of membrane))
@@ -30774,6 +34178,29 @@
       - seed:
         - rxn06442
         - rxn08857
+  - !!omap
+    - id: MAL__Ltex
+    - name: (S)-malate transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - mal__L_e: -1.0
+      - mal__L_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
+    - id: MALt2_2pp
+    - name: Malate transport via proton symport (2 H) (periplasm)
+    - metabolites: !!omap
+      - h_c: 2.0
+      - h_p: -2.0
+      - mal__L_c: 1.0
+      - mal__L_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1872
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN-121A
+      - metanetx.reaction: MNXR3407
   - !!omap
     - id: MAN1PT
     - name: Mannose 1 phosphate guanylyltransferase
@@ -31123,6 +34550,18 @@
       - kegg.reaction: R01146
       - metanetx.reaction: MNXR84835
   - !!omap
+    - id: MEOHtex
+    - name: methanol transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - meoh_e: -1.0
+      - meoh_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: MEOHtex
+  - !!omap
     - id: MEOHtrpp
     - name: Methanol reversible transport via diffusion (periplasm)
     - metabolites: !!omap
@@ -31293,6 +34732,50 @@
         - '13483'
         - '13484'
       - seed: rxn06443
+  - !!omap
+    - id: MG2tex
+    - name: Mg(2+) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - mg2_e: -1.0
+      - mg2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: MG2tex
+  - !!omap
+    - id: MG2tpp
+    - name: Magnesium (+2) transport in via diffusion
+    - metabolites: !!omap
+      - mg2_c: 1.0
+      - mg2_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0108
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN-141
+      - metanetx.reaction: MNXR3516
+  - !!omap
+    - id: MG2uabcpp
+    - name: Magnesium (Mg+2) ABC transporter (ubtake, periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - mg2_c: 1.0
+      - mg2_p: -1.0
+      - pi_c: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1929
+    - annotation: !!omap
+      - biocyc:
+        - META:3.6.3.2-RXN
+        - META:TRANS-RXN-250
+      - brenda: 3.6.3.2
+      - metanetx.reaction: MNXR3513
   - !!omap
     - id: MHPGLUT
     - name: 5 methyltetrahydropteroyltriglutamate homocysteine S methyltransferase
@@ -31485,6 +34968,40 @@
         - '17943'
         - '17944'
       - seed: rxn03061
+  - !!omap
+    - id: MN2t3pp
+    - name: Manganese (Mn+2) transport out via proton antiport (periplasm)
+    - metabolites: !!omap
+      - h_c: 1.0
+      - h_p: -1.0
+      - mn2_c: -1.0
+      - mn2_p: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1801
+  - !!omap
+    - id: MN2tex
+    - name: Manganese(2+) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - mn2_e: -1.0
+      - mn2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
+    - id: MN2tpp
+    - name: Manganese transport in via permease (no H+)
+    - metabolites: !!omap
+      - mn2_c: 1.0
+      - mn2_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0974 or MCA0975 or MCA1728 or MCA2417
+    - annotation: !!omap
+      - biocyc:
+        - META:RXN0-16
+        - META:TRANS-RXN0-487
+      - metanetx.reaction: MNXR69477
   - !!omap
     - id: MOAT
     - name: 3-deoxy-D-manno-octulosonic acid transferase
@@ -31801,6 +35318,27 @@
         - UPA:UCR04420
         - UPA:UER00874
   - !!omap
+    - id: N2Otex
+    - name: dinitrogen oxide transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - n2o_e: -1.0
+      - n2o_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: N2Otex
+  - !!omap
+    - id: NA1tex
+    - name: Na(+) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - na1_e: -1.0
+      - na1_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
     - id: NADH16pp
     - name: type-1 nadh:quinone oxidoreductase (H+-translocating)
     - metabolites: !!omap
@@ -32067,6 +35605,19 @@
         - UPA:UCR01724
         - UPA:UER00457
   - !!omap
+    - id: NAt3pp
+    - name: Sodium transport out via proton antiport (cytoplasm to periplasm)
+    - metabolites: !!omap
+      - h_c: 1.0
+      - h_p: -1.0
+      - na1_c: -1.0
+      - na1_p: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0545 or MCA1700 or MCA1762 or MCA2058 or MCA2735
+    - annotation: !!omap
+      - metanetx.reaction: MNXR3783
+  - !!omap
     - id: NDP6
     - name: NDP6
     - metabolites: !!omap
@@ -32321,16 +35872,73 @@
         - '30350'
       - seed: rxn00515
   - !!omap
-    - id: NH3tpp
-    - name: Diffusion NH3 between Periplasm and Cytosol
+    - id: NH4tex
+    - name: Ammonium transport via diffusion (extracellular to periplasm)
     - metabolites: !!omap
-      - nh3_c: 1.0
-      - nh3_p: -1.0
+      - nh4_e: -1.0
+      - nh4_p: 1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
     - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: NH4tex
+  - !!omap
+    - id: NH4tpp
+    - name: Diffusion NH3 between Periplasm and Cytosol
+    - metabolites: !!omap
+      - nh4_c: 1.0
+      - nh4_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ( MCA0268 and MCA0490 and MCA2136 ) or MCA1581
+    - annotation: !!omap
       - metanetx.reaction: MNXR82602
+  - !!omap
+    - id: NI2t3pp
+    - name: Nickel (Ni+2) transport out via proton antiport (periplasm)
+    - metabolites: !!omap
+      - h_c: 1.0
+      - h_p: -1.0
+      - ni2_c: -2.0
+      - ni2_p: 2.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA2720
+    - annotation: !!omap
+      - metanetx.reaction: MNXR69538
+  - !!omap
+    - id: NI2tex
+    - name: Nickel transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - ni2_e: -1.0
+      - ni2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: NI2tex
+  - !!omap
+    - id: NI2uabcpp
+    - name: Nickel transport via ABC system (uptake, periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - ni2_c: 1.0
+      - ni2_p: -1.0
+      - pi_c: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1929
+    - annotation: !!omap
+      - biocyc:
+        - META:3.6.3.24-RXN
+        - META:ABC-20-RXN
+      - brenda: 3.6.3.24
+      - metanetx.reaction: MNXR19978
   - !!omap
     - id: NITR_AMpp
     - name: Nitrite reductase (cytochrome; ammonia-forming)
@@ -32339,7 +35947,7 @@
       - focytcc553_p: -6.0
       - h2o_c: 2.0
       - h_c: -8.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - no2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 0.0
@@ -32429,7 +36037,7 @@
       - h2o_c: -1.0
       - nac_c: 1.0
       - ncam_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2761
@@ -32597,6 +36205,18 @@
         - UPA:UCR03348
         - UPA:UER00331
   - !!omap
+    - id: NO2tex
+    - name: nitrite transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - no2_e: -1.0
+      - no2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: NO2tex
+  - !!omap
     - id: NO2tpp
     - name: Diffusion Hydroxylamine between Periplasm and Cytosol
     - metabolites: !!omap
@@ -32627,28 +36247,22 @@
         - UPA:UCR00798
         - UPA:UER00706
   - !!omap
-    - id: NO3abcpp
-    - name: Nitrate transport via ABC system (periplasm)
+    - id: NO3t2pp
+    - name: Nitrate transport in via proton symport (periplasm)
     - metabolites: !!omap
       - adp_c: 1.0
       - atp_c: -1.0
       - h2o_c: -1.0
       - h_c: 1.0
+      - h_p: -1.0
       - no3_c: 1.0
       - no3_p: -1.0
       - pi_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0589
+    - gene_reaction_rule: MCA0589 or MCA0594
     - annotation: !!omap
-      - biocyc: META:3.6.3.26-RXN
-      - brenda: 3.6.3.26
-      - metanetx.reaction: MNXR19979
-      - rhea:
-        - '13181'
-        - '13182'
-        - '13183'
-        - '13184'
+      - metanetx.reaction: MNXR3846
   - !!omap
     - id: NO3t7pp
     - name: Nitrate transport in via nitrite antiport (periplasm)
@@ -32659,7 +36273,7 @@
       - no3_p: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0594
+    - gene_reaction_rule: MCA0589 or MCA0594
     - annotation: !!omap
       - biocyc: META:TRANS-RXN0-239
       - metanetx.reaction: MNXR3847
@@ -32695,6 +36309,18 @@
       - upa:
         - UPA:UCR00294
         - UPA:UER00708
+  - !!omap
+    - id: NOtex
+    - name: nitric oxide transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - no_e: -1.0
+      - no_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: NOtex
   - !!omap
     - id: NT5C
     - name: NT5C
@@ -33250,7 +36876,7 @@
       - h_c: -5.0
       - nad_c: 3.0
       - nadh_c: -3.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - no2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -33277,7 +36903,7 @@
       - h_c: -5.0
       - nadp_c: 3.0
       - nadph_c: -3.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - no2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -33303,7 +36929,7 @@
       - h2o_c: -2.0
       - ind3ac_c: 1.0
       - ind3acnl_c: -1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0381
@@ -33391,6 +37017,18 @@
     - annotation: !!omap
       - SBO: SBO:0000375
       - bigg.reaction: O16GLCT2
+  - !!omap
+    - id: O2tex
+    - name: dioxygen transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - o2_e: -1.0
+      - o2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: O2tex
   - !!omap
     - id: O2tpp
     - name: Diffusion H2O between Periplasm and Cytosol
@@ -33828,6 +37466,32 @@
         - '15351'
         - '15352'
   - !!omap
+    - id: OROTt2_2pp
+    - name: Orotate transport via proton symport (2 H) (periplasm)
+    - metabolites: !!omap
+      - h_c: 2.0
+      - h_p: -2.0
+      - orot_c: 1.0
+      - orot_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1872
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN-121C
+      - metanetx.reaction: MNXR3994
+  - !!omap
+    - id: OROTtex
+    - name: orotate transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - orot_e: -1.0
+      - orot_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: OROTtex
+  - !!omap
     - id: ORPT
     - name: Orotate phosphoribosyltransferase
     - metabolites: !!omap
@@ -33961,7 +37625,7 @@
     - metabolites: !!omap
       - h2o_p: 1.0
       - ham_p: 1.0
-      - nh3_p: -1.0
+      - nh4_p: -1.0
       - o2_p: -1.0
       - q8_im: 1.0
       - q8h2_im: -1.0
@@ -34812,6 +38476,33 @@
         - UPA:UCR01799
         - UPA:UER00614
   - !!omap
+    - id: PHEMEabcpp
+    - name: Protoheme transport via ABC system (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pheme_c: -1.0
+      - pheme_p: 1.0
+      - pi_c: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0952 and MCA0953 and MCA0954
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN0-162
+      - brenda: 3.6.3.41
+      - metanetx.reaction: MNXR76153
+  - !!omap
+    - id: PHEMEtex
+    - name: heme b transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - pheme_e: -1.0
+      - pheme_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
     - id: PHEPYRTA
     - name: phenylalanine:pyruvate aminotransferase
     - metabolites: !!omap
@@ -34925,6 +38616,62 @@
       - seed:
         - rxn06444
         - rxn12973
+  - !!omap
+    - id: PIt2rpp
+    - name: Phosphate reversible transport via symport (periplasm)
+    - metabolites: !!omap
+      - h_c: 1.0
+      - h_p: -1.0
+      - pi_c: 1.0
+      - pi_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1005
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN-114
+      - metanetx.reaction: MNXR4295
+  - !!omap
+    - id: PIt7ipp
+    - name: Phosphate transport in via three Na+ symporter (periplasm)
+    - metabolites: !!omap
+      - na1_c: 3.0
+      - na1_p: -3.0
+      - pi_c: 1.0
+      - pi_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0070
+    - annotation: !!omap
+      - metanetx.reaction: MNXR4297
+  - !!omap
+    - id: PItex
+    - name: phosphate transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - pi_e: -1.0
+      - pi_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: PItex
+  - !!omap
+    - id: PIuabcpp
+    - name: Phosphate transport via ABC system (uptake, periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 2.0
+      - pi_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1072 and MCA1073 and MCA1074
+    - annotation: !!omap
+      - biocyc: META:ABC-27-RXN
+      - brenda: 3.6.3.27
+      - metanetx.reaction: MNXR4293
   - !!omap
     - id: PKLi
     - name: Phosphoketolase
@@ -35209,7 +38956,7 @@
       - ppi_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: MCA1188
+    - gene_reaction_rule: MCA1252 or MCA1188
     - annotation: !!omap
       - bigg.reaction: PPA
       - brenda: 3.6.1.1
@@ -36333,6 +40080,36 @@
         - UPA:UCR03035
         - UPA:UER00355
   - !!omap
+    - id: PTRCabcpp
+    - name: Putrescine transport via ABC system (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
+      - ptrc_c: 1.0
+      - ptrc_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0869 and MCA0870 and MCA0871
+    - annotation: !!omap
+      - biocyc: META:ABC-25-RXN
+      - brenda: 3.6.3.31
+      - metanetx.reaction: MNXR4519
+  - !!omap
+    - id: PTRCtex
+    - name: putrescine transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - ptrc_e: -1.0
+      - ptrc_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: PTRCtex
+  - !!omap
     - id: PYK
     - name: Pyruvate kinase
     - metabolites: !!omap
@@ -36379,6 +40156,31 @@
       - upa:
         - UPA:UCR00200
         - UPA:UER00188
+  - !!omap
+    - id: PYRt4pp
+    - name: Pyruvate transport via sodium symport
+    - metabolites: !!omap
+      - na1_c: 1.0
+      - na1_p: -1.0
+      - pyr_c: 1.0
+      - pyr_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1875
+    - annotation: !!omap
+      - metanetx.reaction: MNXR84090
+  - !!omap
+    - id: PYRtex
+    - name: pyruvate transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - pyr_e: -1.0
+      - pyr_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: PYRtex
   - !!omap
     - id: QULNS
     - name: Quinolinate synthase
@@ -36866,7 +40668,7 @@
       - ham_c: 1.0
       - nad_c: 1.0
       - nadh_c: -1.0
-      - nh3_c: -1.0
+      - nh4_c: -1.0
       - o2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -36977,7 +40779,7 @@
     - id: SERD_L
     - name: L-serine deaminase
     - metabolites: !!omap
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - pyr_c: 1.0
       - ser__L_c: -1.0
     - lower_bound: 0.0
@@ -37016,6 +40818,17 @@
       - brenda: 4.2.1.20
       - kegg.reaction: R02722
       - metanetx.reaction: MNXR7565
+  - !!omap
+    - id: SERTHRtpp
+    - name: Serine/Threonine exchanger SteT (periplasm)
+    - metabolites: !!omap
+      - ser__L_c: -1.0
+      - ser__L_p: 1.0
+      - thr__L_c: 1.0
+      - thr__L_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0718 or MCA2830
   - !!omap
     - id: SERTRS
     - name: Seryl-tRNA synthetase
@@ -37074,6 +40887,15 @@
         - '12294'
         - '12295'
       - seed: rxn06446
+  - !!omap
+    - id: SER__Ltex
+    - name: L-serine transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - ser__L_e: -1.0
+      - ser__L_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
   - !!omap
     - id: SGAT
     - name: Serine--glyoxylate aminotransferase
@@ -37327,6 +41149,48 @@
     - annotation: !!omap
       - SBO: SBO:0000375
       - bigg.reaction: SMO
+  - !!omap
+    - id: SO4tex
+    - name: sulfate transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - so4_e: -1.0
+      - so4_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: SO4tex
+  - !!omap
+    - id: SPMDabcpp
+    - name: Spermidine transport via ABC system (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
+      - spmd_c: 1.0
+      - spmd_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0869 and MCA0870 and MCA0871
+    - annotation: !!omap
+      - biocyc: META:ABC-24-RXN
+      - brenda: 3.6.3.31
+      - metanetx.reaction: MNXR4889
+  - !!omap
+    - id: SPMDtex
+    - name: spermidine(3+) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - spmd_e: -1.0
+      - spmd_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: SPMDtex
   - !!omap
     - id: SPMS
     - name: Spermidine synthase
@@ -37640,6 +41504,32 @@
         - UPA:UCR00714
         - UPA:UER01004
   - !!omap
+    - id: SUCCt2_2pp
+    - name: Succinate transport via proton symport (2 H) (periplasm)
+    - metabolites: !!omap
+      - h_c: 2.0
+      - h_p: -2.0
+      - succ_c: 1.0
+      - succ_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1872
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN-121
+      - metanetx.reaction: MNXR4947
+  - !!omap
+    - id: SUCCtex
+    - name: succinate(2-) transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - succ_e: -1.0
+      - succ_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: SUCCtex
+  - !!omap
     - id: SUCOAS
     - name: Succinyl-CoA synthetase (ADP-forming)
     - metabolites: !!omap
@@ -37733,6 +41623,26 @@
       - upa:
         - UPA:UCR00858
         - UPA:UER00207
+  - !!omap
+    - id: SULabcpp
+    - name: Sulfate transport via ABC system (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
+      - so4_c: 1.0
+      - so4_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1181 and MCA1182 and MCA1183
+    - annotation: !!omap
+      - biocyc:
+        - META:3.6.3.25-RXN
+        - META:ABC-70-RXN
+      - brenda: 3.6.3.25
+      - metanetx.reaction: MNXR4968
   - !!omap
     - id: TALA
     - name: Transaldolase
@@ -38017,7 +41927,7 @@
     - name: L-threonine deaminase
     - metabolites: !!omap
       - 2obut_c: 1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - thr__L_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -38138,6 +42048,15 @@
         - '24626'
         - '24627'
       - seed: rxn06447
+  - !!omap
+    - id: THR__Ltex
+    - name: L-threonine zwitterion transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - thr__L_e: -1.0
+      - thr__L_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
   - !!omap
     - id: THZPSN
     - name: Thiazole phosphate synthesis
@@ -38477,6 +42396,37 @@
       - seed:
         - rxn06448
         - rxn13170
+  - !!omap
+    - id: TSULabcpp
+    - name: Thiosulfate transport via ABC system (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
+      - tsul_c: 1.0
+      - tsul_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1181 and MCA1182 and MCA1183
+    - annotation: !!omap
+      - biocyc: META:ABC-7-RXN
+      - brenda: 3.6.3.25
+      - metanetx.reaction: MNXR5156
+  - !!omap
+    - id: TSULtex
+    - name: trioxidosulfanidosulfate(1-) transport via diffusion (extracellular to
+        periplasm)
+    - metabolites: !!omap
+      - tsul_e: -1.0
+      - tsul_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: TSULtex
   - !!omap
     - id: TYRTA
     - name: Tyrosine transaminase
@@ -39320,6 +43270,32 @@
         - UPA:UCR00774
         - UPA:UER00371
   - !!omap
+    - id: UREAabcpp
+    - name: Urea transport via ABC system (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
+      - urea_c: 1.0
+      - urea_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1662
+  - !!omap
+    - id: UREAtex
+    - name: urea_c transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - urea_e: -1.0
+      - urea_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: UREAtex
+  - !!omap
     - id: URIDK2m
     - name: URIDK2m
     - metabolites: !!omap
@@ -39377,7 +43353,7 @@
       - h_c: 1.0
       - nad_c: -1.0
       - nadh_c: 1.0
-      - nh3_c: 1.0
+      - nh4_c: 1.0
       - val__L_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -39505,6 +43481,34 @@
         - '22915'
       - seed: rxn00904
   - !!omap
+    - id: XANt2pp
+    - name: Xanthine transport in via proton symport (periplasm)
+    - metabolites: !!omap
+      - gua_c: 1.0
+      - gua_p: -1.0
+      - h_c: 1.0
+      - h_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1664
+    - annotation: !!omap
+      - biocyc:
+        - META:RXN-5076
+        - META:TRANS-RXN-206
+      - metanetx.reaction: MNXR5350
+  - !!omap
+    - id: XANtex
+    - name: 9H-xanthine transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - xan_e: -1.0
+      - xan_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - SBO: SBO:0000375
+      - bigg.reaction: XANtex
+  - !!omap
     - id: XPPT
     - name: Xanthine phosphoribosyltransferase
     - metabolites: !!omap
@@ -39531,6 +43535,55 @@
         - UPA:UCR02142
         - UPA:UER00658
   - !!omap
+    - id: ZN2t3pp
+    - name: Zinc (Zn+2) transport out via proton antiport (periplasm)
+    - metabolites: !!omap
+      - h_c: 1.0
+      - h_p: -1.0
+      - zn2_c: -2.0
+      - zn2_p: 2.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0079 or MCA1239 or MCA1298 or MCA1767 or MCA0978 or MCA2324
+    - annotation: !!omap
+      - metanetx.reaction: MNXR5386
+  - !!omap
+    - id: ZN2t4pp
+    - name: Zinc transport out via antiport (periplasm)
+    - metabolites: !!omap
+      - h_c: 1.0
+      - h_p: -1.0
+      - k_c: 1.0
+      - k_p: -1.0
+      - zn2_c: -1.0
+      - zn2_p: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1900
+    - annotation: !!omap
+      - metanetx.reaction: MNXR27629
+  - !!omap
+    - id: ZN2tex
+    - name: Zinc transport via diffusion (extracellular to periplasm)
+    - metabolites: !!omap
+      - zn2_e: -1.0
+      - zn2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
+    - id: ZN2tpp
+    - name: Zinc transport in via permease (no H+)
+    - metabolites: !!omap
+      - zn2_c: 1.0
+      - zn2_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0974 or MCA0975 or MCA1728 or MCA2417
+    - annotation: !!omap
+      - biocyc: META:RXN0-12
+      - metanetx.reaction: MNXR5387
+  - !!omap
     - id: ZYMSTR
     - name: Zymosterol reductase
     - metabolites: !!omap
@@ -39549,6 +43602,9 @@
       - metanetx.reaction: MNXR17345
       - seed: rxn03007
 - genes:
+  - !!omap
+    - id: MCA0005
+    - name: MCA0005
   - !!omap
     - id: MCA0006
     - name: MCA0006
@@ -39640,8 +43696,17 @@
     - id: MCA0067
     - name: MCA0067
   - !!omap
+    - id: MCA0070
+    - name: MCA0070
+  - !!omap
     - id: MCA0074
     - name: MCA0074
+  - !!omap
+    - id: MCA0079
+    - name: MCA0079
+  - !!omap
+    - id: MCA0095
+    - name: MCA0095
   - !!omap
     - id: MCA0097
     - name: MCA0097
@@ -39654,6 +43719,9 @@
   - !!omap
     - id: MCA0106
     - name: MCA0106
+  - !!omap
+    - id: MCA0108
+    - name: MCA0108
   - !!omap
     - id: MCA0109
     - name: MCA0109
@@ -39675,6 +43743,9 @@
   - !!omap
     - id: MCA0139
     - name: MCA0139
+  - !!omap
+    - id: MCA0142
+    - name: MCA0142
   - !!omap
     - id: MCA0159
     - name: MCA0159
@@ -39720,6 +43791,9 @@
   - !!omap
     - id: MCA0255
     - name: MCA0255
+  - !!omap
+    - id: MCA0268
+    - name: MCA0268
   - !!omap
     - id: MCA0290
     - name: MCA0290
@@ -39805,6 +43879,9 @@
     - id: MCA0448
     - name: MCA0448
   - !!omap
+    - id: MCA0449
+    - name: MCA0449
+  - !!omap
     - id: MCA0450
     - name: MCA0450
   - !!omap
@@ -39829,6 +43906,9 @@
     - id: MCA0478
     - name: MCA0478
   - !!omap
+    - id: MCA0490
+    - name: MCA0490
+  - !!omap
     - id: MCA0509
     - name: MCA0509
   - !!omap
@@ -39843,6 +43923,9 @@
   - !!omap
     - id: MCA0542
     - name: MCA0542
+  - !!omap
+    - id: MCA0545
+    - name: MCA0545
   - !!omap
     - id: MCA0561
     - name: MCA0561
@@ -39898,6 +43981,9 @@
     - id: MCA0612
     - name: MCA0612
   - !!omap
+    - id: MCA0615
+    - name: MCA0615
+  - !!omap
     - id: MCA0629
     - name: MCA0629
   - !!omap
@@ -39937,8 +44023,14 @@
     - id: MCA0702
     - name: MCA0702
   - !!omap
+    - id: MCA0705
+    - name: MCA0705
+  - !!omap
     - id: MCA0713
     - name: MCA0713
+  - !!omap
+    - id: MCA0718
+    - name: MCA0718
   - !!omap
     - id: MCA0720
     - name: MCA0720
@@ -39997,6 +44089,9 @@
     - id: MCA0789
     - name: MCA0789
   - !!omap
+    - id: MCA0791
+    - name: MCA0791
+  - !!omap
     - id: MCA0797
     - name: MCA0797
   - !!omap
@@ -40036,11 +44131,23 @@
     - id: MCA0847
     - name: MCA0847
   - !!omap
+    - id: MCA0850
+    - name: MCA0850
+  - !!omap
     - id: MCA0858
     - name: MCA0858
   - !!omap
     - id: MCA0859
     - name: MCA0859
+  - !!omap
+    - id: MCA0869
+    - name: MCA0869
+  - !!omap
+    - id: MCA0870
+    - name: MCA0870
+  - !!omap
+    - id: MCA0871
+    - name: MCA0871
   - !!omap
     - id: MCA0879
     - name: MCA0879
@@ -40063,11 +44170,23 @@
     - id: MCA0927
     - name: MCA0927
   - !!omap
+    - id: MCA0928
+    - name: MCA0928
+  - !!omap
     - id: MCA0941
     - name: MCA0941
   - !!omap
     - id: MCA0942
     - name: MCA0942
+  - !!omap
+    - id: MCA0952
+    - name: MCA0952
+  - !!omap
+    - id: MCA0953
+    - name: MCA0953
+  - !!omap
+    - id: MCA0954
+    - name: MCA0954
   - !!omap
     - id: MCA0955
     - name: MCA0955
@@ -40084,6 +44203,18 @@
     - id: MCA0969
     - name: MCA0969
   - !!omap
+    - id: MCA0974
+    - name: MCA0974
+  - !!omap
+    - id: MCA0975
+    - name: MCA0975
+  - !!omap
+    - id: MCA0976
+    - name: MCA0976
+  - !!omap
+    - id: MCA0978
+    - name: MCA0978
+  - !!omap
     - id: MCA0987
     - name: MCA0987
   - !!omap
@@ -40092,6 +44223,12 @@
   - !!omap
     - id: MCA0996
     - name: MCA0996
+  - !!omap
+    - id: MCA1004
+    - name: MCA1004
+  - !!omap
+    - id: MCA1005
+    - name: MCA1005
   - !!omap
     - id: MCA1006
     - name: MCA1006
@@ -40134,6 +44271,15 @@
   - !!omap
     - id: MCA1067
     - name: MCA1067
+  - !!omap
+    - id: MCA1072
+    - name: MCA1072
+  - !!omap
+    - id: MCA1073
+    - name: MCA1073
+  - !!omap
+    - id: MCA1074
+    - name: MCA1074
   - !!omap
     - id: MCA1076
     - name: MCA1076
@@ -40180,11 +44326,23 @@
     - id: MCA1147
     - name: MCA1147
   - !!omap
+    - id: MCA1162
+    - name: MCA1162
+  - !!omap
     - id: MCA1164
     - name: MCA1164
   - !!omap
     - id: MCA1165
     - name: MCA1165
+  - !!omap
+    - id: MCA1181
+    - name: MCA1181
+  - !!omap
+    - id: MCA1182
+    - name: MCA1182
+  - !!omap
+    - id: MCA1183
+    - name: MCA1183
   - !!omap
     - id: MCA1185
     - name: MCA1185
@@ -40240,6 +44398,9 @@
     - id: MCA1234
     - name: MCA1234
   - !!omap
+    - id: MCA1239
+    - name: MCA1239
+  - !!omap
     - id: MCA1240
     - name: MCA1240
   - !!omap
@@ -40257,6 +44418,9 @@
   - !!omap
     - id: MCA1251
     - name: MCA1251
+  - !!omap
+    - id: MCA1252
+    - name: MCA1252
   - !!omap
     - id: MCA1263
     - name: MCA1263
@@ -40288,6 +44452,9 @@
     - id: MCA1294
     - name: MCA1294
   - !!omap
+    - id: MCA1298
+    - name: MCA1298
+  - !!omap
     - id: MCA1303
     - name: MCA1303
   - !!omap
@@ -40314,6 +44481,9 @@
   - !!omap
     - id: MCA1336
     - name: MCA1336
+  - !!omap
+    - id: MCA1346
+    - name: MCA1346
   - !!omap
     - id: MCA1347
     - name: MCA1347
@@ -40447,6 +44617,12 @@
     - id: MCA1501
     - name: MCA1501
   - !!omap
+    - id: MCA1506
+    - name: MCA1506
+  - !!omap
+    - id: MCA1519
+    - name: MCA1519
+  - !!omap
     - id: MCA1522
     - name: MCA1522
   - !!omap
@@ -40501,6 +44677,9 @@
     - id: MCA1578
     - name: MCA1578
   - !!omap
+    - id: MCA1581
+    - name: MCA1581
+  - !!omap
     - id: MCA1587
     - name: MCA1587
   - !!omap
@@ -40543,6 +44722,12 @@
     - id: MCA1660
     - name: MCA1660
   - !!omap
+    - id: MCA1662
+    - name: MCA1662
+  - !!omap
+    - id: MCA1664
+    - name: MCA1664
+  - !!omap
     - id: MCA1665
     - name: MCA1665
   - !!omap
@@ -40576,11 +44761,17 @@
     - id: MCA1697
     - name: MCA1697
   - !!omap
+    - id: MCA1700
+    - name: MCA1700
+  - !!omap
     - id: MCA1716
     - name: MCA1716
   - !!omap
     - id: MCA1717
     - name: MCA1717
+  - !!omap
+    - id: MCA1728
+    - name: MCA1728
   - !!omap
     - id: MCA1734
     - name: MCA1734
@@ -40615,6 +44806,18 @@
     - id: MCA1756
     - name: MCA1756
   - !!omap
+    - id: MCA1760
+    - name: MCA1760
+  - !!omap
+    - id: MCA1761
+    - name: MCA1761
+  - !!omap
+    - id: MCA1762
+    - name: MCA1762
+  - !!omap
+    - id: MCA1767
+    - name: MCA1767
+  - !!omap
     - id: MCA1776
     - name: MCA1776
   - !!omap
@@ -40638,6 +44841,9 @@
   - !!omap
     - id: MCA1798
     - name: MCA1798
+  - !!omap
+    - id: MCA1801
+    - name: MCA1801
   - !!omap
     - id: MCA1804
     - name: MCA1804
@@ -40684,6 +44890,12 @@
     - id: MCA1871
     - name: MCA1871
   - !!omap
+    - id: MCA1872
+    - name: MCA1872
+  - !!omap
+    - id: MCA1875
+    - name: MCA1875
+  - !!omap
     - id: MCA1876
     - name: MCA1876
   - !!omap
@@ -40696,6 +44908,12 @@
     - id: MCA1899
     - name: MCA1899
   - !!omap
+    - id: MCA1900
+    - name: MCA1900
+  - !!omap
+    - id: MCA1907
+    - name: MCA1907
+  - !!omap
     - id: MCA1918
     - name: MCA1918
   - !!omap
@@ -40704,6 +44922,9 @@
   - !!omap
     - id: MCA1922
     - name: MCA1922
+  - !!omap
+    - id: MCA1929
+    - name: MCA1929
   - !!omap
     - id: MCA1933
     - name: MCA1933
@@ -40813,6 +45034,9 @@
     - id: MCA2040
     - name: MCA2040
   - !!omap
+    - id: MCA2041
+    - name: MCA2041
+  - !!omap
     - id: MCA2043
     - name: MCA2043
   - !!omap
@@ -40834,6 +45058,9 @@
     - id: MCA2052
     - name: MCA2052
   - !!omap
+    - id: MCA2058
+    - name: MCA2058
+  - !!omap
     - id: MCA2059
     - name: MCA2059
   - !!omap
@@ -40854,6 +45081,9 @@
   - !!omap
     - id: MCA2068
     - name: MCA2068
+  - !!omap
+    - id: MCA2072
+    - name: MCA2072
   - !!omap
     - id: MCA2075
     - name: MCA2075
@@ -40891,6 +45121,9 @@
     - id: MCA2127
     - name: MCA2127
   - !!omap
+    - id: MCA2136
+    - name: MCA2136
+  - !!omap
     - id: MCA2148
     - name: MCA2148
   - !!omap
@@ -40908,6 +45141,15 @@
   - !!omap
     - id: MCA2204
     - name: MCA2204
+  - !!omap
+    - id: MCA2215
+    - name: MCA2215
+  - !!omap
+    - id: MCA2216
+    - name: MCA2216
+  - !!omap
+    - id: MCA2217
+    - name: MCA2217
   - !!omap
     - id: MCA2219
     - name: MCA2219
@@ -40932,6 +45174,9 @@
   - !!omap
     - id: MCA2260
     - name: MCA2260
+  - !!omap
+    - id: MCA2264
+    - name: MCA2264
   - !!omap
     - id: MCA2270
     - name: MCA2270
@@ -41008,6 +45253,9 @@
     - id: MCA2317
     - name: MCA2317
   - !!omap
+    - id: MCA2324
+    - name: MCA2324
+  - !!omap
     - id: MCA2332
     - name: MCA2332
   - !!omap
@@ -41061,6 +45309,9 @@
   - !!omap
     - id: MCA2405
     - name: MCA2405
+  - !!omap
+    - id: MCA2417
+    - name: MCA2417
   - !!omap
     - id: MCA2418
     - name: MCA2418
@@ -41151,6 +45402,9 @@
   - !!omap
     - id: MCA2496
     - name: MCA2496
+  - !!omap
+    - id: MCA2509
+    - name: MCA2509
   - !!omap
     - id: MCA2513
     - name: MCA2513
@@ -41245,6 +45499,9 @@
     - id: MCA2629
     - name: MCA2629
   - !!omap
+    - id: MCA2692
+    - name: MCA2692
+  - !!omap
     - id: MCA2699
     - name: MCA2699
   - !!omap
@@ -41269,6 +45526,9 @@
     - id: MCA2715
     - name: MCA2715
   - !!omap
+    - id: MCA2720
+    - name: MCA2720
+  - !!omap
     - id: MCA2724
     - name: MCA2724
   - !!omap
@@ -41283,6 +45543,9 @@
   - !!omap
     - id: MCA2730
     - name: MCA2730
+  - !!omap
+    - id: MCA2735
+    - name: MCA2735
   - !!omap
     - id: MCA2738
     - name: MCA2738
@@ -41352,6 +45615,9 @@
   - !!omap
     - id: MCA2805
     - name: MCA2805
+  - !!omap
+    - id: MCA2830
+    - name: MCA2830
   - !!omap
     - id: MCA2844
     - name: MCA2844
@@ -41497,6 +45763,9 @@
     - id: MCA3055
     - name: MCA3055
   - !!omap
+    - id: MCA3057
+    - name: MCA3057
+  - !!omap
     - id: MCA3060
     - name: MCA3060
   - !!omap
@@ -41511,6 +45780,9 @@
   - !!omap
     - id: MCA3071
     - name: MCA3071
+  - !!omap
+    - id: MCA3074
+    - name: MCA3074
   - !!omap
     - id: MCA3079
     - name: MCA3079
