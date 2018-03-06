@@ -1,0 +1,25 @@
+language: python
+sudo: false
+python: 3.5
+cache:
+  pip: true
+git:
+  depth: 2000
+env:
+  global:
+  - DEPLOY_BRANCH="gh-pages"
+
+before_install:
+# travis_retry may overcome some poor network conditions
+- travis_retry pip install -U pip setuptools wheel
+install:
+- travis_retry pip install -r requirements.txt
+
+# as set up in 'memote.ini' this will create a JSON file in Results
+script:
+- git checkout master
+- memote run
+
+# Changed from 'deploy' to 'after_script' so that we deploy even after failures.
+after_script:
+- scripts/deploy.sh
