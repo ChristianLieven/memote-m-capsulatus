@@ -170,8 +170,8 @@
     - id: 1agpgafa_c
     - name: 1-Acyl-sn-glycero-3-phosphoglycerol (Average Fatty Acid)
     - compartment: c
-    - charge: -2
-    - formula: C19H37O7P1
+    - charge: -1000
+    - formula: C19041H37055O6998P1000
   - !!omap
     - id: 1p3h5c_c
     - name: 1-pyrroline-3-hydroxy-5-carboxylate
@@ -5179,8 +5179,8 @@
     - id: cdpdag_MC_c
     - name: CDPdiacylglycerol
     - compartment: c
-    - charge: -2
-    - formula: C44H79N3O15P2
+    - charge: 0
+    - formula: C44082H79110N3000O14996P2000
   - !!omap
     - id: cechddd_c
     - name: 3-(cis-5,6-dihydroxycyclohexa-1,3-dienyl)propanoate
@@ -5683,8 +5683,8 @@
     - id: clpn_MC_c
     - name: Cardiolipin
     - compartment: c
-    - charge: -2
-    - formula: C73H140O17P2
+    - charge: 2000
+    - formula: C73164H140220O16992P2000
   - !!omap
     - id: cmp_c
     - name: CMP
@@ -6172,6 +6172,12 @@
         - REACTOME:110577
       - seed.compound: cpd00052
       - upa: UPA:UPC00063
+  - !!omap
+    - id: cu_c
+    - name: Copper
+    - compartment: c
+    - charge: 2
+    - formula: Cu
   - !!omap
     - id: cys__L_c
     - name: L-cysteine zwitterion
@@ -12049,13 +12055,13 @@
     - name: mc_fattyacid_c
     - compartment: c
     - charge: -1
-    - formula: C16H31O2
+    - formula: C16041H31055O1998
   - !!omap
     - id: mc_fattyacidcoa_c
     - name: mc_fattyacidcoa_c
     - compartment: c
-    - charge: -4
-    - formula: C37H62N7O17P3S
+    - charge: -3001
+    - formula: C37041H62055N7000O16998P3000S1000
   - !!omap
     - id: meoh_c
     - name: methanol
@@ -13637,8 +13643,8 @@
     - id: pa_MC_c
     - name: 1,2-sn-glycerol 3-phosphate
     - compartment: c
-    - charge: -2
-    - formula: C35H67O8P1
+    - charge: 0
+    - formula: C35082H67110O7996P1000
   - !!omap
     - id: pac_c
     - name: phenylacetate
@@ -13797,14 +13803,14 @@
     - id: pc_MC_c
     - name: Phosphatidylcholine
     - compartment: c
-    - charge: 0
-    - formula: C40H80N1O8P1
+    - charge: 3000
+    - formula: C40082H75110N1000O7996P1000
   - !!omap
     - id: pdme_c
     - name: Phosphatidyldimethylethanolamine
     - compartment: c
-    - charge: 0
-    - formula: C39H78N1O8P1
+    - charge: 2000
+    - formula: C39082H78110N1000O7996P1000
   - !!omap
     - id: pdx5p_c
     - name: pyridoxine 5'-phosphate(2-)
@@ -13831,8 +13837,8 @@
     - id: pe_MC_c
     - name: Phosphatidylethanolamin
     - compartment: c
-    - charge: 0
-    - formula: C37H74N1O8P1
+    - charge: 2000
+    - formula: C37082H74110N1000O7996P1000
   - !!omap
     - id: pep_c
     - name: phosphoenolpyruvate
@@ -13889,8 +13895,8 @@
     - id: pg_MC_c
     - name: Phosphatidylglycerol
     - compartment: c
-    - charge: -1
-    - formula: C38H74O10P1
+    - charge: 1000
+    - formula: C38082H74110O9996P1000
   - !!omap
     - id: pgp_EC_c
     - name: 3-(3-sn-phosphatidyl)-sn-glycerol 1-phosphate
@@ -13921,8 +13927,8 @@
     - id: pgp_MC_c
     - name: Phosphatidylglycerophosphate
     - compartment: c
-    - charge: -3
-    - formula: C38H73O13P2
+    - charge: -1000
+    - formula: C38082H73110O12996P2000
   - !!omap
     - id: phaccoa_c
     - name: phenylacetyl-CoA(4-)
@@ -14313,8 +14319,8 @@
     - id: pme_c
     - name: Phosphatidylmethylethanolamine
     - compartment: c
-    - charge: 0
-    - formula: C38H76N1O8P1
+    - charge: 2000
+    - formula: C38082H76110N1000O7996P1000
   - !!omap
     - id: pmtcoa_c
     - name: palmitoyl-CoA
@@ -15099,8 +15105,8 @@
     - id: ps_MC_c
     - name: Phosphatidylserine
     - compartment: c
-    - charge: -1
-    - formula: C38H73N1O10P1
+    - charge: 1000
+    - formula: C38082H73110N1000O9996P1000
   - !!omap
     - id: pser__L_c
     - name: O-phospho-L-serine
@@ -15461,68 +15467,6 @@
       - metanetx.chemical: MNXM1539
       - seed.compound: cpd03423
       - upa: UPA:UPC05775
-  - !!omap
-    - id: retinal_c
-    - name: retinal
-    - compartment: c
-    - charge: 0
-    - formula: C20H28O
-    - annotation: !!omap
-      - bigg.metabolite: retinal
-      - biocyc: META:RETINAL
-      - biopath: BIOPATH:all-trans-Retinal
-      - chebi:
-        - CHEBI:15035
-        - CHEBI:17898
-        - CHEBI:12776
-        - CHEBI:22348
-        - CHEBI:8814
-      - hmdb: HMDB01358
-      - inchi: InChI=1S/C20H28O/c1-16(8-6-9-17(2)13-15-21)11-12-19-18(3)10-7-14-20(19,4)5/h6,8-9,11-13,15H,7,10,14H2,1-5H3/b9-6+,12-11+,16-8+,17-13+
-      - kegg.compound: C00376
-      - lipidmaps: LIPIDMAPS:LMPR01090002
-      - metanetx.chemical: MNXM425
-      - reactome:
-        - REACTOME:2466098
-        - REACTOME:975622
-      - seed.compound: cpd00304
-  - !!omap
-    - id: retinol_c
-    - name: all-trans-retinol
-    - compartment: c
-    - charge: 0
-    - formula: C20H30O
-    - annotation: !!omap
-      - bigg.metabolite: retinol
-      - biocyc:
-        - META:CPD-13524
-        - META:Retinols
-      - biopath: BIOPATH:all-trans-Retinol_(Vitamin_A)
-      - chebi:
-        - CHEBI:12777
-        - CHEBI:17336
-        - CHEBI:8816
-        - CHEBI:22349
-        - CHEBI:12783
-        - CHEBI:50211
-        - CHEBI:15037
-        - CHEBI:26538
-      - hmdb: HMDB00305
-      - inchi: InChI=1S/C20H30O/c1-16(8-6-9-17(2)13-15-21)11-12-19-18(3)10-7-14-20(19,4)5/h6,8-9,11-13,21H,7,10,14-15H2,1-5H3/b9-6+,12-11+,16-8+,17-13+
-      - kegg.compound:
-        - C00473
-        - D06543
-        - C17276
-      - lipidmaps:
-        - LIPIDMAPS:LMPR01090000
-        - LIPIDMAPS:LMPR01090001
-      - metanetx.chemical: MNXM329
-      - reactome:
-        - REACTOME:30209
-        - REACTOME:975590
-      - seed.compound:
-        - cpd00365
-        - ' cpd12577'
   - !!omap
     - id: rhcys_c
     - name: S-(5-deoxy-D-ribos-5-yl)-L-homocysteine zwitterion
@@ -18478,11 +18422,11 @@
     - name: 1 3,4-dihydroxyphenylethyleneglycol + 1 NAD(+) = 1 H(+) + 1 NADH(2-) +
         1 3,4-dihydroxymandelaldehyde
     - metabolites: !!omap
-      - 34dhmald_c: 1.0
-      - 34dhoxpeg_c: -1.0
-      - h_c: 1.0
-      - nad_c: -1.0
-      - nadh_c: 1.0
+      - 34dhmald_c: -1.0
+      - 34dhoxpeg_c: 1.0
+      - h_c: -1.0
+      - nad_c: 1.0
+      - nadh_c: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0775
@@ -19125,7 +19069,7 @@
       - hco3_c: -1.0
       - malcoa_c: 1.0
       - pi_c: 1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1045 or MCA1046 or MCA1804 or MCA2493
     - annotation: !!omap
@@ -19720,10 +19664,10 @@
     - id: ADCL_c
     - name: 1 H(+) + 1 pyruvate + 1 4-aminobenzoate = 1 4-amino-4-deoxychorismate(1-)
     - metabolites: !!omap
-      - 4abz_c: -1.0
-      - 4adcho_c: 1.0
-      - h_c: -1.0
-      - pyr_c: -1.0
+      - 4abz_c: 1.0
+      - 4adcho_c: -1.0
+      - h_c: 1.0
+      - pyr_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1998
@@ -19747,13 +19691,13 @@
     - name: 1 H(+) + 1 adenosylcobinamide + 1 ADP + 1 phosphate = 1 (2R)-2-hydroxypropylammonium
         + 1 ATP + 1 adenosylcobyrate
     - metabolites: !!omap
-      - adcobhex_c: 1.0
-      - adocbi_c: -1.0
-      - adp_c: -1.0
-      - appl_c: 1.0
-      - atp_c: 1.0
-      - h_c: -1.0
-      - pi_c: -1.0
+      - adcobhex_c: -1.0
+      - adocbi_c: 1.0
+      - adp_c: 1.0
+      - appl_c: -1.0
+      - atp_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2287 or MCA2288
@@ -19962,11 +19906,11 @@
     - id: ADNK1_c
     - name: 1 H(+) + 1 AMP + 1 ADP = 1 adenosine + 1 ATP
     - metabolites: !!omap
-      - adn_c: 1.0
-      - adp_c: -1.0
-      - amp_c: -1.0
-      - atp_c: 1.0
-      - h_c: -1.0
+      - adn_c: -1.0
+      - adp_c: 1.0
+      - amp_c: 1.0
+      - atp_c: -1.0
+      - h_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0047 or MCA0448 or MCA0827 or MCA1322 or MCA2418
@@ -20345,29 +20289,6 @@
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
-    - id: AGPOP_c
-    - name: 1 pyruvate + 1 dGTP(3-) = 1 H(+) + 1 dGDP + 1 phosphoenolpyruvate
-    - metabolites: !!omap
-      - dgdp_c: 1.0
-      - dgtp_c: -1.0
-      - h_c: 1.0
-      - pep_c: 1.0
-      - pyr_c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 0.0
-    - gene_reaction_rule: MCA2597 or MCA2886
-    - annotation: !!omap
-      - bigg.reaction: AGPOP
-      - brenda: 2.7.1.40
-      - kegg.reaction: R01858
-      - metanetx.reaction: MNXR59293
-      - rhea:
-        - '30791'
-        - '30792'
-        - '30793'
-        - '30794'
-      - seed: rxn01354
-  - !!omap
     - id: AGPR_c
     - name: 1 H(+) + 1 N-acetyl-L-gamma-glutamyl phosphate(3-) + 1 NADPH = 1 2-acetamido-5-oxopentanoate
         + 1 NADP(+) + 1 phosphate
@@ -20579,7 +20500,7 @@
       - for_c: -1.0
       - fprica_c: 1.0
       - pi_c: 1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1747
     - annotation: !!omap
@@ -21022,12 +20943,12 @@
     - id: ALCD2if_c
     - name: 1 H(+) + 1 NADH(2-) + 1 acetaldehyde = 1 ethanol + 1 NAD(+)
     - metabolites: !!omap
-      - acald_c: -1.0
-      - etoh_c: 1.0
-      - h_c: -1.0
-      - nad_c: 1.0
-      - nadh_c: -1.0
-    - lower_bound: -1000.0
+      - acald_c: 1.0
+      - etoh_c: -1.0
+      - h_c: 1.0
+      - nad_c: -1.0
+      - nadh_c: 1.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0775 or MCA0299 or MCA0779 or MCA0782
     - annotation: !!omap
@@ -21064,12 +20985,12 @@
     - id: ALCD2y_c
     - name: 1 H(+) + 1 NADPH + 1 acetaldehyde = 1 ethanol + 1 NADP(+)
     - metabolites: !!omap
-      - acald_c: -1.0
-      - etoh_c: 1.0
-      - h_c: -1.0
-      - nadp_c: 1.0
-      - nadph_c: -1.0
-    - lower_bound: -1000.0
+      - acald_c: 1.0
+      - etoh_c: -1.0
+      - h_c: 1.0
+      - nadp_c: -1.0
+      - nadph_c: 1.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0299 or MCA0775 or MCA0779 or MCA0782
     - annotation: !!omap
@@ -21376,10 +21297,10 @@
     - id: APG3PAT_MC_c
     - name: Acyl-phosphate:glycerol-3-phosphate acyltransferase
     - metabolites: !!omap
-      - 1agpgafa_c: -1.0
+      - 1agpgafa_c: -0.001
       - coa_c: 1.0
-      - mc_fattyacidcoa_c: -1.0
-      - pa_MC_c: 1.0
+      - mc_fattyacidcoa_c: -0.001
+      - pa_MC_c: 0.001
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0058 or MCA2052
@@ -21879,39 +21800,6 @@
         - UPA:UCR00578
         - UPA:UER00195
   - !!omap
-    - id: ASNS2_c
-    - name: 1 H(+) + 1 diphosphate(3-) + 1 AMP + 1 L-asparagine zwitterion = 1 NH4(+)
-        + 1 ATP + 1 L-aspartate(1-)
-    - metabolites: !!omap
-      - amp_c: 1.0
-      - asn__L_c: 1.0
-      - asp__L_c: -1.0
-      - atp_c: -1.0
-      - h_c: 1.0
-      - nh3_c: -1.0
-      - ppi_c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0472 or MCA0542 or MCA2127
-    - annotation: !!omap
-      - bigg.reaction: ASNS2
-      - biocyc: META:ASNSYNA-RXN
-      - biopath: BIOPATH:RXN00825
-      - brenda:
-        - 6.3.1.1
-        - 6.3.5.4
-      - kegg.reaction: R00483
-      - metanetx.reaction: MNXR844
-      - rhea:
-        - '11372'
-        - '11373'
-        - '11374'
-        - '11375'
-      - seed: rxn00340
-      - upa:
-        - UPA:UCR00483
-        - UPA:UER00194
-  - !!omap
     - id: ASNTRAT_c
     - name: 1 H2O + 1 ATP + 1 L-glutamine zwitterion + 1 L-aspartyl-tRNA(Asn) = 2
         H(+) + 1 ADP + 1 L-glutamate + 1 Asn-tRNA(Asn) + 1 phosphate
@@ -22314,16 +22202,16 @@
       - seed: rxn06936
   - !!omap
     - id: ATPM_c
-    - name: 1 H2O + 1 ATP = 1 H(+) + 1 ADP + 1 phosphate
+    - name: ATP maintenance requirement
     - metabolites: !!omap
       - adp_c: 1.0
       - atp_c: -1.0
       - h2o_c: -1.0
       - h_c: 1.0
       - pi_c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0046
+    - lower_bound: 8.39
+    - upper_bound: 8.39
+    - gene_reaction_rule: ''
     - annotation: !!omap
       - bigg.reaction: ATPM
       - biocyc:
@@ -22621,26 +22509,29 @@
       - 6pgc_c: -0.00015
       - accoa_c: -0.0001
       - adocbl_c: -6.0e-08
-      - adp_c: 24.248
-      - ala__L_c: -0.722
+      - adp_c: 23.08742079
+      - ala__L_c: -0.576
       - amet_c: -0.00022
-      - amp_c: -0.038
-      - arg__L_c: -0.285
+      - arg__L_c: -0.254
       - asn__L_c: -0.119
-      - asp__L_c: -0.537
-      - atp_c: -24.25
+      - asp__L_c: -0.468
+      - atp_c: -23.11185589
+      - ca2_c: -0.06986377
       - cit_c: -0.001
-      - clpn_MC_c: -0.003
-      - cmp_c: -0.069
+      - cl_c: -0.21438646
+      - clpn_MC_c: -3.15904e-06
       - coa_c: -0.00022
+      - cobalt2_c: -5.769e-05
       - colipa_e: -0.002
-      - cpoa2h_c: -0.002
-      - cys__L_c: -0.045
-      - damp_c: -0.013
-      - dcmp_c: -0.022
-      - dgmp_c: -0.0025
-      - dpterol_c: -0.013
-      - dtmp_c: -0.014
+      - cpoa2h_c: -0.00186552
+      - ctp_c: -0.04425885
+      - cu_c: -0.00151072
+      - cys__L_c: -0.038
+      - datp_c: -0.00866366
+      - dctp_c: -0.01571821
+      - dgtp_c: -0.01446787
+      - dpterol_c: -0.01282849
+      - dttp_c: -0.00882698
       - f6p_c: -0.003
       - fad_c: -0.00022
       - fdp_c: -0.001
@@ -22650,60 +22541,63 @@
       - fum_c: -0.001
       - g3p_c: -0.003
       - g6p_c: -0.002
-      - glc__D_c: -0.249
+      - glc__D_c: -0.24977798
       - gln__L_c: -0.15
       - glu__L_c: -0.519
-      - gly_c: -0.483
+      - gly_c: -0.484
       - glyc_R_c: -0.001
-      - gmp_c: -0.061
       - gthrd_c: -0.00022
-      - h2o_c: -24.25
-      - h_c: 24.25
-      - hdca_c: -0.016
+      - gtp_c: -0.04084668
+      - h2o_c: -17.77579456
+      - h_c: 23.08742079
+      - hdca_c: -0.01558994
       - his__L_c: -0.104
-      - hpdca_c: -0.002
+      - hpdca_c: -0.00179858
       - ile__L_c: -0.242
-      - inost_c: -0.0002
-      - lanost_c: -0.005
+      - inost_c: -0.00016652
+      - k_c: -0.17647826
+      - lanost_c: -0.00515564
       - leu__L_c: -0.415
-      - lys__L_c: -0.278
+      - lys__L_c: -0.277
       - mal__L_c: -0.004
       - met__L_c: -0.13
-      - nac_c: -0.001
+      - mg2_c: -0.12343139
+      - na1_c: -0.03914785
+      - nac_c: -0.00106469
       - nad_c: -0.002
       - nadh_c: -0.002
       - nadp_c: -0.001
       - nadph_c: -0.001
-      - ocdca_c: -0.0001
-      - ocdcea_c: -0.0001
-      - pc_MC_c: -0.008
-      - pe_MC_c: -0.081
+      - ocdca_c: -8.548e-05
+      - ocdcea_c: -0.00014349
+      - pc_MC_c: -9.37385e-06
+      - pe_MC_c: -9.134262e-05
       - pep_c: -0.005
       - peptido_MC_c: -0.053
-      - pg_MC_c: -0.014
+      - pg_MC_c: -1.538077e-05
       - phe__L_c: -0.185
       - pheme_c: -0.00022
-      - pi_c: 24.25
-      - ppi_c: -0.029
+      - pi_c: 22.88736056
+      - ppi_c: 0.18282505
       - pro__L_c: -0.248
-      - ptdca_c: -0.0002
+      - ptdca_c: -0.00023422
       - pyr_c: -0.015
       - q8h2_im: -0.00022
-      - ribflv_c: -0.00019
+      - ribflv_c: -0.00019396
       - ru5p_D_c: -0.001
       - ser__L_c: -0.246
-      - sql_c: -0.013
+      - sql_c: -0.01339118
       - succ_c: -0.002
-      - thmpp_c: -3.0e-05
+      - thmpp_c: -2.865e-05
       - thr__L_c: -0.271
       - trp__L_c: -0.093
-      - ttdca_c: -0.001
-      - ttdcea_c: -0.0002
+      - ttdca_c: -0.0014565
+      - ttdcea_c: -0.00017921
       - tyr__L_c: -0.132
-      - ump_c: -0.04
+      - utp_c: -0.02560771
       - val__L_c: -0.36
     - lower_bound: 0.1
-    - upper_bound: 0.1
+    - upper_bound: 1000.0
     - gene_reaction_rule: ''
     - objective_coefficient: 1.0
   - !!omap
@@ -23128,9 +23022,9 @@
     - id: CLPNS_MC_c
     - name: Cardiolipin synthase
     - metabolites: !!omap
-      - clpn_MC_c: 1.0
+      - clpn_MC_c: 0.001
       - glyc_c: 1.0
-      - pg_MC_c: -2.0
+      - pg_MC_c: -0.002
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
@@ -23481,34 +23375,6 @@
       - upa:
         - UPA:UCR00351
         - UPA:UER00717
-  - !!omap
-    - id: CTPS1_c
-    - name: 2 H(+) + 1 CTP(3-) + 1 ADP + 1 phosphate = 1 UTP (3-) + 1 NH4(+) + 1 ATP
-    - metabolites: !!omap
-      - adp_c: 1.0
-      - atp_c: -1.0
-      - ctp_c: 1.0
-      - h_c: 2.0
-      - nh3_c: -1.0
-      - pi_c: 1.0
-      - utp_c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA2513
-    - annotation: !!omap
-      - bigg.reaction: CTPS1
-      - brenda: 6.3.4.2
-      - kegg.reaction: R00571
-      - metanetx.reaction: MNXR1317
-      - rhea:
-        - '16597'
-        - '16598'
-        - '16599'
-        - '16600'
-      - seed: rxn00410
-      - upa:
-        - UPA:UCR00571
-        - UPA:UER00277
   - !!omap
     - id: CTPS2_c
     - name: 2 H(+) + 1 CTP(3-) + 1 ADP + 1 L-glutamate + 1 phosphate = 1 UTP (3-)
@@ -23947,10 +23813,10 @@
     - id: CYTK1_c
     - name: 1 CDP + 1 ADP = 1 ATP + 1 CMP
     - metabolites: !!omap
-      - adp_c: -1.0
-      - atp_c: 1.0
-      - cdp_c: -1.0
-      - cmp_c: 1.0
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - cdp_c: 1.0
+      - cmp_c: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1414
@@ -23974,10 +23840,10 @@
     - id: CYTK2_c
     - name: 1 dCDP + 1 ADP = 1 dCMP(2-) + 1 ATP
     - metabolites: !!omap
-      - adp_c: -1.0
-      - atp_c: 1.0
-      - dcdp_c: -1.0
-      - dcmp_c: 1.0
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - dcdp_c: 1.0
+      - dcmp_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1414
@@ -24014,10 +23880,10 @@
     - id: DADK_c
     - name: 1 dADP + 1 ADP = 1 ATP + 1 dAMP
     - metabolites: !!omap
-      - adp_c: -1.0
-      - atp_c: 1.0
-      - dadp_c: -1.0
-      - damp_c: 1.0
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - dadp_c: 1.0
+      - damp_c: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2066
@@ -24114,29 +23980,6 @@
       - upa:
         - UPA:UCR02735
         - UPA:UER00025
-  - !!omap
-    - id: DAPOP_c
-    - name: 1 pyruvate + 1 dATP = 1 H(+) + 1 dADP + 1 phosphoenolpyruvate
-    - metabolites: !!omap
-      - dadp_c: 1.0
-      - datp_c: -1.0
-      - h_c: 1.0
-      - pep_c: 1.0
-      - pyr_c: -1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA2597 or MCA2886
-    - annotation: !!omap
-      - bigg.reaction: DAPOP
-      - brenda: 2.7.1.40
-      - kegg.reaction: R01138
-      - metanetx.reaction: MNXR59224
-      - rhea:
-        - '30727'
-        - '30728'
-        - '30729'
-        - '30730'
-      - seed: rxn00840
   - !!omap
     - id: DB4PS_c
     - name: 1 H(+) + 1 1-deoxy-L-glycero-tetrulose 4-phosphate + 1 formate = 1 D-ribulose
@@ -24304,7 +24147,7 @@
       - h_c: -1.0
       - nadp_c: 1.0
       - nadph_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1404
     - annotation: !!omap
@@ -24349,10 +24192,10 @@
     - id: DGK1_c
     - name: 1 dGDP + 1 ADP = 1 ATP + 1 dGMP(2-)
     - metabolites: !!omap
-      - adp_c: -1.0
-      - atp_c: 1.0
-      - dgdp_c: -1.0
-      - dgmp_c: 1.0
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - dgdp_c: 1.0
+      - dgmp_c: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2975
@@ -24372,12 +24215,12 @@
     - id: DGNSKm_c
     - name: 1 H(+) + 1 dGMP(2-) + 1 ADP = 1 ATP + 1 2'-deoxyguanosine
     - metabolites: !!omap
-      - adp_c: -1.0
-      - atp_c: 1.0
-      - dgmp_c: -1.0
-      - dgsn_c: 1.0
-      - h_c: -1.0
-    - lower_bound: -1000.0
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - dgmp_c: 1.0
+      - dgsn_c: -1.0
+      - h_c: 1.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0448 or MCA0827 or MCA1322 or MCA2418
     - annotation: !!omap
@@ -24543,7 +24386,7 @@
       - h_c: -1.0
       - nad_c: 1.0
       - nadh_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2729
     - annotation: !!omap
@@ -24562,7 +24405,7 @@
       - nad_c: 1.0
       - nadh_c: -1.0
       - thf_c: 1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2729
     - annotation: !!omap
@@ -24621,13 +24464,13 @@
     - name: 1 H(+) + 1 dihydrofolate(2-) + 1 ADP + 1 phosphate = 1 ATP + 1 L-glutamate
         + 1 7,8-dihydropteroate
     - metabolites: !!omap
-      - adp_c: -1.0
-      - atp_c: 1.0
-      - dhf_c: -1.0
-      - dhpt_c: 1.0
-      - glu__L_c: 1.0
-      - h_c: -1.0
-      - pi_c: -1.0
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - dhf_c: 1.0
+      - dhpt_c: -1.0
+      - glu__L_c: -1.0
+      - h_c: 1.0
+      - pi_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2492
@@ -25084,12 +24927,12 @@
     - name: 1 NH4(+) + 1 5-amino-2-oxopentanoic acid zwitterion + 1 hydrogen peroxide
         = 1 D-ornithinium(1+) + 1 H2O + 1 dioxygen
     - metabolites: !!omap
-      - 5a2opntn_c: -1.0
-      - h2o2_c: -1.0
-      - h2o_c: 1.0
-      - nh3_c: -1.0
-      - o2_c: 1.0
-      - orn_D_c: 1.0
+      - 5a2opntn_c: 1.0
+      - h2o2_c: 1.0
+      - h2o_c: -1.0
+      - nh3_c: 1.0
+      - o2_c: -1.0
+      - orn_D_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0106
@@ -25222,10 +25065,10 @@
     - id: DTMPK_c
     - name: 1 dTDP + 1 ADP = 1 dTMP + 1 ATP
     - metabolites: !!omap
-      - adp_c: -1.0
-      - atp_c: 1.0
-      - dtdp_c: -1.0
-      - dtmp_c: 1.0
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - dtdp_c: 1.0
+      - dtmp_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1996
@@ -25383,7 +25226,7 @@
       - nad_c: 1.0
       - nadh_c: -1.0
       - tdec2eACP_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1263
     - annotation: !!omap
@@ -25401,7 +25244,7 @@
       - nadp_c: 1.0
       - nadph_c: -1.0
       - tdec2eACP_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1263
     - annotation: !!omap
@@ -25780,7 +25623,7 @@
       - 2pg_c: -1.0
       - h2o_c: 1.0
       - pep_c: 1.0
-    - lower_bound: 0.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1933 or MCA2515
     - annotation: !!omap
@@ -27556,7 +27399,7 @@
     - name: Ca(2+) exchange
     - metabolites: !!omap
       - ca2_c: -1.0
-    - lower_bound: 0.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -27659,9 +27502,9 @@
     - id: EX_ch4_p
     - name: methane exchange
     - metabolites: !!omap
-      - ch4_p: 1.0
-    - lower_bound: 0.1
-    - upper_bound: 108.572548727957
+      - ch4_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: -0.1
     - gene_reaction_rule: ''
   - !!omap
     - id: EX_chlstol_c
@@ -27756,7 +27599,7 @@
     - name: Cl(-) exchange
     - metabolites: !!omap
       - cl_c: -1.0
-    - lower_bound: 0.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -27780,7 +27623,7 @@
     - name: CO(2) exchange
     - metabolites: !!omap
       - co2_c: -1.0
-    - lower_bound: -4.93511585127076
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -27949,6 +27792,14 @@
     - metabolites: !!omap
       - ctp_c: -1.0
     - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+  - !!omap
+    - id: EX_cu_c
+    - name: Cu+ exchange
+    - metabolites: !!omap
+      - cu_c: -1.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -29516,7 +29367,7 @@
     - name: K(+) exchange
     - metabolites: !!omap
       - k_c: -1.0
-    - lower_bound: 0.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -29780,7 +29631,7 @@
     - name: Mg(2+) exchange
     - metabolites: !!omap
       - mg2_c: -1.0
-    - lower_bound: 0.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -29876,7 +29727,7 @@
     - name: Na(+) exchange
     - metabolites: !!omap
       - na1_c: -1.0
-    - lower_bound: 0.0
+    - lower_bound: -1.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -29988,7 +29839,7 @@
     - name: dioxygen exchange
     - metabolites: !!omap
       - o2_c: -1.0
-    - lower_bound: -194.443564540068
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -30670,22 +30521,6 @@
     - name: alpha-ribazole exchange
     - metabolites: !!omap
       - rdmbzi_c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: ''
-  - !!omap
-    - id: EX_retinal_c
-    - name: retinal exchange
-    - metabolites: !!omap
-      - retinal_c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: ''
-  - !!omap
-    - id: EX_retinol_c
-    - name: all-trans-retinol exchange
-    - metabolites: !!omap
-      - retinol_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
@@ -31829,12 +31664,12 @@
     - name: 1 diphosphate(3-) + 1 AMP + 1 palmitoyl-CoA = 1 palmitate + 1 CoA + 1
         ATP
     - metabolites: !!omap
-      - amp_c: -1.0
-      - atp_c: 1.0
-      - coa_c: 1.0
-      - hdca_c: 1.0
-      - pmtcoa_c: -1.0
-      - ppi_c: -1.0
+      - amp_c: 1.0
+      - atp_c: -1.0
+      - coa_c: -1.0
+      - hdca_c: -1.0
+      - pmtcoa_c: 1.0
+      - ppi_c: 1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1006 or MCA1569
@@ -31944,7 +31779,7 @@
       - dhap_c: -1.0
       - e4p_c: -1.0
       - s17bp_c: 1.0
-    - lower_bound: 0.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA3041 or MCA3047
     - annotation: !!omap
@@ -31985,33 +31820,6 @@
         - '14730'
         - '14731'
         - '14732'
-  - !!omap
-    - id: FBP_c
-    - name: 1 H2O + 1 D-fructofuranose 1,6-bisphosphate(4-) = 1 beta-D-fructofuranose
-        6-phosphate(2-) + 1 phosphate
-    - metabolites: !!omap
-      - f6p_c: 1.0
-      - fdp_c: -1.0
-      - h2o_c: -1.0
-      - pi_c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA1251
-    - annotation: !!omap
-      - bigg.reaction: FBP
-      - biocyc: META:F16BDEPHOS-RXN
-      - biopath: BIOPATH:RXN00267
-      - brenda: 3.1.3.11
-      - kegg.reaction:
-        - R00762
-        - R04780
-      - metanetx.reaction: MNXR39683
-      - rhea:
-        - '11064'
-        - '11065'
-        - '11066'
-        - '11067'
-      - seed: rxn00549
   - !!omap
     - id: FCLT_c
     - name: 2 H(+) + 1 heme b = 1 Fe(2+) + 1 Protoporphyrin
@@ -32145,7 +31953,7 @@
       - fmn_c: -1.0
       - h_c: -1.0
       - ppi_c: 1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2252
     - annotation: !!omap
@@ -32210,7 +32018,7 @@
       - h_c: -1.0
       - nadp_c: 1.0
       - nadph_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2729
     - annotation: !!omap
@@ -32512,10 +32320,10 @@
     - id: G3PAT_MC_c
     - name: Glycerol-3-phosphate acyltransferase
     - metabolites: !!omap
-      - 1agpgafa_c: 1.0
+      - 1agpgafa_c: 0.001
       - coa_c: 1.0
       - glyc1p_c: -1.0
-      - mc_fattyacidcoa_c: -1.0
+      - mc_fattyacidcoa_c: -0.001
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2004 or MCA2989
@@ -32821,13 +32629,13 @@
     - name: 1 H(+) + 1 3-phosphonato-D-glyceroyl phosphate(4-) + 1 NADPH = 1 NADP(+)
         + 1 D-glyceraldehyde 3-phosphate + 1 phosphate
     - metabolites: !!omap
-      - 13dpg_c: -1.0
-      - g3p_c: 1.0
-      - h_c: -1.0
-      - nadp_c: 1.0
-      - nadph_c: -1.0
-      - pi_c: 1.0
-    - lower_bound: -1000.0
+      - 13dpg_c: 1.0
+      - g3p_c: -1.0
+      - h_c: 1.0
+      - nadp_c: -1.0
+      - nadph_c: 1.0
+      - pi_c: -1.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2598
     - annotation: !!omap
@@ -32953,11 +32761,11 @@
     - id: GCCa_c
     - name: 1 CO(2) + 1 S(8)-aminomethyldihydrolipoylprotein = 1 glycine + 1 lipoylprotein
     - metabolites: !!omap
-      - alpro_c: -1.0
-      - co2_c: -1.0
-      - gly_c: 1.0
-      - h_c: 1.0
-      - lpro_c: 1.0
+      - alpro_c: 1.0
+      - co2_c: 1.0
+      - gly_c: -1.0
+      - h_c: -1.0
+      - lpro_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 0.0
     - gene_reaction_rule: MCA0348 or MCA0349
@@ -32972,11 +32780,11 @@
     - name: 1 NH4(+) + 1 dihydrolipoylprotein + 1 (6R)-5,10-methylenetetrahydrofolate
         = 1 (6S)-5,6,7,8-tetrahydrofolate + 1 S(8)-aminomethyldihydrolipoylprotein
     - metabolites: !!omap
-      - alpro_c: 1.0
-      - dhlpro_c: -1.0
-      - mlthf_c: -1.0
-      - nh3_c: -1.0
-      - thf_c: 1.0
+      - alpro_c: -1.0
+      - dhlpro_c: 1.0
+      - mlthf_c: 1.0
+      - nh3_c: 1.0
+      - thf_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 0.0
     - gene_reaction_rule: MCA0350 or MCA1660
@@ -32990,11 +32798,11 @@
     - id: GCCc_c
     - name: 1 H(+) + 1 NADH(2-) + 1 lipoylprotein = 1 dihydrolipoylprotein + 1 NAD(+)
     - metabolites: !!omap
-      - dhlpro_c: 1.0
-      - h_c: -1.0
-      - lpro_c: -1.0
-      - nad_c: 1.0
-      - nadh_c: -1.0
+      - dhlpro_c: -1.0
+      - h_c: 1.0
+      - lpro_c: 1.0
+      - nad_c: -1.0
+      - nadh_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 0.0
     - gene_reaction_rule: MCA3002
@@ -33595,7 +33403,7 @@
       - nadp_c: 1.0
       - nadph_c: -1.0
       - trnaglu_c: 1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1052
     - annotation: !!omap
@@ -33623,7 +33431,7 @@
       - glutrna_c: 1.0
       - ppi_c: 1.0
       - trnaglu_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0510 or MCA1234
     - annotation: !!omap
@@ -33720,7 +33528,7 @@
       - h_c: -1.0
       - nad_c: 1.0
       - nadh_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1499 or MCA1500 or MCA1501 or MCA1748
     - annotation: !!omap
@@ -33750,7 +33558,7 @@
       - h_c: -1.0
       - nadp_c: 1.0
       - nadph_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1499 or MCA1500 or MCA1501 or MCA1748
     - annotation: !!omap
@@ -34179,36 +33987,6 @@
         - UPA:UCR01231
         - UPA:UER00296
   - !!omap
-    - id: GMPS_c
-    - name: 2 H(+) + 1 diphosphate(3-) + 1 GMP(3-) + 1 AMP = 1 NH4(+) + 1 5'-xanthylate(2-)
-        + 1 ATP
-    - metabolites: !!omap
-      - amp_c: 1.0
-      - atp_c: -1.0
-      - gmp_c: 1.0
-      - h_c: 2.0
-      - nh3_c: -1.0
-      - ppi_c: 1.0
-      - xmp_c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0290
-    - annotation: !!omap
-      - bigg.reaction: GMPS
-      - biocyc: META:GMP-SYN-NH3-RXN
-      - brenda: 6.3.5.2
-      - kegg.reaction: R01230
-      - metanetx.reaction: MNXR2788
-      - rhea:
-        - '18301'
-        - '18302'
-        - '18303'
-        - '18304'
-      - seed: rxn00916
-      - upa:
-        - UPA:UCR01230
-        - UPA:UER00297
-  - !!omap
     - id: GND_c
     - name: 1 CO(2) + 1 D-ribulose 5-phosphate(2-) + 1 NADPH = 1 6-phosphonatooxy-D-gluconate
         + 1 NADP(+)
@@ -34505,6 +34283,18 @@
         - UPA:UCR00497
         - UPA:UER00210
   - !!omap
+    - id: GTPCI
+    - name: GTP cyclohydrolase I
+    - metabolites: !!omap
+      - ahdt_c: 1.0
+      - for_c: 1.0
+      - gtp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA1670
+  - !!omap
     - id: GTPCII_c
     - name: 3 H2O + 1 GTP = 2 H(+) + 1 diphosphate(3-) + 1 formate + 1 2,5-diamino-4-hydroxy-6-(5-phosphonatoribosylamino)pyrimidine(3-)
     - metabolites: !!omap
@@ -34586,29 +34376,6 @@
       - upa:
         - UPA:UCR00429
         - UPA:UER00884
-  - !!omap
-    - id: GTPOPm_c
-    - name: 1 H(+) + 1 pyruvate + 1 GTP = 1 H(+) + 1 GDP(2-) + 1 phosphoenolpyruvate
-    - metabolites: !!omap
-      - gdp_c: -1.0
-      - gtp_c: 1.0
-      - h_c: -1.0
-      - pep_c: -1.0
-      - pyr_c: 1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA2597 or MCA2886
-    - annotation: !!omap
-      - bigg.reaction: GTPOPm
-      - brenda: 2.7.1.40
-      - kegg.reaction: R00430
-      - metanetx.reaction: MNXR73657
-      - rhea:
-        - '30295'
-        - '30296'
-        - '30297'
-        - '30298'
-      - seed: rxn00304
   - !!omap
     - id: GUAPRT_c
     - name: 1 guanine + 1 5-phosphoribosyl diphosphate = 1 diphosphate(3-) + 1 GMP(3-)
@@ -35359,7 +35126,7 @@
       - hom__L_c: 1.0
       - nad_c: 1.0
       - nadh_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0597
     - annotation: !!omap
@@ -35415,7 +35182,7 @@
       - h_c: 1.0
       - hom__L_c: -1.0
       - phom_c: 1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -36026,7 +35793,7 @@
       - pi_c: 1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0967 or MCA0968
+    - gene_reaction_rule: ( MCA0967 and MCA0968 ) or ( MCA1740 and MCA1741 )
     - annotation: !!omap
       - bigg.reaction: ITCOALm
       - brenda: 6.2.1.5
@@ -36670,8 +36437,8 @@
       - amp_c: 1.0
       - atp_c: -1.0
       - coa_c: -1.0
-      - mc_fattyacid_c: -1.0
-      - mc_fattyacidcoa_c: 1.0
+      - mc_fattyacid_c: -0.001
+      - mc_fattyacidcoa_c: 0.001
       - ppi_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -37607,7 +37374,7 @@
       - h_c: 1.0
       - nad_c: -1.0
       - nadp_c: 1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1859 or MCA2767 or MCA2768
     - annotation: !!omap
@@ -37638,37 +37405,6 @@
         - '18631'
         - '18632'
       - seed: rxn00077
-  - !!omap
-    - id: NADS1_c
-    - name: 1 H(+) + 1 diphosphate(3-) + 1 AMP + 1 NAD(+) = 1 NH4(+) + 1 ATP + 1 deamido-NAD(2-)
-    - metabolites: !!omap
-      - amp_c: 1.0
-      - atp_c: -1.0
-      - dnad_c: -1.0
-      - h_c: 1.0
-      - nad_c: 1.0
-      - nh3_c: -1.0
-      - ppi_c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0969
-    - annotation: !!omap
-      - bigg.reaction: NADS1
-      - biocyc: META:NAD-SYNTH-NH3-RXN
-      - brenda:
-        - 6.3.1.5
-        - 6.3.5.1
-      - kegg.reaction: R00189
-      - metanetx.reaction: MNXR3769
-      - rhea:
-        - '21188'
-        - '21189'
-        - '21190'
-        - '21191'
-      - seed: rxn00138
-      - upa:
-        - UPA:UCR00189
-        - UPA:UER00333
   - !!omap
     - id: NADS2_c
     - name: 1 H2O + 1 ATP + 1 deamido-NAD(2-) + 1 L-glutamine zwitterion = 1 H(+)
@@ -37730,7 +37466,7 @@
       - nadh_c: 1.0
       - nadp_c: 1.0
       - nadph_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2767 or MCA2768 or MCA1859
     - annotation: !!omap
@@ -38097,18 +37833,6 @@
         - '30349'
         - '30350'
       - seed: rxn00515
-  - !!omap
-    - id: NGAM_c
-    - name: Non-growth associated maintenance
-    - metabolites: !!omap
-      - adp_c: 1.0
-      - atp_c: -1.0
-      - h2o_c: -1.0
-      - h_c: 1.0
-      - pi_c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: ''
   - !!omap
     - id: NH3_im
     - name: Diffusion NH3 between Periplasm and Cytosol
@@ -38479,8 +38203,8 @@
     - name: Na(+)-translocating NADH-quinone - NQR
     - metabolites: !!omap
       - h_c: -1.0
-      - na1_c: 2.0
-      - na1_p: -2.0
+      - na1_c: -2.0
+      - na1_p: 2.0
       - nad_c: 1.0
       - nadh_c: -1.0
       - q8_im: -1.0
@@ -40063,8 +39787,8 @@
       - ahcys_c: 1.0
       - amet_c: -1.0
       - h_c: 1.0
-      - pe_MC_c: -1.0
-      - pme_c: 1.0
+      - pe_MC_c: -0.001
+      - pme_c: 0.001
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA3065
@@ -40077,94 +39801,17 @@
         - rxn06091
         - rxn09543
   - !!omap
-    - id: PFK_2_c
-    - name: 1 H(+) + 1 D-tagatose 1,6-bisphosphate + 1 ADP = 1 ATP + 1 D-tagatofuranose
-        6-phosphate(2-)
+    - id: PFK_3_ppi_c
+    - name: Pyrophosphate-dependent Phosphofructokinase (s7p)
     - metabolites: !!omap
-      - adp_c: 1.0
-      - atp_c: -1.0
       - h_c: 1.0
-      - tag6p_D_c: -1.0
-      - tagdp_D_c: 1.0
+      - pi_c: 1.0
+      - ppi_c: -1.0
+      - s17bp_c: 1.0
+      - s7p_c: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: MCA1251
-    - annotation: !!omap
-      - bigg.reaction: PFK_2
-      - biocyc: META:TAGAKIN-RXN
-      - brenda:
-        - 2.7.1.11
-        - 2.7.1.144
-        - 2.7.1.56
-      - kegg.reaction: R03236
-      - metanetx.reaction: MNXR4173
-      - rhea:
-        - '12420'
-        - '12421'
-        - '12422'
-        - '12423'
-      - seed: rxn02314
-      - upa:
-        - UPA:UCR03236
-        - UPA:UER00715
-  - !!omap
-    - id: PFK_adp_c
-    - name: 1 H(+) + 1 AMP + 1 D-fructofuranose 1,6-bisphosphate(4-) = 1 ADP + 1 beta-D-fructofuranose
-        6-phosphate(2-)
-    - metabolites: !!omap
-      - adp_c: -1.0
-      - amp_c: 1.0
-      - f6p_c: -1.0
-      - fdp_c: 1.0
-      - h_c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA1251
-    - annotation: !!omap
-      - bigg.reaction: PFK_adp
-      - biocyc: META:R302-RXN
-      - brenda: 2.7.1.146
-      - kegg.reaction:
-        - R05805
-        - R09084
-      - metanetx.reaction: MNXR39702
-      - rhea:
-        - '20105'
-        - '20106'
-        - '20107'
-        - '20108'
-      - seed: rxn04043
-  - !!omap
-    - id: PFK_c
-    - name: 1 H(+) + 1 D-fructofuranose 1,6-bisphosphate(4-) + 1 ADP = 1 ATP + 1 beta-D-fructofuranose
-        6-phosphate(2-)
-    - metabolites: !!omap
-      - adp_c: 1.0
-      - atp_c: -1.0
-      - f6p_c: -1.0
-      - fdp_c: 1.0
-      - h_c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA1251
-    - annotation: !!omap
-      - bigg.reaction: PFK
-      - biocyc: META:6PFRUCTPHOS-RXN
-      - biopath: BIOPATH:RXN00615
-      - brenda: 2.7.1.11
-      - kegg.reaction:
-        - R00756
-        - R04779
-      - metanetx.reaction: MNXR39694
-      - rhea:
-        - '16109'
-        - '16110'
-        - '16111'
-        - '16112'
-      - seed: rxn00545
-      - upa:
-        - UPA:UCR00756
-        - UPA:UER00182
+    - gene_reaction_rule: ''
   - !!omap
     - id: PFK_ppi_c
     - name: 1 H(+) + 1 D-fructofuranose 1,6-bisphosphate(4-) + 1 phosphate = 1 diphosphate(3-)
@@ -40544,8 +40191,8 @@
     - name: Phosphatidylglycerol synthase
     - metabolites: !!omap
       - h2o_c: -1.0
-      - pg_MC_c: 1.0
-      - pgp_MC_c: -1.0
+      - pg_MC_c: 0.001
+      - pgp_MC_c: -0.001
       - pi_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -40573,11 +40220,11 @@
     - id: PGSA_MC_c
     - name: Phosphatidylglycerol synthase
     - metabolites: !!omap
-      - cdpdag_MC_c: -1.0
+      - cdpdag_MC_c: -0.001
       - cmp_c: 1.0
       - glyc1p_c: -1.0
       - h_c: 1.0
-      - pgp_MC_c: 1.0
+      - pgp_MC_c: 0.001
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0372 or MCA1682
@@ -40620,10 +40267,10 @@
     - id: PHCYT_MC_c
     - name: Phosphatidate cytidylyltransferase
     - metabolites: !!omap
-      - cdpdag_MC_c: 1.0
+      - cdpdag_MC_c: 0.001
       - ctp_c: -1.0
       - h_c: -1.0
-      - pa_MC_c: -1.0
+      - pa_MC_c: -0.001
       - ppi_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -40891,8 +40538,8 @@
       - amet_c: -1.0
       - h2o_c: 3.0
       - o2_c: -1.5
-      - pc_MC_c: 1.0
-      - pdme_c: -1.0
+      - pc_MC_c: 0.001
+      - pdme_c: -0.001
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA3065
@@ -40913,8 +40560,8 @@
       - ahcys_c: 1.0
       - amet_c: -1.0
       - h_c: 1.0
-      - pdme_c: 1.0
-      - pme_c: -1.0
+      - pdme_c: 0.001
+      - pme_c: -0.001
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA3065
@@ -40986,7 +40633,7 @@
       - atp_c: -1.0
       - h_c: 1.0
       - pnto_R_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1780
     - annotation: !!omap
@@ -41342,12 +40989,12 @@
     - id: PPND2_c
     - name: 1 CO(2) + 1 3-(4-hydroxyphenyl)pyruvate + 1 NADPH = 1 NADP(+) + 1 prephenate
     - metabolites: !!omap
-      - 34hpp_c: -1.0
-      - co2_c: -1.0
-      - nadp_c: 1.0
-      - nadph_c: -1.0
-      - pphn_c: 1.0
-    - lower_bound: -1000.0
+      - 34hpp_c: 1.0
+      - co2_c: 1.0
+      - nadp_c: -1.0
+      - nadph_c: 1.0
+      - pphn_c: -1.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1416
     - annotation: !!omap
@@ -41463,33 +41110,6 @@
       - upa:
         - UPA:UCR06782
         - UPA:UER00792
-  - !!omap
-    - id: PPS_c
-    - name: 1 H2O + 1 pyruvate + 1 ATP = 2 H(+) + 1 AMP + 1 phosphoenolpyruvate +
-        1 phosphate
-    - metabolites: !!omap
-      - amp_c: 1.0
-      - atp_c: -1.0
-      - h2o_c: -1.0
-      - h_c: 2.0
-      - pep_c: 1.0
-      - pi_c: 1.0
-      - pyr_c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA2597
-    - annotation: !!omap
-      - bigg.reaction: PPS
-      - biocyc: META:PEPSYNTH-RXN
-      - brenda: 2.7.9.2
-      - kegg.reaction: R00199
-      - metanetx.reaction: MNXR4414
-      - rhea:
-        - '11364'
-        - '11365'
-        - '11366'
-        - '11367'
-      - seed: rxn00147
   - !!omap
     - id: PPTGS_MC_c
     - name: Peptidoglycan subunit synthesis
@@ -41961,8 +41581,8 @@
     - metabolites: !!omap
       - co2_c: 1.0
       - h_c: -1.0
-      - pe_MC_c: 1.0
-      - ps_MC_c: -1.0
+      - pe_MC_c: 0.001
+      - ps_MC_c: -0.001
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1409
@@ -42133,10 +41753,10 @@
     - id: PSSA_MC_c
     - name: Phosphatidylserine syntase
     - metabolites: !!omap
-      - cdpdag_MC_c: -1.0
+      - cdpdag_MC_c: -0.001
       - cmp_c: 1.0
       - h_c: 1.0
-      - ps_MC_c: 1.0
+      - ps_MC_c: 0.001
       - ser__L_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
@@ -42431,60 +42051,6 @@
         - '23126'
         - '23127'
       - seed: rxn00018
-  - !!omap
-    - id: RDH1_c
-    - name: 1 H(+) + 1 NADH(2-) + 1 retinal = 1 all-trans-retinol + 1 NAD(+)
-    - metabolites: !!omap
-      - h_c: -1.0
-      - nad_c: 1.0
-      - nadh_c: -1.0
-      - retinal_c: -1.0
-      - retinol_c: 1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0775
-    - annotation: !!omap
-      - bigg.reaction: RDH1
-      - biocyc: META:RETINOL-DEHYDROGENASE-RXN
-      - biopath: BIOPATH:RXN01340
-      - brenda:
-        - 1.1.1.1
-        - 1.1.1.105
-      - kegg.reaction: R02124
-      - metanetx.reaction: MNXR4592
-      - rhea:
-        - '21284'
-        - '21285'
-        - '21286'
-        - '21287'
-      - seed: rxn01530
-  - !!omap
-    - id: RDH1a_c
-    - name: 1 H(+) + 1 retinal + 1 NADPH = 1 all-trans-retinol + 1 NADP(+)
-    - metabolites: !!omap
-      - h_c: -1.0
-      - nadp_c: 1.0
-      - nadph_c: -1.0
-      - retinal_c: -1.0
-      - retinol_c: 1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0775
-    - annotation: !!omap
-      - bigg.reaction: RDH1a
-      - biocyc: META:RXN-10841
-      - brenda:
-        - 1.1.1.-
-        - 1.1.1.300
-      - kegg.reaction: R08379
-      - metanetx.reaction: MNXR4593
-      - reactome: REACT_150367
-      - rhea:
-        - '25033'
-        - '25034'
-        - '25035'
-        - '25036'
-      - seed: rxn11890
   - !!omap
     - id: RHAT1_GAPFILLING_c
     - name: Rhamnosyltransferase I (LPS core biosynthesis)
@@ -43083,10 +42649,10 @@
     - id: SHCHF_c
     - name: 1 H(+) + 2 H(+) + 1 siroheme = 1 Fe(2+) + 1 sirohydrochlorin
     - metabolites: !!omap
-      - fe2_c: 1.0
-      - h_c: -3.0
-      - scl_c: 1.0
-      - sheme_c: -1.0
+      - fe2_c: -1.0
+      - h_c: 3.0
+      - scl_c: -1.0
+      - sheme_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 0.0
     - gene_reaction_rule: MCA2089
@@ -43403,7 +42969,7 @@
       - nadph_c: -1.0
       - ppi_c: 2.0
       - sql_c: 1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0813
     - annotation: !!omap
@@ -43550,63 +43116,19 @@
       - seed: rxn02062
       - upa: UPA:UCR02872
   - !!omap
-    - id: SUCOAS1m_c
-    - name: 1 H(+) + 1 CoA + 1 succinate(2-) + 1 GTP = 1 GDP(2-) + 1 phosphate + 1
-        succinyl-CoA(5-)
+    - id: SUCOAS_c
+    - name: 1 ADP + 1 phosphate + 1 succinyl-CoA(5-) = 1 CoA + 1 succinate(2-) + 1
+        ATP
     - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
       - coa_c: -1.0
-      - gdp_c: 1.0
-      - gtp_c: -1.0
-      - h_c: -1.0
       - pi_c: 1.0
       - succ_c: -1.0
       - succoa_c: 1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0967 or MCA0968
-    - annotation: !!omap
-      - bigg.reaction: SUCOAS1m
-      - biopath: BIOPATH:RXN00016
-      - kegg.reaction: R00432
-      - metanetx.reaction: MNXR55927
-      - reactome:
-        - REACT_106266
-        - REACT_106355
-        - REACT_107711
-        - REACT_115751
-        - REACT_115829
-        - REACT_134437
-        - REACT_135616
-        - REACT_138513
-        - REACT_143474
-        - REACT_30069
-        - REACT_31210
-        - REACT_337
-        - REACT_85025
-        - REACT_85078
-        - REACT_86430
-        - REACT_96173
-        - REACT_98092
-      - rhea:
-        - '22120'
-        - '22121'
-        - '22122'
-        - '22123'
-      - seed: rxn00306
-  - !!omap
-    - id: SUCOAS_c
-    - name: 1 ADP + 1 phosphate + 1 succinyl-CoA(5-) = 1 CoA + 1 succinate(2-) + 1
-        ATP
-    - metabolites: !!omap
-      - adp_c: -1.0
-      - atp_c: 1.0
-      - coa_c: 1.0
-      - pi_c: -1.0
-      - succ_c: 1.0
-      - succoa_c: -1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA0967 or MCA0968
+    - gene_reaction_rule: ( MCA0967 and MCA0968 ) or ( MCA1740 and MCA1741 )
     - annotation: !!omap
       - bigg.reaction: SUCOAS
       - biopath: BIOPATH:RXN00971
@@ -45291,10 +44813,10 @@
     - id: URIDK2m_c
     - name: 1 dUDP + 1 ADP = 1 dUMP + 1 ATP
     - metabolites: !!omap
-      - adp_c: -1.0
-      - atp_c: 1.0
-      - dudp_c: -1.0
-      - dump_c: 1.0
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - dudp_c: 1.0
+      - dump_c: -1.0
     - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1996
@@ -45511,7 +45033,7 @@
       - nadph_c: -1.0
       - zymst_c: -1.0
       - zymstnl_c: 1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1404
     - annotation: !!omap
@@ -45558,7 +45080,7 @@
       - meoh_p: 1.0
       - o2_p: -1.0
     - lower_bound: 0.0
-    - upper_bound: 1000.0
+    - upper_bound: 0.0
     - gene_reaction_rule: ( ( MCA1796 and MCA1797 and MCA1798 ) or ( MCA2853 and MCA2854
         and MCA2855 ) ) and MCA0295
     - annotation: !!omap
@@ -45574,7 +45096,7 @@
       - q8_im: 1.0
       - q8h2_im: -1.0
     - lower_bound: 0.0
-    - upper_bound: 0.0
+    - upper_bound: 1000.0
     - gene_reaction_rule: ( ( MCA1796 and MCA1797 and MCA1798 ) or ( MCA2853 and MCA2854
         and MCA2855 ) ) and MCA0295
     - annotation: !!omap
@@ -45591,7 +45113,7 @@
       - nadh_c: -1.0
       - o2_c: -1.0
     - lower_bound: 0.0
-    - upper_bound: 1000.0
+    - upper_bound: 0.0
     - gene_reaction_rule: MCA1194 and MCA1195 and MCA1198 and MCA1196 and MCA1200
         and MCA1202 and MCA1205
     - annotation: !!omap
