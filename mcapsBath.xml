@@ -5714,19 +5714,6 @@
           </html>
         </notes>
       </species>
-      <species id="M_MNXM18_c" name="glutamate(1-)" compartment="c" charge="-1">
-        <notes>
-          <html xmlns="http://www.w3.org/1999/xhtml">
-            <p>FORMULA: C5H8NO4</p>
-            <p>SMILES: [NH3+]C(CCC([O-])=O)C([O-])=O</p>
-            <p>KEGG: C00302, D04341</p>
-            <p>METACYC: Glutamates</p>
-            <p>MXNREF: MNXM18</p>
-            <p>INCHI: InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/p-1</p>
-            <p>CHEBI: 14321, 18237, 24314, 5431, 29987, 64220</p>
-          </html>
-        </notes>
-      </species>
       <species id="M_3mob_c" name="3-methyl-2-oxobutanoate" compartment="c" charge="-1">
         <notes>
           <html xmlns="http://www.w3.org/1999/xhtml">
@@ -15548,7 +15535,7 @@
           </html>
         </notes>
       </species>
-      <species id="M_MNXM18_bm" name="glutamate(1-)" compartment="bm" charge="-1">
+      <species id="M_glu__L_bm" name="glutamate(1-)" compartment="bm" charge="-1">
         <notes>
           <html xmlns="http://www.w3.org/1999/xhtml">
             <p>FORMULA: C5H8NO4</p>
@@ -22145,19 +22132,6 @@
             <p>INCHI: InChI=1S/C3H4O3S/c4-2(1-7)3(5)6/h7H,1H2,(H,5,6)/p-1</p>
             <p>CHEBI: 16208, 20103, 6767, 20104, 11847, 14583, 57678</p>
             <p>BIGG: mercppyr</p>
-          </html>
-        </notes>
-      </species>
-      <species id="M_MNXM18_c_boundary" name="glutamate(1-)" compartment="c" boundaryCondition="true" charge="-1">
-        <notes>
-          <html xmlns="http://www.w3.org/1999/xhtml">
-            <p>FORMULA: C5H8NO4</p>
-            <p>SMILES: [NH3+]C(CCC([O-])=O)C([O-])=O</p>
-            <p>KEGG: C00302, D04341</p>
-            <p>METACYC: Glutamates</p>
-            <p>MXNREF: MNXM18</p>
-            <p>INCHI: InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/p-1</p>
-            <p>CHEBI: 14321, 18237, 24314, 5431, 29987, 64220</p>
           </html>
         </notes>
       </species>
@@ -42351,7 +42325,7 @@
           <speciesReference species="M_cys__L_c" stoichiometry="1"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="M_MNXM18_c" stoichiometry="1"/>
+          <speciesReference species="M_glu__L_c" stoichiometry="1"/>
           <speciesReference species="M_mercppyr_c" stoichiometry="1"/>
         </listOfProducts>
         <kineticLaw>
@@ -46490,7 +46464,7 @@
           <speciesReference species="M_acybut_c" stoichiometry="1"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="M_MNXM18_c" stoichiometry="1"/>
+          <speciesReference species="M_glu__L_c" stoichiometry="1"/>
           <speciesReference species="M_nh3_c" stoichiometry="1"/>
         </listOfProducts>
         <kineticLaw>
@@ -62655,7 +62629,7 @@
           </listOfParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="R_ALATA__L_c" name="1 pyruvate + 1 L-glutamate = 1 2-oxoglutarate + 1 L-alanine zwitterion" reversible="true">
+      <reaction id="R_ALATA_L_c" name="1 pyruvate + 1 L-glutamate = 1 2-oxoglutarate + 1 L-alanine zwitterion" reversible="true">
         <notes>
           <html xmlns="http://www.w3.org/1999/xhtml">
             <p>SUBSYSTEM: rn01120:Microbial metabolism in diverse environments,rn01200:Carbon metabolism,rn00250:Alanine, aspartate and glutamate metabolism,rn01100:Metabolic pathways,rn00220:Arginine biosynthesis,rn00710:Carbon fixation in photosynthetic organisms,rn01210:2-Oxocarboxylic acid metabolism,rn01230:Biosynthesis of amino acids</p>
@@ -71917,30 +71891,6 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_mercppyr_c_boundary" stoichiometry="1"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> FLUX_VALUE </ci>
-          </math>
-          <listOfParameters>
-            <parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
-            <parameter id="OBJECTIVE_COEFFICIENT" value="0" units="dimensionless"/>
-            <parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
-            <parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
-          </listOfParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="R_MNXM18_out" name="glutamate(1-) (out)" reversible="false">
-        <notes>
-          <html xmlns="http://www.w3.org/1999/xhtml">
-            <p>GENE ASSOCIATION: </p>
-          </html>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="M_MNXM18_c" stoichiometry="1"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_MNXM18_c_boundary" stoichiometry="1"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -86114,17 +86064,17 @@
           </listOfParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="R_MNXM18_bm" name="glutamate(1-) (biomass precursor)" reversible="true">
+      <reaction id="R_glu__L_bm" name="glutamate(1-) (biomass precursor)" reversible="true">
         <notes>
           <html xmlns="http://www.w3.org/1999/xhtml">
             <p>GENE ASSOCIATION: </p>
           </html>
         </notes>
         <listOfReactants>
-          <speciesReference species="M_MNXM18_c" stoichiometry="1"/>
+          <speciesReference species="M_glu__L_c" stoichiometry="1"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="M_MNXM18_bm" stoichiometry="1"/>
+          <speciesReference species="M_glu__L_bm" stoichiometry="1"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -86688,7 +86638,7 @@
           <speciesReference species="M_asp__L_bm" stoichiometry="1"/>
           <speciesReference species="M_dtmp_bm" stoichiometry="1"/>
           <speciesReference species="M_cys__L_bm" stoichiometry="1"/>
-          <speciesReference species="M_MNXM18_bm" stoichiometry="1"/>
+          <speciesReference species="M_glu__L_bm" stoichiometry="1"/>
           <speciesReference species="M_glycogen_bm" stoichiometry="1"/>
           <speciesReference species="M_atp_bm" stoichiometry="1"/>
           <speciesReference species="M_thr__L_bm" stoichiometry="1"/>
