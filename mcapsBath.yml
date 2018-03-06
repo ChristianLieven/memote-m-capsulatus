@@ -18474,53 +18474,6 @@
         - UPA:UCR07394
         - UPA:UER00877
   - !!omap
-    - id: 2OXOADOXm_c
-    - name: 1 CoA + 1 2-oxoadipate(2-) + 1 NAD(+) = 1 NADH(2-) + 1 CO(2) + 1 glutaryl-CoA(5-)
-    - metabolites: !!omap
-      - 2oxoadp_c: -1.0
-      - co2_c: 1.0
-      - coa_c: -1.0
-      - glutcoa_c: 1.0
-      - nad_c: -1.0
-      - nadh_c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA1952
-    - annotation: !!omap
-      - bigg.reaction: 2OXOADOXm
-      - biocyc: META:2-KETO-ADIPATE-DEHYDROG-RXN
-      - biopath: BIOPATH:RXN00392
-      - brenda:
-        - 1.2.4.2
-        - 1.8.1.4
-        - 2.3.1.61
-      - kegg.reaction: R01933
-      - metanetx.reaction: MNXR103
-      - reactome:
-        - REACT_104005
-        - REACT_104161
-        - REACT_108886
-        - REACT_118079
-        - REACT_154181
-        - REACT_1865
-        - REACT_33367
-        - REACT_78897
-        - REACT_80759
-        - REACT_85409
-        - REACT_89552
-        - REACT_89734
-        - REACT_91421
-        - REACT_93348
-        - REACT_99546
-        - REACT_99666
-        - REACT_99678
-      - rhea:
-        - '30795'
-        - '30796'
-        - '30797'
-        - '30798'
-      - seed: rxn01418
-  - !!omap
     - id: 34DHOXPEGOX_c
     - name: 1 3,4-dihydroxyphenylethyleneglycol + 1 NAD(+) = 1 H(+) + 1 NADH(2-) +
         1 3,4-dihydroxymandelaldehyde
@@ -20755,9 +20708,9 @@
       - nad_c: -1.0
       - nadh_c: 1.0
       - succoa_c: 1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA1952 or MCA1953 or MCA3002
+    - lower_bound: 0.0
+    - upper_bound: 0.0
+    - gene_reaction_rule: MCA1952 and MCA1953
     - annotation: !!omap
       - bigg.reaction: AKGDH
       - brenda:
@@ -20849,6 +20802,37 @@
       - h_c: -1.0
       - nad_c: 1.0
       - nadh_c: -1.0
+      - nh3_c: -1.0
+      - pyr_c: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0563 or MCA1406
+    - annotation: !!omap
+      - bigg.reaction: ALAD_L
+      - biocyc: META:ALANINE-DEHYDROGENASE-RXN
+      - biopath: BIOPATH:RXN00578
+      - brenda: 1.4.1.1
+      - kegg.reaction: R00396
+      - metanetx.reaction: MNXR621
+      - rhea:
+        - '18405'
+        - '18406'
+        - '18407'
+        - '18408'
+      - seed: rxn00278
+      - upa:
+        - UPA:UCR00396
+        - UPA:UER00585
+  - !!omap
+    - id: ALAD__Ly_c
+    - name: 1 H2O + 1 L-alanine zwitterion + 1 NAD(+) = 1 H(+) + 1 NADH(2-) + 1 NH4(+)
+        + 1 pyruvate
+    - metabolites: !!omap
+      - ala__L_c: 1.0
+      - h2o_c: 1.0
+      - h_c: -1.0
+      - nadp_c: 1.0
+      - nadph_c: -1.0
       - nh3_c: -1.0
       - pyr_c: -1.0
     - lower_bound: 0.0
@@ -21110,7 +21094,7 @@
       - nad_c: -1.0
       - nadh_c: 1.0
     - lower_bound: 0.0
-    - upper_bound: 1000.0
+    - upper_bound: 0.0
     - gene_reaction_rule: ''
     - annotation: !!omap
       - bigg.reaction: ALDD1
@@ -21246,40 +21230,18 @@
         - UPA:UCR01073
         - UPA:UER00041
   - !!omap
-    - id: ANS2_c
-    - name: 1 H(+) + 1 anthranilate + 1 H2O + 1 pyruvate = 1 NH4(+) + 1 chorismate(2-)
-    - metabolites: !!omap
-      - anth_c: 1.0
-      - chor_c: -1.0
-      - h2o_c: 1.0
-      - h_c: 1.0
-      - nh3_c: -1.0
-      - pyr_c: 1.0
-    - lower_bound: 0.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA2584 or MCA2585
-    - annotation: !!omap
-      - bigg.reaction: ANS2
-      - brenda: 4.1.3.27
-      - kegg.reaction: R00985
-      - metanetx.reaction: MNXR729
-      - seed:
-        - rxn00726
-        - rxn11283
-      - upa: UPA:UCR00985
-  - !!omap
     - id: ANS_c
     - name: 1 H(+) + 1 anthranilate + 1 pyruvate + 1 L-glutamate = 1 chorismate(2-)
         + 1 L-glutamine zwitterion
     - metabolites: !!omap
-      - anth_c: -1.0
-      - chor_c: 1.0
-      - gln__L_c: 1.0
-      - glu__L_c: -1.0
-      - h_c: -1.0
-      - pyr_c: -1.0
-    - lower_bound: 0.0
-    - upper_bound: 0.0
+      - anth_c: 1.0
+      - chor_c: -1.0
+      - gln__L_c: -1.0
+      - glu__L_c: 1.0
+      - h_c: 1.0
+      - pyr_c: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
     - gene_reaction_rule: MCA2584 or MCA2585
     - annotation: !!omap
       - bigg.reaction: ANS
@@ -22741,7 +22703,7 @@
       - ump_c: -0.04
       - val__L_c: -0.36
     - lower_bound: 0.1
-    - upper_bound: 1000.0
+    - upper_bound: 0.1
     - gene_reaction_rule: ''
     - objective_coefficient: 1.0
   - !!omap
@@ -23626,7 +23588,7 @@
       - brenda: 1.10.2.2
       - metanetx.reaction: MNXR82078
   - !!omap
-    - id: CYP460_im
+    - id: CYP460_p
     - name: Cytochrome P460 - Hydroxylamine Dehydrogenase
     - metabolites: !!omap
       - ficytcc555_p: -2.0
@@ -25714,9 +25676,9 @@
     - id: EDA_c
     - name: 1 pyruvate + 1 D-glyceraldehyde 3-phosphate = 1 2-dehydro-3-deoxy-6-phosphonato-D-gluconate(3-)
     - metabolites: !!omap
-      - 2ddg6p_c: 1.0
-      - g3p_c: -1.0
-      - pyr_c: -1.0
+      - 2ddg6p_c: -1.0
+      - g3p_c: 1.0
+      - pyr_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0038
@@ -25738,9 +25700,9 @@
     - id: EDD_c
     - name: 1 H2O + 1 2-dehydro-3-deoxy-6-phosphonato-D-gluconate(3-) = 1 6-phosphonatooxy-D-gluconate
     - metabolites: !!omap
-      - 2ddg6p_c: -1.0
-      - 6pgc_c: 1.0
-      - h2o_c: -1.0
+      - 2ddg6p_c: 1.0
+      - 6pgc_c: -1.0
+      - h2o_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0037
@@ -27698,8 +27660,8 @@
     - name: methane exchange
     - metabolites: !!omap
       - ch4_p: 1.0
-    - lower_bound: 1.0
-    - upper_bound: 18.405
+    - lower_bound: 0.1
+    - upper_bound: 108.572548727957
     - gene_reaction_rule: ''
   - !!omap
     - id: EX_chlstol_c
@@ -27818,7 +27780,7 @@
     - name: CO(2) exchange
     - metabolites: !!omap
       - co2_c: -1.0
-    - lower_bound: 0.0
+    - lower_bound: -4.93511585127076
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -29970,7 +29932,7 @@
     - name: NH4(+) exchange
     - metabolites: !!omap
       - nh3_c: -1.0
-    - lower_bound: 0.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -30010,7 +29972,7 @@
     - name: Nitrate exchange
     - metabolites: !!omap
       - no3_e: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -30026,7 +29988,7 @@
     - name: dioxygen exchange
     - metabolites: !!omap
       - o2_c: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: -194.443564540068
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
@@ -33224,7 +33186,7 @@
       - nh3_c: -1.0
       - pi_c: 1.0
     - lower_bound: 0.0
-    - upper_bound: 1000.0
+    - upper_bound: 0.0
     - gene_reaction_rule: MCA1677
     - annotation: !!omap
       - bigg.reaction: GLNS
@@ -33396,13 +33358,13 @@
     - name: 1 H2O + 1 NADP(+) + 1 L-glutamate = 1 H(+) + 1 NH4(+) + 1 2-oxoglutarate
         + 1 NADPH
     - metabolites: !!omap
-      - akg_c: -1.0
-      - glu__L_c: 1.0
-      - h2o_c: 1.0
-      - h_c: -1.0
-      - nadp_c: 1.0
-      - nadph_c: -1.0
-      - nh3_c: -1.0
+      - akg_c: 1.0
+      - glu__L_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - nadp_c: -1.0
+      - nadph_c: 1.0
+      - nh3_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1030 or MCA1684 or MCA2039 or MCA2040 or MCA2202
@@ -33489,56 +33451,6 @@
         - REACT_89304
         - REACT_96687
         - REACT_99367
-  - !!omap
-    - id: GLUN_c
-    - name: 1 H2O + 1 L-glutamine zwitterion = 1 NH4(+) + 1 L-glutamate
-    - metabolites: !!omap
-      - gln__L_c: -1.0
-      - glu__L_c: 1.0
-      - h2o_c: -1.0
-      - nh3_c: 1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA1677
-    - annotation: !!omap
-      - bigg.reaction: GLUN
-      - biocyc:
-        - META:GLUTAMIN-RXN
-        - META:GLUTAMINASE-ASPARAGIN-ASE-RXN
-      - biopath: BIOPATH:RXN00559
-      - brenda:
-        - 1.4.1.13
-        - 1.4.7.1
-        - 3.5.1.2
-        - 3.5.1.38
-        - 4.3.3.6
-        - 6.3.4.2
-        - 6.3.5.2
-        - 6.3.5.4
-        - 6.3.5.5
-      - kegg.reaction: R00256
-      - metanetx.reaction: MNXR32746
-      - reactome:
-        - REACT_100843
-        - REACT_107816
-        - REACT_145057
-        - REACT_1700
-        - REACT_31712
-        - REACT_40104
-        - REACT_81929
-        - REACT_82434
-        - REACT_84071
-        - REACT_91746
-        - REACT_97500
-        - REACT_98074
-        - REACT_98880
-      - rhea:
-        - '15889'
-        - '15890'
-        - '15891'
-        - '15892'
-      - seed: rxn00189
-      - upa: UPA:UCR00256
   - !!omap
     - id: GLUPRT_c
     - name: 1 H2O + 1 L-glutamine zwitterion + 1 5-phosphoribosyl diphosphate = 1
@@ -33652,7 +33564,7 @@
       - h_c: -1.0
       - nadp_c: 1.0
       - nadph_c: -1.0
-    - lower_bound: 0.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2039 or MCA2040 or MCA1030 or MCA1684 or MCA2202 or MCA0472
         or MCA0542 or MCA2127
@@ -34733,7 +34645,7 @@
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
-    - id: HAO_im
+    - id: HAO_p
     - name: Hydroxylamine oxydoreductase
     - metabolites: !!omap
       - ficytcc555_p: -2.0
@@ -35281,7 +35193,7 @@
       - hmbil_c: 1.0
       - nh3_c: 4.0
       - ppbng_c: -4.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA3060
     - annotation: !!omap
@@ -36518,20 +36430,6 @@
       - upa:
         - UPA:UCR02530
         - UPA:UER00675
-  - !!omap
-    - id: LLEUDr_c
-    - name: leucine dehydrogenase
-    - metabolites: !!omap
-      - 4mop_c: -1.0
-      - h2o_c: 1.0
-      - h_c: -1.0
-      - leu__L_c: 1.0
-      - nad_c: 1.0
-      - nadh_c: -1.0
-      - nh3_c: -1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: ''
   - !!omap
     - id: LNSTLS_c
     - name: Lanosterol synthase
@@ -38226,13 +38124,13 @@
     - metabolites: !!omap
       - ficytcc553_p: 6.0
       - focytcc553_p: -6.0
-      - h2o_p: 2.0
-      - h_p: -8.0
-      - nh3_p: 1.0
-      - no2_p: -1.0
+      - h2o_c: 2.0
+      - h_c: -8.0
+      - nh3_c: 1.0
+      - no2_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 0.0
-    - gene_reaction_rule: MCA0591 or MCA0592
+    - gene_reaction_rule: MCA2059
     - annotation: !!omap
       - brenda: 1.7.2.2
       - kegg.reaction: R05712
@@ -38243,13 +38141,13 @@
     - metabolites: !!omap
       - ficytcc553_p: 1.0
       - focytcc553_p: -1.0
-      - h2o_p: 1.0
-      - h_p: -2.0
-      - no2_p: -1.0
-      - no_p: 1.0
+      - h2o_c: 1.0
+      - h_c: -2.0
+      - no2_c: -1.0
+      - no_c: 1.0
     - lower_bound: 0.0
     - upper_bound: 0.0
-    - gene_reaction_rule: MCA0591 or MCA0592
+    - gene_reaction_rule: MCA2059
     - annotation: !!omap
       - biocyc: META:FERREDOXIN--NITRITE-REDUCTASE-RXN
       - brenda: 1.7.7.1
@@ -38499,12 +38397,12 @@
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
-    - id: NO3R1_im
+    - id: NO3R1_c
     - name: Nitrate reductase (Ubiquinol-8)
     - metabolites: !!omap
-      - h2o_p: 1.0
-      - no2_p: 1.0
-      - no3_p: -1.0
+      - h2o_c: 1.0
+      - no2_c: 1.0
+      - no3_c: -1.0
       - q8_im: 1.0
       - q8h2_im: -1.0
     - lower_bound: 0.0
@@ -38519,6 +38417,43 @@
       - upa:
         - UPA:UCR00798
         - UPA:UER00706
+  - !!omap
+    - id: NO3abcpp_im
+    - name: Nitrate transport via ABC system (periplasm)
+    - metabolites: !!omap
+      - adp_c: 1.0
+      - atp_c: -1.0
+      - h2o_c: -1.0
+      - h_c: 1.0
+      - no3_c: 1.0
+      - no3_p: -1.0
+      - pi_c: 1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0589
+    - annotation: !!omap
+      - biocyc: META:3.6.3.26-RXN
+      - brenda: 3.6.3.26
+      - metanetx.reaction: MNXR19979
+      - rhea:
+        - '13181'
+        - '13182'
+        - '13183'
+        - '13184'
+  - !!omap
+    - id: NO3t7pp_im
+    - name: Nitrate transport in via nitrite antiport (periplasm)
+    - metabolites: !!omap
+      - no2_c: -1.0
+      - no2_p: 1.0
+      - no3_c: 1.0
+      - no3_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0594
+    - annotation: !!omap
+      - biocyc: META:TRANS-RXN0-239
+      - metanetx.reaction: MNXR3847
   - !!omap
     - id: NOR_im
     - name: Nitric oxide reductase (cytochrome c)
@@ -39122,6 +39057,7 @@
     - annotation: !!omap
       - bigg.reaction: NTRIR2x
       - biocyc: META:NIRBD-RXN
+      - brenda: 1.7.1.4
       - kegg.reaction: R00787
       - metanetx.reaction: MNXR55793
       - rhea:
@@ -39150,6 +39086,7 @@
       - biocyc:
         - META:NITRITREDUCT-RXN
         - META:RXN0-6377
+      - brenda: 1.7.1.4
       - kegg.reaction: R00789
       - metanetx.reaction: MNXR55794
       - rhea:
@@ -39508,9 +39445,9 @@
       - fdxrd_c: -1.0
       - h_c: 1.0
       - succoa_c: -1.0
-    - lower_bound: -1000.0
-    - upper_bound: 1000.0
-    - gene_reaction_rule: MCA1952 or MCA1953 or MCA3002
+    - lower_bound: 0.0
+    - upper_bound: 0.0
+    - gene_reaction_rule: MCA1952 and MCA1953
     - annotation: !!omap
       - bigg.reaction: OOR3
       - kegg.reaction: R01197
@@ -42364,11 +42301,11 @@
     - name: 2 H(+) + 1 3-phospho-D-glycerate + 1 2-phosphonatoglycolate(3-) = 1 D-ribulose
         1,5-bisphosphate(4-) + 1 dioxygen
     - metabolites: !!omap
-      - 2pglyc_c: -1.0
-      - 3pg_c: -1.0
-      - h_c: -2.0
-      - o2_c: 1.0
-      - rb15bp_c: 1.0
+      - 2pglyc_c: 1.0
+      - 3pg_c: 1.0
+      - h_c: 2.0
+      - o2_c: -1.0
+      - rb15bp_c: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2743 or MCA2744
@@ -42973,10 +42910,10 @@
     - id: SERD__L_c
     - name: 1 NH4(+) + 1 pyruvate = 1 L-serine
     - metabolites: !!omap
-      - nh3_c: -1.0
-      - pyr_c: -1.0
-      - ser__L_c: 1.0
-    - lower_bound: -1000.0
+      - nh3_c: 1.0
+      - pyr_c: 1.0
+      - ser__L_c: -1.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0354
     - annotation: !!omap
@@ -45611,6 +45548,22 @@
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
   - !!omap
+    - id: pMMO_dir_coupl_im
+    - name: particulate Methane Monooxygenase
+    - metabolites: !!omap
+      - ch4_p: -1.0
+      - ficytcc555_p: 2.0
+      - focytcc555_p: -2.0
+      - h2o_p: 1.0
+      - meoh_p: 1.0
+      - o2_p: -1.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ( ( MCA1796 and MCA1797 and MCA1798 ) or ( MCA2853 and MCA2854
+        and MCA2855 ) ) and MCA0295
+    - annotation: !!omap
+      - brenda: 1.14.18.3
+  - !!omap
     - id: pMMO_im
     - name: particulate Methane Monooxygenase
     - metabolites: !!omap
@@ -45621,7 +45574,7 @@
       - q8_im: 1.0
       - q8h2_im: -1.0
     - lower_bound: 0.0
-    - upper_bound: 1000.0
+    - upper_bound: 0.0
     - gene_reaction_rule: ( ( MCA1796 and MCA1797 and MCA1798 ) or ( MCA2853 and MCA2854
         and MCA2855 ) ) and MCA0295
     - annotation: !!omap
@@ -45970,6 +45923,9 @@
     - id: MCA0586
     - name: MCA0586
   - !!omap
+    - id: MCA0589
+    - name: MCA0589
+  - !!omap
     - id: MCA0590
     - name: MCA0590
   - !!omap
@@ -45978,6 +45934,9 @@
   - !!omap
     - id: MCA0592
     - name: MCA0592
+  - !!omap
+    - id: MCA0594
+    - name: MCA0594
   - !!omap
     - id: MCA0596
     - name: MCA0596

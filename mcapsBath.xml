@@ -21,9 +21,12 @@
       <parameter constant="true" id="cobra_default_lb" sboTerm="SBO:0000626" units="mmol_per_gDW_per_hr" value="-1000"/>
       <parameter constant="true" id="cobra_default_ub" sboTerm="SBO:0000626" units="mmol_per_gDW_per_hr" value="1000"/>
       <parameter constant="true" id="cobra_0_bound" sboTerm="SBO:0000626" units="mmol_per_gDW_per_hr" value="0"/>
+      <parameter constant="true" id="R_EX_co2_c_lower_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="-4.93511585127076"/>
+      <parameter constant="true" id="R_EX_o2_c_lower_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="-194.443564540068"/>
+      <parameter constant="true" id="R_BIOMASS_REACTION_upper_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="0.1"/>
       <parameter constant="true" id="R_BIOMASS_REACTION_lower_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="0.1"/>
-      <parameter constant="true" id="R_EX_ch4_p_upper_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="18.405"/>
-      <parameter constant="true" id="R_EX_ch4_p_lower_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="1"/>
+      <parameter constant="true" id="R_EX_ch4_p_upper_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="108.572548727957"/>
+      <parameter constant="true" id="R_EX_ch4_p_lower_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="0.1"/>
     </listOfParameters>
     <listOfCompartments>
       <compartment constant="true" id="c" name="cytosol"/>
@@ -21460,6 +21463,8 @@
       <fbc:geneProduct fbc:id="G_MCA0478" fbc:label="MCA0478"/>
       <fbc:geneProduct fbc:id="G_MCA0524" fbc:label="MCA0524"/>
       <fbc:geneProduct fbc:id="G_MCA0955" fbc:label="MCA0955"/>
+      <fbc:geneProduct fbc:id="G_MCA0589" fbc:label="MCA0589"/>
+      <fbc:geneProduct fbc:id="G_MCA0594" fbc:label="MCA0594"/>
     </fbc:listOfGeneProducts>
     <listOfReactions>
       <reaction fast="false" id="R_FBA_c" reversible="true" name="1 D-fructofuranose 1,6-bisphosphate(4-) = 1 D-glyceraldehyde 3-phosphate + 1 glycerone phosphate" metaid="R_FBA_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
@@ -22664,11 +22669,11 @@
           </rdf:RDF>
         </sbml:annotation>
         <listOfReactants>
-          <speciesReference constant="true" species="M_g3p_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_pyr_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_2ddg6p_c" stoichiometry="1"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference constant="true" species="M_2ddg6p_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_g3p_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_pyr_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:geneProductRef fbc:geneProduct="G_MCA0038"/>
@@ -23039,11 +23044,11 @@
           </rdf:RDF>
         </sbml:annotation>
         <listOfReactants>
-          <speciesReference constant="true" species="M_2ddg6p_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_6pgc_c" stoichiometry="1"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference constant="true" species="M_6pgc_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_2ddg6p_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:geneProductRef fbc:geneProduct="G_MCA0037"/>
@@ -29619,7 +29624,7 @@
           <fbc:geneProductRef fbc:geneProduct="G_MCA1756"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_GLUSy_c" reversible="false" name="1 H(+) + 1 2-oxoglutarate + 1 L-glutamine zwitterion + 1 NADPH = 1 NADP(+) + 2 L-glutamate" metaid="R_GLUSy_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_GLUSy_c" reversible="true" name="1 H(+) + 1 2-oxoglutarate + 1 L-glutamine zwitterion + 1 NADPH = 1 NADP(+) + 2 L-glutamate" metaid="R_GLUSy_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <rdf:Description rdf:about="#R_GLUSy_c">
@@ -29809,15 +29814,15 @@
           </rdf:RDF>
         </sbml:annotation>
         <listOfReactants>
+          <speciesReference constant="true" species="M_glu__L_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_nadp_c" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
           <speciesReference constant="true" species="M_akg_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_h_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_nadph_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_nh3_c" stoichiometry="1"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="true" species="M_glu__L_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_nadp_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:or>
@@ -29829,7 +29834,7 @@
           </fbc:or>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_GLNS_c" reversible="false" name="1 H(+) + 1 L-glutamine zwitterion + 1 ADP + 1 phosphate = 1 NH4(+) + 1 ATP + 1 L-glutamate" metaid="R_GLNS_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_GLNS_c" reversible="false" name="1 H(+) + 1 L-glutamine zwitterion + 1 ADP + 1 phosphate = 1 NH4(+) + 1 ATP + 1 L-glutamate" metaid="R_GLNS_c" fbc:upperFluxBound="cobra_0_bound" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <rdf:Description rdf:about="#R_GLNS_c">
@@ -30492,7 +30497,7 @@
           <fbc:geneProductRef fbc:geneProduct="G_MCA3002"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_SERD__L_c" reversible="true" name="1 NH4(+) + 1 pyruvate = 1 L-serine" metaid="R_SERD__L_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
+      <reaction fast="false" id="R_SERD__L_c" reversible="false" name="1 NH4(+) + 1 pyruvate = 1 L-serine" metaid="R_SERD__L_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <rdf:Description rdf:about="#R_SERD__L_c">
@@ -30516,11 +30521,11 @@
           </rdf:RDF>
         </sbml:annotation>
         <listOfReactants>
-          <speciesReference constant="true" species="M_nh3_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_pyr_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_ser__L_c" stoichiometry="1"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference constant="true" species="M_ser__L_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_nh3_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_pyr_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:geneProductRef fbc:geneProduct="G_MCA0354"/>
@@ -33845,61 +33850,6 @@
           <fbc:geneProductRef fbc:geneProduct="G_MCA0996"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_2OXOADOXm_c" reversible="false" name="1 CoA + 1 2-oxoadipate(2-) + 1 NAD(+) = 1 NADH(2-) + 1 CO(2) + 1 glutaryl-CoA(5-)" metaid="R_2OXOADOXm_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
-        <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <rdf:Description rdf:about="#R_2OXOADOXm_c">
-              <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/bigg.reaction/2OXOADOXm"/>
-                  <rdf:li rdf:resource="http://identifiers.org/biocyc/META:2-KETO-ADIPATE-DEHYDROG-RXN"/>
-                  <rdf:li rdf:resource="http://identifiers.org/biopath/BIOPATH:RXN00392"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/1.2.4.2"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/1.8.1.4"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/2.3.1.61"/>
-                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R01933"/>
-                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR103"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_104005"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_104161"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_108886"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_118079"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_154181"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_1865"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_33367"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_78897"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_80759"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_85409"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_89552"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_89734"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_91421"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_93348"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_99546"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_99666"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_99678"/>
-                  <rdf:li rdf:resource="http://identifiers.org/rhea/30795"/>
-                  <rdf:li rdf:resource="http://identifiers.org/rhea/30796"/>
-                  <rdf:li rdf:resource="http://identifiers.org/rhea/30797"/>
-                  <rdf:li rdf:resource="http://identifiers.org/rhea/30798"/>
-                  <rdf:li rdf:resource="http://identifiers.org/seed/rxn01418"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </sbml:annotation>
-        <listOfReactants>
-          <speciesReference constant="true" species="M_2oxoadp_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_coa_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_nad_c" stoichiometry="1"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="true" species="M_co2_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_glutcoa_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_nadh_c" stoichiometry="1"/>
-        </listOfProducts>
-        <fbc:geneProductAssociation>
-          <fbc:geneProductRef fbc:geneProduct="G_MCA1952"/>
-        </fbc:geneProductAssociation>
-      </reaction>
       <reaction fast="false" id="R_NTRLASE_c" reversible="false" name="1 H(+) + 1 indole-3-acetonitrile + 2 H2O = 1 H(+) + 1 NH4(+) + 1 indole-3-acetate" metaid="R_NTRLASE_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -34180,42 +34130,7 @@
           <fbc:geneProductRef fbc:geneProduct="G_MCA2586"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_ANS2_c" reversible="false" name="1 H(+) + 1 anthranilate + 1 H2O + 1 pyruvate = 1 NH4(+) + 1 chorismate(2-)" metaid="R_ANS2_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
-        <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <rdf:Description rdf:about="#R_ANS2_c">
-              <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/bigg.reaction/ANS2"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/4.1.3.27"/>
-                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00985"/>
-                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR729"/>
-                  <rdf:li rdf:resource="http://identifiers.org/seed/rxn00726"/>
-                  <rdf:li rdf:resource="http://identifiers.org/seed/rxn11283"/>
-                  <rdf:li rdf:resource="http://identifiers.org/upa/UPA:UCR00985"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </sbml:annotation>
-        <listOfReactants>
-          <speciesReference constant="true" species="M_chor_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_nh3_c" stoichiometry="1"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="true" species="M_anth_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_h_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_pyr_c" stoichiometry="1"/>
-        </listOfProducts>
-        <fbc:geneProductAssociation>
-          <fbc:or>
-            <fbc:geneProductRef fbc:geneProduct="G_MCA2584"/>
-            <fbc:geneProductRef fbc:geneProduct="G_MCA2585"/>
-          </fbc:or>
-        </fbc:geneProductAssociation>
-      </reaction>
-      <reaction fast="false" id="R_ANS_c" reversible="false" name="1 H(+) + 1 anthranilate + 1 pyruvate + 1 L-glutamate = 1 chorismate(2-) + 1 L-glutamine zwitterion" metaid="R_ANS_c" fbc:upperFluxBound="cobra_0_bound" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_ANS_c" reversible="true" name="1 H(+) + 1 anthranilate + 1 pyruvate + 1 L-glutamate = 1 chorismate(2-) + 1 L-glutamine zwitterion" metaid="R_ANS_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <rdf:Description rdf:about="#R_ANS_c">
@@ -34238,14 +34153,14 @@
           </rdf:RDF>
         </sbml:annotation>
         <listOfReactants>
+          <speciesReference constant="true" species="M_chor_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_gln__L_c" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
           <speciesReference constant="true" species="M_anth_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_glu__L_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_h_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_pyr_c" stoichiometry="1"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="true" species="M_chor_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_gln__L_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:or>
@@ -37735,13 +37650,13 @@
           </rdf:RDF>
         </sbml:annotation>
         <listOfReactants>
+          <speciesReference constant="true" species="M_o2_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_rb15bp_c" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
           <speciesReference constant="true" species="M_2pglyc_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_3pg_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_h_c" stoichiometry="2"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="true" species="M_o2_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_rb15bp_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:or>
@@ -41737,7 +41652,7 @@
           <fbc:geneProductRef fbc:geneProduct="G_MCA0332"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_HMBS_c" reversible="true" name="1 H2O + 4 porphobilinogen(1-) = 4 NH4(+) + 1 preuroporphyrinogen(8-)" metaid="R_HMBS_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
+      <reaction fast="false" id="R_HMBS_c" reversible="false" name="1 H2O + 4 porphobilinogen(1-) = 4 NH4(+) + 1 preuroporphyrinogen(8-)" metaid="R_HMBS_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <rdf:Description rdf:about="#R_HMBS_c">
@@ -43476,10 +43391,10 @@
           <fbc:geneProductRef fbc:geneProduct="G_MCA0812"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_NO3R1_im" reversible="false" name="Nitrate reductase (Ubiquinol-8)" metaid="R_NO3R1_im" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_NO3R1_c" reversible="false" name="Nitrate reductase (Ubiquinol-8)" metaid="R_NO3R1_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <rdf:Description rdf:about="#R_NO3R1_im">
+            <rdf:Description rdf:about="#R_NO3R1_c">
               <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/biocyc/META:NITRATREDUCT-RXN"/>
@@ -43495,12 +43410,12 @@
           </rdf:RDF>
         </sbml:annotation>
         <listOfReactants>
-          <speciesReference constant="true" species="M_no3_p" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_no3_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference constant="true" species="M_h2o_p" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_no2_p" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_no2_c" stoichiometry="1"/>
           <speciesReference constant="true" species="M_q8_im" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
@@ -43515,6 +43430,7 @@
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/bigg.reaction/NTRIR2x"/>
                   <rdf:li rdf:resource="http://identifiers.org/biocyc/META:NIRBD-RXN"/>
+                  <rdf:li rdf:resource="http://identifiers.org/brenda/1.7.1.4"/>
                   <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00787"/>
                   <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR55793"/>
                   <rdf:li rdf:resource="http://identifiers.org/rhea/24628"/>
@@ -43554,6 +43470,7 @@
                   <rdf:li rdf:resource="http://identifiers.org/bigg.reaction/NTRIR2y"/>
                   <rdf:li rdf:resource="http://identifiers.org/biocyc/META:NITRITREDUCT-RXN"/>
                   <rdf:li rdf:resource="http://identifiers.org/biocyc/META:RXN0-6377"/>
+                  <rdf:li rdf:resource="http://identifiers.org/brenda/1.7.1.4"/>
                   <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00789"/>
                   <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR55794"/>
                   <rdf:li rdf:resource="http://identifiers.org/rhea/24632"/>
@@ -45333,63 +45250,6 @@
           <fbc:geneProductRef fbc:geneProduct="G_MCA0106"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_GLUN_c" reversible="true" name="1 H2O + 1 L-glutamine zwitterion = 1 NH4(+) + 1 L-glutamate" metaid="R_GLUN_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
-        <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <rdf:Description rdf:about="#R_GLUN_c">
-              <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/bigg.reaction/GLUN"/>
-                  <rdf:li rdf:resource="http://identifiers.org/biocyc/META:GLUTAMIN-RXN"/>
-                  <rdf:li rdf:resource="http://identifiers.org/biocyc/META:GLUTAMINASE-ASPARAGIN-ASE-RXN"/>
-                  <rdf:li rdf:resource="http://identifiers.org/biopath/BIOPATH:RXN00559"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/1.4.1.13"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/1.4.7.1"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/3.5.1.2"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/3.5.1.38"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/4.3.3.6"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/6.3.4.2"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/6.3.5.2"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/6.3.5.4"/>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/6.3.5.5"/>
-                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00256"/>
-                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR32746"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_100843"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_107816"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_145057"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_1700"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_31712"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_40104"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_81929"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_82434"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_84071"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_91746"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_97500"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_98074"/>
-                  <rdf:li rdf:resource="http://identifiers.org/reactome/REACT_98880"/>
-                  <rdf:li rdf:resource="http://identifiers.org/rhea/15889"/>
-                  <rdf:li rdf:resource="http://identifiers.org/rhea/15890"/>
-                  <rdf:li rdf:resource="http://identifiers.org/rhea/15891"/>
-                  <rdf:li rdf:resource="http://identifiers.org/rhea/15892"/>
-                  <rdf:li rdf:resource="http://identifiers.org/seed/rxn00189"/>
-                  <rdf:li rdf:resource="http://identifiers.org/upa/UPA:UCR00256"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </sbml:annotation>
-        <listOfReactants>
-          <speciesReference constant="true" species="M_gln__L_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="true" species="M_glu__L_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_nh3_c" stoichiometry="1"/>
-        </listOfProducts>
-        <fbc:geneProductAssociation>
-          <fbc:geneProductRef fbc:geneProduct="G_MCA1677"/>
-        </fbc:geneProductAssociation>
-      </reaction>
       <reaction fast="false" id="R_ACONT_c" reversible="false" name="1 isocitrate(3-) = 1 citrate" metaid="R_ACONT_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -45833,19 +45693,6 @@
             <fbc:geneProductRef fbc:geneProduct="G_MCA2260"/>
           </fbc:or>
         </fbc:geneProductAssociation>
-      </reaction>
-      <reaction fast="false" id="R_LLEUDr_c" reversible="true" name="leucine dehydrogenase" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
-        <listOfReactants>
-          <speciesReference constant="true" species="M_4mop_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_h_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_nadh_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_nh3_c" stoichiometry="1"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_leu__L_c" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_nad_c" stoichiometry="1"/>
-        </listOfProducts>
       </reaction>
       <reaction fast="false" id="R_VPAMT_c" reversible="false" name="1 3-methyl-2-oxobutanoate + 1 L-alanine zwitterion = 1 L-valine zwitterion + 1 pyruvate" metaid="R_VPAMT_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
@@ -47144,7 +46991,7 @@
           </fbc:or>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_AKGDH_c" reversible="true" name="1 CoA + 1 2-oxoglutarate + 1 NAD(+) = 1 NADH(2-) + 1 CO(2) + 1 succinyl-CoA(5-)" metaid="R_AKGDH_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
+      <reaction fast="false" id="R_AKGDH_c" reversible="false" name="1 CoA + 1 2-oxoglutarate + 1 NAD(+) = 1 NADH(2-) + 1 CO(2) + 1 succinyl-CoA(5-)" metaid="R_AKGDH_c" fbc:upperFluxBound="cobra_0_bound" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <rdf:Description rdf:about="#R_AKGDH_c">
@@ -47197,14 +47044,13 @@
           <speciesReference constant="true" species="M_succoa_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
+          <fbc:and>
             <fbc:geneProductRef fbc:geneProduct="G_MCA1952"/>
             <fbc:geneProductRef fbc:geneProduct="G_MCA1953"/>
-            <fbc:geneProductRef fbc:geneProduct="G_MCA3002"/>
-          </fbc:or>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_OOR3r_c" reversible="true" name="2 H(+) + 1 CO(2) + 2 reduced ferredoxin + 1 succinyl-CoA(5-) = 1 CoA + 2 oxidized ferredoxin + 1 2-oxoglutarate" metaid="R_OOR3r_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
+      <reaction fast="false" id="R_OOR3r_c" reversible="false" name="2 H(+) + 1 CO(2) + 2 reduced ferredoxin + 1 succinyl-CoA(5-) = 1 CoA + 2 oxidized ferredoxin + 1 2-oxoglutarate" metaid="R_OOR3r_c" fbc:upperFluxBound="cobra_0_bound" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <rdf:Description rdf:about="#R_OOR3r_c">
@@ -47234,11 +47080,10 @@
           <speciesReference constant="true" species="M_h_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
+          <fbc:and>
             <fbc:geneProductRef fbc:geneProduct="G_MCA1952"/>
             <fbc:geneProductRef fbc:geneProduct="G_MCA1953"/>
-            <fbc:geneProductRef fbc:geneProduct="G_MCA3002"/>
-          </fbc:or>
+          </fbc:and>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction fast="false" id="R_FBP_c" reversible="false" name="1 H2O + 1 D-fructofuranose 1,6-bisphosphate(4-) = 1 beta-D-fructofuranose 6-phosphate(2-) + 1 phosphate" metaid="R_FBP_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
@@ -47618,19 +47463,16 @@
         </sbml:annotation>
         <listOfReactants>
           <speciesReference constant="true" species="M_focytcc553_p" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_h_p" stoichiometry="2"/>
-          <speciesReference constant="true" species="M_no2_p" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h_c" stoichiometry="2"/>
+          <speciesReference constant="true" species="M_no2_c" stoichiometry="1"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_ficytcc553_p" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_h2o_p" stoichiometry="1"/>
-          <speciesReference constant="true" species="M_no_p" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_no_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
-            <fbc:geneProductRef fbc:geneProduct="G_MCA0591"/>
-            <fbc:geneProductRef fbc:geneProduct="G_MCA0592"/>
-          </fbc:or>
+          <fbc:geneProductRef fbc:geneProduct="G_MCA2059"/>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction fast="false" id="R_NITR_AM_im" reversible="false" name="Nitrite reductase (cytochrome; ammonia-forming)" metaid="R_NITR_AM_im" fbc:upperFluxBound="cobra_0_bound" fbc:lowerFluxBound="cobra_0_bound">
@@ -47649,19 +47491,16 @@
         </sbml:annotation>
         <listOfReactants>
           <speciesReference constant="true" species="M_focytcc553_p" stoichiometry="6"/>
-          <speciesReference constant="true" species="M_h_p" stoichiometry="8"/>
-          <speciesReference constant="true" species="M_no2_p" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h_c" stoichiometry="8"/>
+          <speciesReference constant="true" species="M_no2_c" stoichiometry="1"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_ficytcc553_p" stoichiometry="6"/>
-          <speciesReference constant="true" species="M_h2o_p" stoichiometry="2"/>
-          <speciesReference constant="true" species="M_nh3_p" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h2o_c" stoichiometry="2"/>
+          <speciesReference constant="true" species="M_nh3_c" stoichiometry="1"/>
         </listOfProducts>
         <fbc:geneProductAssociation>
-          <fbc:or>
-            <fbc:geneProductRef fbc:geneProduct="G_MCA0591"/>
-            <fbc:geneProductRef fbc:geneProduct="G_MCA0592"/>
-          </fbc:or>
+          <fbc:geneProductRef fbc:geneProduct="G_MCA2059"/>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction fast="false" id="R_MDHy_c" reversible="true" name="1 H(+) + 1 oxaloacetate + 1 NADPH = 1 NADP(+) + 1 (S)-malate" metaid="R_MDHy_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
@@ -47784,7 +47623,7 @@
           <speciesReference constant="true" species="M_thmpp_c" stoichiometry="1"/>
         </listOfReactants>
       </reaction>
-      <reaction fast="false" id="R_EX_co2_c" reversible="false" name="CO(2) exchange" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_EX_co2_c" reversible="true" name="CO(2) exchange" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="R_EX_co2_c_lower_bound">
         <listOfReactants>
           <speciesReference constant="true" species="M_co2_c" stoichiometry="1"/>
         </listOfReactants>
@@ -48389,7 +48228,7 @@
           <speciesReference constant="true" species="M_mergtrol_c" stoichiometry="1"/>
         </listOfReactants>
       </reaction>
-      <reaction fast="false" id="R_EX_o2_c" reversible="true" name="dioxygen exchange" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
+      <reaction fast="false" id="R_EX_o2_c" reversible="true" name="dioxygen exchange" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="R_EX_o2_c_lower_bound">
         <listOfReactants>
           <speciesReference constant="true" species="M_o2_c" stoichiometry="1"/>
         </listOfReactants>
@@ -48624,7 +48463,7 @@
           <speciesReference constant="true" species="M_gmp_c" stoichiometry="1"/>
         </listOfReactants>
       </reaction>
-      <reaction fast="false" id="R_EX_nh3_c" reversible="false" name="NH4(+) exchange" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_EX_nh3_c" reversible="true" name="NH4(+) exchange" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
         <listOfReactants>
           <speciesReference constant="true" species="M_nh3_c" stoichiometry="1"/>
         </listOfReactants>
@@ -50954,7 +50793,7 @@
           <speciesReference constant="true" species="M_ham_c" stoichiometry="1"/>
         </listOfReactants>
       </reaction>
-      <reaction fast="false" id="R_EX_no3_e" reversible="true" name="Nitrate exchange" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
+      <reaction fast="false" id="R_EX_no3_e" reversible="false" name="Nitrate exchange" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
         <listOfReactants>
           <speciesReference constant="true" species="M_no3_e" stoichiometry="1"/>
         </listOfReactants>
@@ -51304,7 +51143,7 @@
           <speciesReference constant="true" species="M_ca2_c" stoichiometry="1"/>
         </listOfReactants>
       </reaction>
-      <reaction fast="false" id="R_BIOMASS_REACTION" reversible="false" name="BIOMASS_REACTION" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="R_BIOMASS_REACTION_lower_bound">
+      <reaction fast="false" id="R_BIOMASS_REACTION" reversible="false" name="BIOMASS_REACTION" fbc:upperFluxBound="R_BIOMASS_REACTION_upper_bound" fbc:lowerFluxBound="R_BIOMASS_REACTION_lower_bound">
         <listOfReactants>
           <speciesReference constant="true" species="M_2ddg6p_c" stoichiometry="3e-06"/>
           <speciesReference constant="true" species="M_2pg_c" stoichiometry="0.006"/>
@@ -51396,7 +51235,7 @@
           <speciesReference constant="true" species="M_pi_c" stoichiometry="24.25"/>
         </listOfProducts>
       </reaction>
-      <reaction fast="false" id="R_pMMO_im" reversible="false" name="particulate Methane Monooxygenase" metaid="R_pMMO_im" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_pMMO_im" reversible="false" name="particulate Methane Monooxygenase" metaid="R_pMMO_im" fbc:upperFluxBound="cobra_0_bound" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <rdf:Description rdf:about="#R_pMMO_im">
@@ -51551,7 +51390,7 @@
           <speciesReference constant="true" species="M_fald_c" stoichiometry="1"/>
         </listOfProducts>
       </reaction>
-      <reaction fast="false" id="R_ALDD1_c" reversible="false" name="NAD+-linked formaldehyde dehydrogenase" metaid="R_ALDD1_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_ALDD1_c" reversible="false" name="NAD+-linked formaldehyde dehydrogenase" metaid="R_ALDD1_c" fbc:upperFluxBound="cobra_0_bound" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <rdf:Description rdf:about="#R_ALDD1_c">
@@ -53186,10 +53025,10 @@
           <speciesReference constant="true" species="M_no2_c" stoichiometry="1"/>
         </listOfProducts>
       </reaction>
-      <reaction fast="false" id="R_CYP460_im" reversible="false" name="Cytochrome P460 - Hydroxylamine Dehydrogenase" metaid="R_CYP460_im" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_CYP460_p" reversible="false" name="Cytochrome P460 - Hydroxylamine Dehydrogenase" metaid="R_CYP460_p" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <rdf:Description rdf:about="#R_CYP460_im">
+            <rdf:Description rdf:about="#R_CYP460_p">
               <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/brenda/1.7.2.6"/>
@@ -53212,10 +53051,10 @@
           <fbc:geneProductRef fbc:geneProduct="G_MCA0524"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_HAO_im" reversible="false" name="Hydroxylamine oxydoreductase" metaid="R_HAO_im" fbc:upperFluxBound="cobra_0_bound" fbc:lowerFluxBound="cobra_0_bound">
+      <reaction fast="false" id="R_HAO_p" reversible="false" name="Hydroxylamine oxydoreductase" metaid="R_HAO_p" fbc:upperFluxBound="cobra_0_bound" fbc:lowerFluxBound="cobra_0_bound">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <rdf:Description rdf:about="#R_HAO_im">
+            <rdf:Description rdf:about="#R_HAO_p">
               <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/brenda/1.7.3.4"/>
@@ -53248,6 +53087,146 @@
         <listOfProducts>
           <speciesReference constant="true" species="M_no3_p" stoichiometry="1"/>
         </listOfProducts>
+      </reaction>
+      <reaction fast="false" id="R_NO3abcpp_im" reversible="false" name="Nitrate transport via ABC system (periplasm)" metaid="R_NO3abcpp_im" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+        <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about="#R_NO3abcpp_im">
+              <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/biocyc/META:3.6.3.26-RXN"/>
+                  <rdf:li rdf:resource="http://identifiers.org/brenda/3.6.3.26"/>
+                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR19979"/>
+                  <rdf:li rdf:resource="http://identifiers.org/rhea/13181"/>
+                  <rdf:li rdf:resource="http://identifiers.org/rhea/13182"/>
+                  <rdf:li rdf:resource="http://identifiers.org/rhea/13183"/>
+                  <rdf:li rdf:resource="http://identifiers.org/rhea/13184"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+        <listOfReactants>
+          <speciesReference constant="true" species="M_atp_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_no3_p" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" species="M_adp_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_no3_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_pi_c" stoichiometry="1"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:geneProductRef fbc:geneProduct="G_MCA0589"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction fast="false" id="R_NO3t7pp_im" reversible="true" name="Nitrate transport in via nitrite antiport (periplasm)" metaid="R_NO3t7pp_im" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
+        <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about="#R_NO3t7pp_im">
+              <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/biocyc/META:TRANS-RXN0-239"/>
+                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR3847"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+        <listOfReactants>
+          <speciesReference constant="true" species="M_no2_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_no3_p" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" species="M_no2_p" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_no3_c" stoichiometry="1"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:geneProductRef fbc:geneProduct="G_MCA0594"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction fast="false" id="R_ALAD__Ly_c" reversible="false" name="1 H2O + 1 L-alanine zwitterion + 1 NAD(+) = 1 H(+) + 1 NADH(2-) + 1 NH4(+) + 1 pyruvate" metaid="R_ALAD__Ly_c" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+        <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about="#R_ALAD__Ly_c">
+              <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/bigg.reaction/ALAD_L"/>
+                  <rdf:li rdf:resource="http://identifiers.org/biocyc/META:ALANINE-DEHYDROGENASE-RXN"/>
+                  <rdf:li rdf:resource="http://identifiers.org/biopath/BIOPATH:RXN00578"/>
+                  <rdf:li rdf:resource="http://identifiers.org/brenda/1.4.1.1"/>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00396"/>
+                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR621"/>
+                  <rdf:li rdf:resource="http://identifiers.org/rhea/18405"/>
+                  <rdf:li rdf:resource="http://identifiers.org/rhea/18406"/>
+                  <rdf:li rdf:resource="http://identifiers.org/rhea/18407"/>
+                  <rdf:li rdf:resource="http://identifiers.org/rhea/18408"/>
+                  <rdf:li rdf:resource="http://identifiers.org/seed/rxn00278"/>
+                  <rdf:li rdf:resource="http://identifiers.org/upa/UPA:UCR00396"/>
+                  <rdf:li rdf:resource="http://identifiers.org/upa/UPA:UER00585"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+        <listOfReactants>
+          <speciesReference constant="true" species="M_h_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_nadph_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_nh3_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_pyr_c" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" species="M_ala__L_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_h2o_c" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_nadp_c" stoichiometry="1"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_MCA0563"/>
+            <fbc:geneProductRef fbc:geneProduct="G_MCA1406"/>
+          </fbc:or>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction fast="false" id="R_pMMO_dir_coupl_im" reversible="false" name="particulate Methane Monooxygenase" metaid="R_pMMO_dir_coupl_im" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_0_bound">
+        <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about="#R_pMMO_dir_coupl_im">
+              <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/brenda/1.14.18.3"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+        <listOfReactants>
+          <speciesReference constant="true" species="M_ch4_p" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_focytcc555_p" stoichiometry="2"/>
+          <speciesReference constant="true" species="M_o2_p" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" species="M_ficytcc555_p" stoichiometry="2"/>
+          <speciesReference constant="true" species="M_h2o_p" stoichiometry="1"/>
+          <speciesReference constant="true" species="M_meoh_p" stoichiometry="1"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:and>
+            <fbc:or>
+              <fbc:and>
+                <fbc:geneProductRef fbc:geneProduct="G_MCA1796"/>
+                <fbc:geneProductRef fbc:geneProduct="G_MCA1797"/>
+                <fbc:geneProductRef fbc:geneProduct="G_MCA1798"/>
+              </fbc:and>
+              <fbc:and>
+                <fbc:geneProductRef fbc:geneProduct="G_MCA2853"/>
+                <fbc:geneProductRef fbc:geneProduct="G_MCA2854"/>
+                <fbc:geneProductRef fbc:geneProduct="G_MCA2855"/>
+              </fbc:and>
+            </fbc:or>
+            <fbc:geneProductRef fbc:geneProduct="G_MCA0295"/>
+          </fbc:and>
+        </fbc:geneProductAssociation>
       </reaction>
     </listOfReactions>
   </model>
