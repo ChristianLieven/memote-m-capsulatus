@@ -23729,6 +23729,66 @@
           </rdf:RDF>
         </sbml:annotation>
       </species>
+      <species boundaryCondition="false" compartment="p" constant="false" hasOnlySubstanceUnits="false" id="M_n2_p" metaid="M_n2_p" name="dinitrogen" fbc:charge="0" fbc:chemicalFormula="N2">
+        <sbml:annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#M_n2_p">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/bigg.metabolite/n2" />
+                  <rdf:li rdf:resource="http://identifiers.org/biocyc/META:NITROGEN-MOLECULE" />
+                  <rdf:li rdf:resource="http://identifiers.org/biopath/BIOPATH:Nitrogen" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17997" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:43128" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:7593" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:25365" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:13388" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:14660" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:30099" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:30102" />
+                  <rdf:li rdf:resource="http://identifiers.org/hmdb/HMDB01371" />
+                  <rdf:li rdf:resource="http://identifiers.org/inchi/InChI=1S/N2/c1-2" />
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00697" />
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.compound/D00083" />
+                  <rdf:li rdf:resource="http://identifiers.org/metanetx.chemical/MNXM724" />
+                  <rdf:li rdf:resource="http://identifiers.org/seed.compound/cpd00528" />
+                  <rdf:li rdf:resource="http://identifiers.org/upa/UPA:UPC00697" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+      </species>
+      <species boundaryCondition="false" compartment="e" constant="false" hasOnlySubstanceUnits="false" id="M_n2_e" metaid="M_n2_e" name="dinitrogen" fbc:charge="0" fbc:chemicalFormula="N2">
+        <sbml:annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#M_n2_e">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/bigg.metabolite/n2" />
+                  <rdf:li rdf:resource="http://identifiers.org/biocyc/META:NITROGEN-MOLECULE" />
+                  <rdf:li rdf:resource="http://identifiers.org/biopath/BIOPATH:Nitrogen" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17997" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:43128" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:7593" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:25365" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:13388" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:14660" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:30099" />
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:30102" />
+                  <rdf:li rdf:resource="http://identifiers.org/hmdb/HMDB01371" />
+                  <rdf:li rdf:resource="http://identifiers.org/inchi/InChI=1S/N2/c1-2" />
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00697" />
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.compound/D00083" />
+                  <rdf:li rdf:resource="http://identifiers.org/metanetx.chemical/MNXM724" />
+                  <rdf:li rdf:resource="http://identifiers.org/seed.compound/cpd00528" />
+                  <rdf:li rdf:resource="http://identifiers.org/upa/UPA:UPC00697" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+      </species>
     </listOfSpecies>
     <fbc:listOfGeneProducts>
       <fbc:geneProduct fbc:id="G_MCA3041" fbc:label="MCA3041" />
@@ -41162,7 +41222,7 @@
           <fbc:geneProductRef fbc:geneProduct="G_MCA2729" />
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction fast="false" id="R_NAD_H2" metaid="R_NAD_H2" name="NAD-linked hydrogenase" reversible="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction fast="false" id="R_NAD_H2" metaid="R_NAD_H2" name="NAD-linked hydrogenase" reversible="true" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
         <sbml:annotation>
           <rdf:RDF>
             <rdf:Description rdf:about="#R_NAD_H2">
@@ -54882,7 +54942,7 @@
           <speciesReference constant="true" species="M_co2_e" stoichiometry="1" />
         </listOfProducts>
       </reaction>
-      <reaction fast="false" id="R_EX_no3_e" metaid="R_EX_no3_e" name="no3_e exchange" reversible="true" sboTerm="SBO:0000627" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+      <reaction fast="false" id="R_EX_no3_e" metaid="R_EX_no3_e" name="no3_e exchange" reversible="false" sboTerm="SBO:0000627" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <sbml:annotation>
           <rdf:RDF>
             <rdf:Description rdf:about="#R_EX_no3_e">
@@ -55015,7 +55075,7 @@
           <speciesReference constant="true" species="M_fe2_e" stoichiometry="1" />
         </listOfReactants>
       </reaction>
-      <reaction fast="false" id="R_EX_nh4_e" metaid="R_EX_nh4_e" name="Ammonium exchange" reversible="true" sboTerm="SBO:0000627" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+      <reaction fast="false" id="R_EX_nh4_e" metaid="R_EX_nh4_e" name="Ammonium exchange" reversible="false" sboTerm="SBO:0000627" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <sbml:annotation>
           <rdf:RDF>
             <rdf:Description rdf:about="#R_EX_nh4_e">
@@ -55618,6 +55678,97 @@
         </sbml:annotation>
         <listOfReactants>
           <speciesReference constant="true" species="M_co_e" stoichiometry="1" />
+        </listOfReactants>
+      </reaction>
+      <reaction fast="false" id="R_NIT_mc" metaid="R_NIT_mc" name="Nitrogenase" reversible="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <sbml:annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#R_NIT_mc">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/biocyc/NITROGENASE-RXN" />
+                  <rdf:li rdf:resource="http://identifiers.org/brenda/1.18.6.1" />
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R05185" />
+                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR85317" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+        <listOfReactants>
+          <speciesReference constant="true" species="M_atp_c" stoichiometry="16" />
+          <speciesReference constant="true" species="M_fdxrd_c" stoichiometry="4" />
+          <speciesReference constant="true" species="M_h2o_c" stoichiometry="16" />
+          <speciesReference constant="true" species="M_n2_c" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" species="M_adp_c" stoichiometry="16" />
+          <speciesReference constant="true" species="M_fdxox_c" stoichiometry="4" />
+          <speciesReference constant="true" species="M_h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_h_c" stoichiometry="14" />
+          <speciesReference constant="true" species="M_nh4_c" stoichiometry="2" />
+          <speciesReference constant="true" species="M_pi_c" stoichiometry="16" />
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_MCA0229" />
+            <fbc:geneProductRef fbc:geneProduct="G_MCA0230" />
+            <fbc:geneProductRef fbc:geneProduct="G_MCA0231" />
+          </fbc:and>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction fast="false" id="R_N2trpp" metaid="R_N2trpp" name="Nitrogen exchange, diffusion (periplasm)" reversible="true" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <sbml:annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#R_N2trpp">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR3686" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+        <listOfReactants>
+          <speciesReference constant="true" species="M_n2_p" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" species="M_n2_c" stoichiometry="1" />
+        </listOfProducts>
+      </reaction>
+      <reaction fast="false" id="R_N2tex" metaid="R_N2tex" name="Nitrogen exchange, diffusion (extra-organism to periplasm)" reversible="true" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <sbml:annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#R_N2tex">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR3686" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+        <listOfReactants>
+          <speciesReference constant="true" species="M_n2_e" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" species="M_n2_p" stoichiometry="1" />
+        </listOfProducts>
+      </reaction>
+      <reaction fast="false" id="R_EX_n2_e" metaid="R_EX_n2_e" name="N2 exchange" reversible="true" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <sbml:annotation>
+          <rdf:RDF>
+            <rdf:Description rdf:about="#R_EX_n2_e">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/metanetx.reaction/MNXR3686" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </sbml:annotation>
+        <listOfReactants>
+          <speciesReference constant="true" species="M_n2_e" stoichiometry="1" />
         </listOfReactants>
       </reaction>
     </listOfReactions>

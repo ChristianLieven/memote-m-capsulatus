@@ -13820,6 +13820,60 @@
       - seed.compound: cpd00528
       - upa: UPA:UPC00697
   - !!omap
+    - id: n2_e
+    - name: dinitrogen
+    - compartment: e
+    - charge: 0
+    - formula: N2
+    - annotation: !!omap
+      - bigg.metabolite: n2
+      - biocyc: META:NITROGEN-MOLECULE
+      - biopath: BIOPATH:Nitrogen
+      - chebi:
+        - CHEBI:17997
+        - CHEBI:43128
+        - CHEBI:7593
+        - CHEBI:25365
+        - CHEBI:13388
+        - CHEBI:14660
+        - CHEBI:30099
+        - CHEBI:30102
+      - hmdb: HMDB01371
+      - inchi: InChI=1S/N2/c1-2
+      - kegg.compound:
+        - C00697
+        - D00083
+      - metanetx.chemical: MNXM724
+      - seed.compound: cpd00528
+      - upa: UPA:UPC00697
+  - !!omap
+    - id: n2_p
+    - name: dinitrogen
+    - compartment: p
+    - charge: 0
+    - formula: N2
+    - annotation: !!omap
+      - bigg.metabolite: n2
+      - biocyc: META:NITROGEN-MOLECULE
+      - biopath: BIOPATH:Nitrogen
+      - chebi:
+        - CHEBI:17997
+        - CHEBI:43128
+        - CHEBI:7593
+        - CHEBI:25365
+        - CHEBI:13388
+        - CHEBI:14660
+        - CHEBI:30099
+        - CHEBI:30102
+      - hmdb: HMDB01371
+      - inchi: InChI=1S/N2/c1-2
+      - kegg.compound:
+        - C00697
+        - D00083
+      - metanetx.chemical: MNXM724
+      - seed.compound: cpd00528
+      - upa: UPA:UPC00697
+  - !!omap
     - id: n2o_c
     - name: dinitrogen oxide
     - compartment: c
@@ -28874,6 +28928,16 @@
       - SBO: SBO:0000627
       - bigg.reaction: mn2
   - !!omap
+    - id: EX_n2_e
+    - name: N2 exchange
+    - metabolites: !!omap
+      - n2_e: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - metanetx.reaction: MNXR3686
+  - !!omap
     - id: EX_n2o_e
     - name: dinitrogen oxide exchange
     - metabolites: !!omap
@@ -28900,7 +28964,7 @@
     - name: Ammonium exchange
     - metabolites: !!omap
       - nh4_e: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
     - annotation: !!omap
@@ -28933,7 +28997,7 @@
     - name: no3_e exchange
     - metabolites: !!omap
       - no3_e: -1.0
-    - lower_bound: -1000.0
+    - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ''
     - annotation: !!omap
@@ -35330,6 +35394,28 @@
       - SBO: SBO:0000375
       - bigg.reaction: N2Otex
   - !!omap
+    - id: N2tex
+    - name: Nitrogen exchange, diffusion (extra-organism to periplasm)
+    - metabolites: !!omap
+      - n2_e: -1.0
+      - n2_p: 1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - metanetx.reaction: MNXR3686
+  - !!omap
+    - id: N2trpp
+    - name: Nitrogen exchange, diffusion (periplasm)
+    - metabolites: !!omap
+      - n2_c: 1.0
+      - n2_p: -1.0
+    - lower_bound: -1000.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: ''
+    - annotation: !!omap
+      - metanetx.reaction: MNXR3686
+  - !!omap
     - id: NA1tex
     - name: Na(+) transport via diffusion (extracellular to periplasm)
     - metabolites: !!omap
@@ -35539,7 +35625,7 @@
       - h_c: -1.0
       - nad_c: 1.0
       - nadh_c: -1.0
-    - lower_bound: 0.0
+    - lower_bound: -1000.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0114 or MCA2724 or MCA2725
     - annotation: !!omap
@@ -35975,6 +36061,28 @@
       - kegg.reaction: R00790
       - metanetx.reaction: MNXR84802
       - seed: rxn05893
+  - !!omap
+    - id: NIT_mc
+    - name: Nitrogenase
+    - metabolites: !!omap
+      - adp_c: 16.0
+      - atp_c: -16.0
+      - fdxox_c: 4.0
+      - fdxrd_c: -4.0
+      - h2_c: 1.0
+      - h2o_c: -16.0
+      - h_c: 14.0
+      - n2_c: -1.0
+      - nh4_c: 2.0
+      - pi_c: 16.0
+    - lower_bound: 0.0
+    - upper_bound: 1000.0
+    - gene_reaction_rule: MCA0229 and MCA0230 and MCA0231
+    - annotation: !!omap
+      - biocyc: NITROGENASE-RXN
+      - brenda: 1.18.6.1
+      - kegg.reaction: R05185
+      - metanetx.reaction: MNXR85317
   - !!omap
     - id: NMNAT
     - name: Nicotinamide-nucleotide adenylyltransferase
