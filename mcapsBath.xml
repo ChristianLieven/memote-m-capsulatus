@@ -26,9 +26,10 @@
       <parameter constant="true" id="R_EX_ch4_e_lower_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="-18.46" />
     </listOfParameters>
     <listOfCompartments>
+      <compartment constant="true" id="p" name="periplasm" />
       <compartment constant="true" id="c" name="cytosol" />
       <compartment constant="true" id="e" name="extracellular" />
-      <compartment constant="true" id="p" name="periplasm" />
+      <compartment constant="true" id="im" name="inner membrane" />
     </listOfCompartments>
     <listOfSpecies>
       <species boundaryCondition="false" compartment="c" constant="false" hasOnlySubstanceUnits="false" id="M_10fthf_c" metaid="M_10fthf_c" name="10-formyltetrahydrofolate(2-)" fbc:charge="-2" fbc:chemicalFormula="C20H21N7O7">
@@ -19290,10 +19291,10 @@
           </rdf:RDF>
         </sbml:annotation>
       </species>
-      <species boundaryCondition="false" compartment="im" constant="false" hasOnlySubstanceUnits="false" id="M_q8_c" metaid="M_q8_c" name="Ubiquinone-8" fbc:charge="0" fbc:chemicalFormula="C49H74O4">
+      <species boundaryCondition="false" compartment="im" constant="false" hasOnlySubstanceUnits="false" id="M_q8_im" metaid="M_q8_im" name="Ubiquinone-8" fbc:charge="0" fbc:chemicalFormula="C49H74O4">
         <sbml:annotation>
           <rdf:RDF>
-            <rdf:Description rdf:about="#M_q8_c">
+            <rdf:Description rdf:about="#M_q8_im">
               <bqbiol:is>
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/bigg.metabolite/q8" />
@@ -19310,10 +19311,10 @@
           </rdf:RDF>
         </sbml:annotation>
       </species>
-      <species boundaryCondition="false" compartment="im" constant="false" hasOnlySubstanceUnits="false" id="M_q8h2_c" metaid="M_q8h2_c" name="Ubiquinol-8" fbc:charge="0" fbc:chemicalFormula="C49H76O4">
+      <species boundaryCondition="false" compartment="im" constant="false" hasOnlySubstanceUnits="false" id="M_q8h2_im" metaid="M_q8h2_im" name="Ubiquinol-8" fbc:charge="0" fbc:chemicalFormula="C49H76O4">
         <sbml:annotation>
           <rdf:RDF>
-            <rdf:Description rdf:about="#M_q8h2_c">
+            <rdf:Description rdf:about="#M_q8h2_im">
               <bqbiol:is>
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/bigg.metabolite/q8h2" />
@@ -30018,7 +30019,7 @@
           <speciesReference constant="true" species="M_pro__L_c" stoichiometry="0.248" />
           <speciesReference constant="true" species="M_ptdca_c" stoichiometry="0.00023422" />
           <speciesReference constant="true" species="M_pyr_c" stoichiometry="0.015" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="0.00022" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="0.00022" />
           <speciesReference constant="true" species="M_ribflv_c" stoichiometry="0.00019396" />
           <speciesReference constant="true" species="M_ru5p_D_c" stoichiometry="0.001" />
           <speciesReference constant="true" species="M_ser__L_c" stoichiometry="0.246" />
@@ -31739,12 +31740,12 @@
         <listOfReactants>
           <speciesReference constant="true" species="M_ficytcc553_p" stoichiometry="2" />
           <speciesReference constant="true" species="M_h_c" stoichiometry="2" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1" />
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_focytcc553_p" stoichiometry="2" />
           <speciesReference constant="true" species="M_h_p" stoichiometry="4" />
-          <speciesReference constant="true" species="M_q8_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8_im" stoichiometry="1" />
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:and>
@@ -33657,7 +33658,7 @@
         <listOfProducts>
           <speciesReference constant="true" species="M_ahcys_c" stoichiometry="1" />
           <speciesReference constant="true" species="M_h_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1" />
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:or>
@@ -36015,12 +36016,12 @@
         <listOfReactants>
           <speciesReference constant="true" species="M_fald_c" stoichiometry="1" />
           <speciesReference constant="true" species="M_h2o_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8_im" stoichiometry="1" />
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_for_c" stoichiometry="1" />
           <speciesReference constant="true" species="M_h_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1" />
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:geneProductRef fbc:geneProduct="G_MCA2155" />
@@ -44122,12 +44123,12 @@
         <listOfReactants>
           <speciesReference constant="true" species="M_h_c" stoichiometry="4" />
           <speciesReference constant="true" species="M_nadh_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8_im" stoichiometry="1" />
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_h_p" stoichiometry="3" />
           <speciesReference constant="true" species="M_nad_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1" />
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:and>
@@ -44164,11 +44165,11 @@
         <listOfReactants>
           <speciesReference constant="true" species="M_h_c" stoichiometry="1" />
           <speciesReference constant="true" species="M_nadh_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8_im" stoichiometry="1" />
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_nad_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1" />
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:geneProductRef fbc:geneProduct="G_MCA1918" />
@@ -44192,12 +44193,12 @@
           <speciesReference constant="true" species="M_h_c" stoichiometry="1" />
           <speciesReference constant="true" species="M_na1_c" stoichiometry="2" />
           <speciesReference constant="true" species="M_nadh_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8_im" stoichiometry="1" />
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_na1_p" stoichiometry="2" />
           <speciesReference constant="true" species="M_nad_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1" />
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:and>
@@ -45419,12 +45420,12 @@
         </sbml:annotation>
         <listOfReactants>
           <speciesReference constant="true" species="M_no3_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1" />
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_h2o_c" stoichiometry="1" />
           <speciesReference constant="true" species="M_no2_c" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8_im" stoichiometry="1" />
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:geneProductRef fbc:geneProduct="G_MCA0590" />
@@ -47442,13 +47443,13 @@
         <listOfReactants>
           <speciesReference constant="true" species="M_nh4_p" stoichiometry="1" />
           <speciesReference constant="true" species="M_o2_p" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1" />
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_h2o_p" stoichiometry="1" />
           <speciesReference constant="true" species="M_h_p" stoichiometry="1" />
           <speciesReference constant="true" species="M_ham_p" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8_im" stoichiometry="1" />
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:and>
@@ -49129,12 +49130,12 @@
         <listOfReactants>
           <speciesReference constant="true" species="M_ch4_p" stoichiometry="1" />
           <speciesReference constant="true" species="M_o2_p" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8h2_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8h2_im" stoichiometry="1" />
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="true" species="M_h2o_p" stoichiometry="1" />
           <speciesReference constant="true" species="M_meoh_p" stoichiometry="1" />
-          <speciesReference constant="true" species="M_q8_c" stoichiometry="1" />
+          <speciesReference constant="true" species="M_q8_im" stoichiometry="1" />
         </listOfProducts>
         <fbc:geneProductAssociation>
           <fbc:and>
