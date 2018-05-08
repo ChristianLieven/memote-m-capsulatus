@@ -17100,7 +17100,7 @@
       - seed.compound: cpd00020
       - upa: UPA:UPC00022
   - !!omap
-    - id: q8_c
+    - id: q8_im
     - name: Ubiquinone-8
     - compartment: im
     - charge: 0
@@ -17115,7 +17115,7 @@
       - metanetx.chemical: MNXM232
       - seed.compound: cpd15560
   - !!omap
-    - id: q8h2_c
+    - id: q8h2_im
     - name: Ubiquinol-8
     - compartment: im
     - charge: 0
@@ -25089,7 +25089,7 @@
       - pro__L_c: -0.248
       - ptdca_c: -0.00023422
       - pyr_c: -0.015
-      - q8h2_c: -0.00022
+      - q8h2_im: -0.00022
       - ribflv_c: -0.00019396
       - ru5p_D_c: -0.001
       - ser__L_c: -0.246
@@ -26217,8 +26217,8 @@
       - focytcc553_p: 2.0
       - h_c: -2.0
       - h_p: 4.0
-      - q8_c: 1.0
-      - q8h2_c: -1.0
+      - q8_im: 1.0
+      - q8h2_im: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1960_c and MCA1961_c and MCA1962 and MCA2405
@@ -27588,7 +27588,7 @@
       - ahcys_c: 1.0
       - amet_c: -1.0
       - h_c: 1.0
-      - q8h2_c: 1.0
+      - q8h2_im: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1164 or MCA1272
@@ -29260,8 +29260,8 @@
       - for_c: 1.0
       - h2o_c: -1.0
       - h_c: 1.0
-      - q8_c: -1.0
-      - q8h2_c: 1.0
+      - q8_im: -1.0
+      - q8h2_im: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2155
@@ -35257,8 +35257,8 @@
       - h_p: 3.0
       - nad_c: 1.0
       - nadh_c: -1.0
-      - q8_c: -1.0
-      - q8h2_c: 1.0
+      - q8_im: -1.0
+      - q8h2_im: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1347 and MCA1348 and MCA1349 and MCA1350 and MCA1351
@@ -35275,8 +35275,8 @@
       - h_c: -1.0
       - nad_c: 1.0
       - nadh_c: -1.0
-      - q8_c: -1.0
-      - q8h2_c: 1.0
+      - q8_im: -1.0
+      - q8h2_im: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA1918
@@ -35293,8 +35293,8 @@
       - na1_p: 2.0
       - nad_c: 1.0
       - nadh_c: -1.0
-      - q8_c: -1.0
-      - q8h2_c: 1.0
+      - q8_im: -1.0
+      - q8h2_im: 1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA2389 and MCA2388 and MCA2387 and MCA2386 and MCA2385
@@ -36165,8 +36165,8 @@
       - h2o_c: 1.0
       - no2_c: 1.0
       - no3_c: -1.0
-      - q8_c: 1.0
-      - q8h2_c: -1.0
+      - q8_im: 1.0
+      - q8h2_im: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: MCA0590
@@ -37557,8 +37557,8 @@
       - ham_p: 1.0
       - nh4_p: -1.0
       - o2_p: -1.0
-      - q8_c: 1.0
-      - q8h2_c: -1.0
+      - q8_im: 1.0
+      - q8h2_im: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ( ( MCA1796 and MCA1797 and MCA1798 ) or ( MCA2853 and MCA2854
@@ -38749,8 +38749,8 @@
       - h2o_p: 1.0
       - meoh_p: 1.0
       - o2_p: -1.0
-      - q8_c: 1.0
-      - q8h2_c: -1.0
+      - q8_im: 1.0
+      - q8h2_im: -1.0
     - lower_bound: 0.0
     - upper_bound: 1000.0
     - gene_reaction_rule: ( ( MCA1796 and MCA1797 and MCA1798 ) or ( MCA2853 and MCA2854
@@ -45727,6 +45727,6 @@
 - compartments: !!omap
   - c: cytosol
   - e: extracellular
-  - im: ''
+  - im: inner membrane
   - p: periplasm
 - version: '1'
