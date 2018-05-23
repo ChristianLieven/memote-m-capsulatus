@@ -49,6 +49,22 @@ matplotlib    1.4.3
 palettable    2.1.1
 ```
 
+### Contribute To Development
+You have several options to contribute to and ultimately improve the metabolic model of Methylococcus capsulatus Bath.
+
+#### Provide Feedback (Simple)
+1. Click on `Issues` in the top toolbar here on Github
+2. Click on the green button `New issue` to open a new issue
+3. Report errors or issues, provide feedback, or simply ask questions
+4. Submit the issue by clicking `Submit new issue`
+
+#### Participate (Advanced)
+1. Fork the repository to your own Github account
+2. Create a new branch from [`develop`](https://github.com/ChristianLieven/memote-m-capsulatus/develop).
+3. Make changes to the model
+    + [cobrapy](https://github.com/opencobra/cobrapy) is highly recommended for making changes
+    + Make a Pull Request to the `devel` branch, including changed `txt`, `yml` and `xml` files
+
 ## Complementary Scripts
 
 * `1. MappingMNXtoBIGG.ipynb`: Maps metabolite and reaction IDs from the MetaNetX namespace to the BiGG namespace semi-automatically using both the ver 1.0 as well as the ver 2.0 mapping dumps from MetaNetX. Moreover removes all formulas that contained brackets. Adds EC numbers based on MetaNetX reaction properties dump (MNXref Version 2015/09/03) and KEGG subsystem information.
