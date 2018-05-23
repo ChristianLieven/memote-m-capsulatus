@@ -78,3 +78,7 @@ palettable    2.1.1
 * `13. Fixing compartments.ipynb`: Fixes SBML error that occured due to metabolites being in a compartment that was not formally defined.
 
 * `Model 15 Calculations.ipynb`: Interactive notebook to allow parameter exploration and growth in different conditions.
+
+## Complementary Data
+
+* `putative_transporter_genes_not_considered.xls`: Combined output from PsortB 3.0, TransportDB and TCDB for genes which were not pursued in this study either because the transport mechanism or the substrate(s) were unclear. In the future, these could be looked at when improving the model.
