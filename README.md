@@ -102,3 +102,12 @@ You have several options to contribute to and ultimately improve the metabolic m
 * `SupplementTable1.docx`: Stoichiometry of the biomass reaction in mcapsBath.
 
 * `SupplementFigure1.png`: High-resolution export of the genome-scale [metabolic map](https://github.com/ChristianLieven/memote-m-capsulatus/blob/master/MetabolicMap/MethylococcusCapsulatusMetabolismMap.json) of the mcapsBath. The metabolic map was constructed using [escher](https://escher.github.io/).
+
+## Contributors
+
+* [Christian Lieven](http://www.dtu.dk/english/service/phonebook/person?id=103199&tab=2&qt=dtupublicationquery) ([@ChristianLieven](https://github.com/ChristianLieven)), The Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark, Kgs. Lyngby, Denmark
+* [Leander A. H. Petersen](http://www.dtu.dk/english/service/phonebook/person?id=51987&tab=2&qt=dtupublicationquery), Department of Chemical Engineering, Technical University of Denmark, Kgs. Lyngby, Denmark
+* [Sten Bay Jørgensen](), Department of Chemical Engineering, Technical University of Denmark, Kgs. Lyngby, Denmark
+* [Krist V. Gernaey](http://www.dtu.dk/english/service/phonebook/person?id=10316&cpid=8787&tab=1), Department of Chemical Engineering, Technical University of Denmark, Kgs. Lyngby, Denmark
+* [Markus J. Herrgård](http://www.dtu.dk/english/service/phonebook/person?id=72922&tab=1), The Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark, Kgs. Lyngby, Denmark
+* [Nikolaus Sonnenschein](http://www.biosustain.dtu.dk/english/service/phonebook/person?id=87972&tab=1) ([@phantomas1234](https://github.com/phantomas1234)), The Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark, Kgs. Lyngby, Denmark
