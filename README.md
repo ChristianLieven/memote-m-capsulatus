@@ -60,7 +60,7 @@ You have several options to contribute to and ultimately improve the metabolic m
 
 #### Participate (Advanced)
 1. Fork the repository to your own Github account
-2. Create a new branch from [`develop`](https://github.com/ChristianLieven/memote-m-capsulatus/develop).
+2. Create a new branch from [`develop`](https://github.com/ChristianLieven/memote-m-capsulatus/tree/develop).
 3. Make changes to the model
     + [cobrapy](https://github.com/opencobra/cobrapy) is highly recommended for making changes
     + Make a Pull Request to the `devel` branch, including changed `txt`, `yml` and `xml` files
