@@ -1,4 +1,4 @@
-# iCL730: A genome-scale metabolic model of _Methylococcus capsulatus_ Bath
+# iMcBath: A genome-scale metabolic model of _Methylococcus capsulatus_ Bath
 
 * Brief Model Description:
 
