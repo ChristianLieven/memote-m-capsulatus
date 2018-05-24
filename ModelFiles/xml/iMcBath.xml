@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <sbml xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core" level="3" sboTerm="SBO:0000624" version="1" xmlns="http://www.sbml.org/sbml/level3/version1/core" fbc:required="false">
-  <model id="iCL730" fbc:strict="true">
+  <model id="iMcBath" name="Methylococcus_capsulatus_Bath-GEM_v1.0" fbc:strict="true">
     <listOfUnitDefinitions>
       <unitDefinition id="mmol_per_gDW_per_hr">
         <listOfUnits>
