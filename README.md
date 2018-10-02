@@ -8,13 +8,13 @@ This repository contains the a metabolic model of _Methylococcus capsulatus_ Bat
 
 **GEM Category:** Species; **Utilisation:** maximising growth; **Field:** metabolic-network reconstruction; **Type of Model:** curated, reconstruction; **Model Source:** [BMID000000141026](https://www.ebi.ac.uk/biomodels-main/BMID000000141026); **Taxonomy:** _Methylococcus capsulatus_ Bath; **Metabolic System:** General Metabolism; **Bioreactor**
 
-* Last update: 2017-09-18
+* Last update: 2018-10-02
 
 * The model:
 
 |Taxonomy | Template Model | Reactions | Metabolites| Genes |
 |:-------:|:--------------:|:---------:|:----------:|:-----:|
-|_Methylococcus capsulatus_ Bath|[BMID000000141026](https://www.ebi.ac.uk/biomodels-main/BMID000000141026)|898|877|730|
+|_Methylococcus capsulatus_ Bath|[BMID000000141026](https://www.ebi.ac.uk/biomodels-main/BMID000000141026)|913|879|730|
 
 This repository is administered by Christian Lieven ([@ChristianLieven](https://github.com/ChristianLieven)), Center for Biosustainability, Technical University of Denmark, Kgs. Lyngby 2800
 
@@ -92,6 +92,8 @@ You have several options to contribute to and ultimately improve the metabolic m
 * `12. ApplyMemoteDrivenCuration.ipynb`: Checks and corrects for metabolites without charge, reactions without GPR, imbalanced reactions, syntax inconsistencies, precursors that cannot be produced.
 
 * `13. Fixing compartments.ipynb`: Fixes SBML error that occured due to metabolites being in a compartment that was not formally defined.
+
+* `14. Review Stage Corrections.ipynb`: Implements amendments required to test wether the model can grow using certain amino acids as N-sources, and growth on H2 and CO2 as sources of energy and carbon respectively.
 
 * `Model 15 Calculations.ipynb`: Interactive notebook to allow parameter exploration and growth in different conditions.
 
