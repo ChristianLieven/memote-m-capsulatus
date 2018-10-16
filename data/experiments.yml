@@ -1,0 +1,15 @@
+version: "0.1"
+medium:
+  path: "media/"
+  definitions:
+    methane_ms:
+essentiality:
+  path: "essentiality/"
+growth:
+  path: "growth/"
+  experiments:
+    ch4_nitrogen_sources:
+      filename: "ch4_nitrogen_sources.csv"
+      medium: methane_ms
+      objective: BIOMASS_Mcapsulatus
+      label: "Growth on various N-sources"
