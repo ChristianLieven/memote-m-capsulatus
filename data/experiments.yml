@@ -3,6 +3,9 @@ medium:
   path: "media/"
   definitions:
     methane_ms:
+    no3_ms:
+    no3_h2_ms:
+    no3_for_ms:
 essentiality:
   path: "essentiality/"
 growth:
@@ -13,3 +16,18 @@ growth:
       medium: methane_ms
       objective: BIOMASS_Mcapsulatus
       label: "Growth on various N-sources"
+    no3_carbon_sources:
+      filename: "no3_carbon_sources.csv"
+      medium: no3_ms
+      objective: BIOMASS_Mcapsulatus
+      label: "Growth on various C-sources"
+    no3_autotrophic_cofeeding_h2:
+      filename: "no3_autotrophic_cofeeding.csv"
+      medium: no3_h2_ms
+      objective: BIOMASS_Mcapsulatus
+      label: "Growth on H2 and CO2"
+    no3_autotrophic_cofeeding_for:
+      filename: "no3_autotrophic_cofeeding.csv"
+      medium: no3_for_ms
+      objective: BIOMASS_Mcapsulatus
+      label: "Growth on Formate and CO2"
