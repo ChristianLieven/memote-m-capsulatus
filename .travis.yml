@@ -13,7 +13,7 @@ before_install:
 # travis_retry may overcome some poor network conditions
 - travis_retry pip install -U pip setuptools wheel
 install:
-- travis_retry pip install -r requirements.txt
+- travis_retry pip install https://github.com/opencobra/memote/archive/devel.zip
 
 # as set up in 'memote.ini' this will create a JSON file in Results
 script:
