@@ -27,9 +27,10 @@ fi
 
 # Generate the history report on the deployment branch.
 output="index.html"
-git checkout "${deployment}"
 echo "Generating updated history report '${output}'."
-memote report history --filename="${output}"
+memote report history --filename="/tmp/${output}"
+git checkout "${deployment}"
+mv "/tmp/${output}" ./
 
 # Add, commit and push the files.
 git add "${output}"
