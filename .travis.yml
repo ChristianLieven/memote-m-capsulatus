@@ -16,7 +16,7 @@ before_install:
   - pip install --upgrade pip setuptools wheel
 
 install:
-  - pip install --upgrade memote
+  - pip install https://github.com/opencobra/memote/archive/fix_memote_report_history.zip
 
 script:
   - git checkout "${TRAVIS_BRANCH}"
