@@ -13,7 +13,7 @@ git config --global user.name "Travis CI Deployment Bot"
 
 if [[ "${TRAVIS_PULL_REQUEST}" != "false" || "${TRAVIS_REPO_SLUG}" != "ChristianLieven/memote-m-capsulatus" ]]; then
     echo "Untracked build."
-    memote run --ignore-git --skip_unchanged
+    memote run --ignore-git --skip-unchanged
     echo "Skip deploy."
     exit 0
 else
@@ -21,7 +21,7 @@ else
     git checkout "${deployment}"
     git checkout "${TRAVIS_BRANCH}"
     echo "Tracked build."
-    memote run --skip_unchanged
+    memote run --skip-unchanged
     echo "Start deploy to ${deployment}..."
 fi
 
