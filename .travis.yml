@@ -10,14 +10,13 @@ git:
 
 branches:
   except:
-    - "gh-pages"
+  - gh-pages
 
 before_install:
-  - pip install --upgrade pip setuptools wheel
+- pip install --upgrade pip setuptools wheel
 
 install:
-  - pip install https://github.com/opencobra/memote/archive/fix_memote_report_history.zip
+- pip install --upgrade memote
 
 script:
-  - git checkout "${TRAVIS_BRANCH}"
-  - ./scripts/travis_deploy.sh
+- ./scripts/travis_deploy.sh
