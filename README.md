@@ -1,3 +1,5 @@
+[![memote tested](https://img.shields.io/badge/memote-tested-blue.svg?style=plastic)](https://christianlieven.github.io/memote-m-capsulatus)
+
 # iMcBath: A genome-scale metabolic model of _Methylococcus capsulatus_ Bath
 
 * Brief Model Description:
@@ -104,6 +106,10 @@ You have several options to contribute to and ultimately improve the metabolic m
 * `SupplementTable1.docx`: Stoichiometry of the biomass reaction in mcapsBath.
 
 * `SupplementFigure1.png`: High-resolution export of the genome-scale [metabolic map](https://github.com/ChristianLieven/memote-m-capsulatus/blob/master/MetabolicMap/MethylococcusCapsulatusMetabolismMap.json) of the mcapsBath. The metabolic map was constructed using [escher](https://escher.github.io/).
+
+## Citation
+
+* iMcBath v1.0 has been published [here](https://doi.org/10.3389/fmicb.2018.02947). When citing iMcBath please refer to this repository by including a link to [https://github.com/ChristianLieven/memote-m-capsulatus](https://github.com/ChristianLieven/memote-m-capsulatus). This is to ensure users finding the most recent version.
 
 ## Contributors
 
